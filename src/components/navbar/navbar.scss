@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+
+.navbar {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  background-color: $white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  width: calc(100vw - 30rem);
+
+  .shopping_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    .shopping_container {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+
+  button {
+    background-color: $main-green;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 7px;
+    color: $white;
+    font-weight: bold;
+  }
+}

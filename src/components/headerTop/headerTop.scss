@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15rem;
+  color: $white;
+  background-color: $main-green;
+
+  .conversions,
+  .locations {
+    display: flex;
+    gap: 10px;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      h3 {
+        font-size: 10px;
+        text-transform: uppercase;
+      }
+
+      img {
+        height: 12px;
+        width: 12px;
+        cursor: pointer;
+      }
+
+      &:nth-of-type(1) {
+        border-right: 1.5px solid $white;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .locations {
+    div {
+      h3 {
+        text-transform: capitalize;
+      }
+
+      &:nth-of-type(1) {
+        border-right: none;
+      }
+    }
+  }
+}

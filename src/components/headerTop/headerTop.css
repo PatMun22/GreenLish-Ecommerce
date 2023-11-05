@@ -1,0 +1,41 @@
+.headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15rem;
+  color: #fff;
+  background-color: #25bd01;
+}
+.headerTop .conversions,
+.headerTop .locations {
+  display: flex;
+  gap: 10px;
+}
+.headerTop .conversions div,
+.headerTop .locations div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.headerTop .conversions div h3,
+.headerTop .locations div h3 {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.headerTop .conversions div img,
+.headerTop .locations div img {
+  height: 12px;
+  width: 12px;
+  cursor: pointer;
+}
+.headerTop .conversions div:nth-of-type(1),
+.headerTop .locations div:nth-of-type(1) {
+  border-right: 1.5px solid #fff;
+  padding-right: 10px;
+}
+.headerTop .locations div h3 {
+  text-transform: capitalize;
+}
+.headerTop .locations div:nth-of-type(1) {
+  border-right: none;
+}

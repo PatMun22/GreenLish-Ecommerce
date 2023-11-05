@@ -1,0 +1,45 @@
+.menu_searchbox {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background-color: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 15px;
+  padding: 7px 20px;
+  gap: 10px;
+  position: relative;
+}
+.menu_searchbox .menuContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgba(0, 0, 0, 0.6);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding-right: 10px;
+  font-size: 18px;
+}
+.menu_searchbox .menuContainer h2 {
+  font-size: 16px;
+}
+.menu_searchbox form {
+  display: flex;
+  gap: 0;
+}
+.menu_searchbox form input {
+  border: none;
+  outline: none;
+}
+.menu_searchbox form button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 50px;
+  border: none;
+  background-color: #25bd01;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
