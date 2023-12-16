@@ -1,0 +1,15 @@
+.carousel-right {
+  flex: 1;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: transparent;
+    object-fit: cover;
+  }
+}

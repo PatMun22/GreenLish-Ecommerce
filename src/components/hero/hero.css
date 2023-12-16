@@ -1,0 +1,9 @@
+.hero {
+  background-color: rgba(221, 200, 200, 0.5);
+  padding: 100px 14rem 50px 15rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}

@@ -1,9 +1,10 @@
-import CarouselComponent from "../../components/carouselComponent/CarouselComponent";
+import Hero from "../../components/hero/Hero";
+import { carousels } from "../../assets/data";
 
 const Home = () => {
   return (
     <div className="home">
-      <CarouselComponent />
+      <Hero carousels={carousels} />
     </div>
   );
 };
