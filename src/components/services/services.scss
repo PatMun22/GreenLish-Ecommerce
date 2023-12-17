@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+
+.services {
+  margin: 4rem auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+
+  .service-box {
+    border: 1.8px solid $section-bg;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 10px;
+
+    .icon-box {
+      width: 40px;
+      height: 40px;
+      background-color: $main-green;
+      border-radius: 5px;
+      display: grid;
+      place-items: center;
+
+      .serviceIcon {
+        color: $white;
+        font-size: 1.5rem;
+      }
+    }
+
+    .text-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      align-items: flex-start;
+
+      h1 {
+        font-size: 16px;
+        color: $main-bue;
+        text-transform: uppercase;
+      }
+
+      p {
+        text-transform: capitalize;
+        font-size: 12px;
+        font-weight: bold;
+        color: $main-bue;
+      }
+    }
+  }
+}

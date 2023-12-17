@@ -1,0 +1,64 @@
+@import "../../styles/variables.scss";
+
+.discount-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 170px;
+
+  .discount-box {
+    background-color: $section-bg;
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    height: inherit;
+
+    .left-part {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+
+      h1 {
+        text-transform: capitalize;
+        font-size: 22px;
+        color: $main-bue;
+        font-weight: 500;
+      }
+
+      span {
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 30px;
+        color: $main-bue;
+      }
+
+      p {
+        color: $main-bue;
+      }
+
+      button {
+        background-color: $main-green;
+        border: none;
+        padding: 5px;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 12px;
+        cursor: pointer;
+      }
+    }
+
+    .right-part {
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+}

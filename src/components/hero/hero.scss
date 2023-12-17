@@ -1,5 +1,7 @@
+@import "../../styles/variables.scss";
+
 .hero {
-  background-color: rgba(221, 200, 200, 0.5);
+  background-color: $section-bg;
   padding: 100px 14rem 50px 15rem;
   height: 100vh;
   display: flex;

@@ -9,7 +9,7 @@ const CarouselItem = ({ carousels, updateIndex, activeSlideIndex }) => {
       <div className="slide-container">
         {carousels.map((carousel, index) => (
           <div
-            key={index}
+            key={carousel.id}
             className={
               index === activeSlideIndex
                 ? "carousel-item active"
