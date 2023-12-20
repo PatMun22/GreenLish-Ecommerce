@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./carouselcompnent.scss";
 import CarouselItem from "../carouselItem/CarouselItem";
 
-const CarouselComponent = ({ carousels }) => {
+const CarouselComponent = ({ carousels, index }) => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
   const nextSlide = () => {

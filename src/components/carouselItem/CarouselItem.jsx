@@ -25,7 +25,7 @@ const CarouselItem = ({ carousels, updateIndex, activeSlideIndex }) => {
       <div className="indicators">
         {carousels.map((carousel, index) => (
           <IndicatorButtons
-            key={carousels.id}
+            key={carousel.img}
             carousel={carousel}
             index={index}
             updateIndex={updateIndex}

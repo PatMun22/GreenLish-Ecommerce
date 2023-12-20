@@ -1,0 +1,92 @@
+@import "../../styles/variables.scss";
+
+.bs-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin-top: 20px;
+
+  .bscarouselitem {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 48%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border: 1.3px solid $section-bg;
+
+    &.active {
+      opacity: 1;
+    }
+
+    &.inactive {
+      display: none;
+    }
+
+    .car_image {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        object-fit: cover;
+        width: 115px;
+        height: 110px;
+        border-radius: 50%;
+      }
+    }
+
+    .car_text {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 1.8rem;
+      margin-bottom: 1rem;
+      padding: 10px 0;
+
+      .category {
+        color: $section-bg;
+        font-size: 14px;
+        text-transform: capitalize;
+        font-weight: 600;
+        margin-bottom: -1rem;
+      }
+
+      h1 {
+        color: $main-bue;
+        text-transform: capitalize;
+        font-size: 18px;
+      }
+
+      .prices {
+        display: flex;
+        gap: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+
+        .new_price {
+          color: $main-green;
+        }
+
+        .old_price {
+          color: $main-bue;
+          text-decoration: line-through;
+          text-decoration-color: red;
+          text-decoration-thickness: 2px;
+        }
+      }
+    }
+  }
+}

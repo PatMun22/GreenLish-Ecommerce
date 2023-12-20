@@ -1,0 +1,78 @@
+@import "../../styles/variables.scss";
+
+.obcarouselitem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+
+  &.active {
+    opacity: 1;
+  }
+
+  &.inactive {
+    display: none;
+  }
+
+  .car_image {
+    flex: 1;
+    height: inherit;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .car_text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .category {
+      color: $section-bg;
+      font-size: 14px;
+      text-transform: capitalize;
+    }
+
+    h1 {
+      color: $main-bue;
+      text-transform: capitalize;
+      font-size: 18px;
+    }
+
+    .ratings {
+      display: flex;
+      gap: 10px;
+
+      .star-rating {
+        color: $main-green;
+        font-size: 0.8rem;
+      }
+    }
+
+    .prices {
+      display: flex;
+      gap: 10px;
+
+      .new_price {
+        color: $main-green;
+        font-size: 14px;
+      }
+
+      .old_price {
+        color: $main-bue;
+        font-size: 14px;
+        text-decoration: line-through;
+        text-decoration-color: red;
+      }
+    }
+
+    .description {
+      color: $main-bue;
+      font-size: 16px;
+    }
+  }
+}

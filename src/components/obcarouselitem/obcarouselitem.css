@@ -1,0 +1,64 @@
+.obcarouselitem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.obcarouselitem.active {
+  opacity: 1;
+}
+.obcarouselitem.inactive {
+  display: none;
+}
+.obcarouselitem .car_image {
+  flex: 1;
+  height: inherit;
+}
+.obcarouselitem .car_image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.obcarouselitem .car_text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.obcarouselitem .car_text .category {
+  color: rgba(221, 200, 200, 0.5);
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.obcarouselitem .car_text h1 {
+  color: #121935;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.obcarouselitem .car_text .ratings {
+  display: flex;
+  gap: 10px;
+}
+.obcarouselitem .car_text .ratings .star-rating {
+  color: #25bd01;
+  font-size: 0.8rem;
+}
+.obcarouselitem .car_text .prices {
+  display: flex;
+  gap: 10px;
+}
+.obcarouselitem .car_text .prices .new_price {
+  color: #25bd01;
+  font-size: 14px;
+}
+.obcarouselitem .car_text .prices .old_price {
+  color: #121935;
+  font-size: 14px;
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+.obcarouselitem .car_text .description {
+  color: #121935;
+  font-size: 16px;
+}

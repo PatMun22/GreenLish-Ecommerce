@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+
+.offer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+
+  .top-text {
+    p {
+      font-size: 14px;
+      color: $main-bue;
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 18px;
+      color: $main-bue;
+      font-weight: bolder;
+    }
+  }
+
+  .hr-line {
+    height: 0;
+    border: 0.3px solid $section-bg;
+    width: 50%;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .scroll-btn {
+      border: 1px solid $section-bg;
+      background: transparent;
+      display: flex;
+      place-items: center;
+      color: $section-bg;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        background-color: rgba($section-bg, 0.7);
+        transform: scale(1.3);
+      }
+    }
+  }
+}

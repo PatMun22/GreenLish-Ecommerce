@@ -1,0 +1,103 @@
+.offer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  box-shadow: 0 0 15px rgba(221, 200, 200, 0.8);
+  margin-top: 20px;
+  padding: 10px;
+}
+.offer-bottom .obcarouselitem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.offer-bottom .obcarouselitem.active {
+  opacity: 1;
+}
+.offer-bottom .obcarouselitem.inactive {
+  display: none;
+}
+.offer-bottom .obcarouselitem .car_image {
+  flex: 1;
+  height: inherit;
+  display: flex;
+  place-items: center;
+}
+.offer-bottom .obcarouselitem .car_image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+.offer-bottom .obcarouselitem .car_text {
+  flex: 1;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.offer-bottom .obcarouselitem .car_text .category {
+  color: rgba(221, 200, 200, 0.5);
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.offer-bottom .obcarouselitem .car_text h1 {
+  color: #121935;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.offer-bottom .obcarouselitem .car_text .ratings {
+  display: flex;
+  gap: 0;
+}
+.offer-bottom .obcarouselitem .car_text .ratings .star-rating {
+  color: #25bd01;
+  font-size: 0.8rem;
+}
+.offer-bottom .obcarouselitem .car_text .prices {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.offer-bottom .obcarouselitem .car_text .prices .new_price {
+  color: #25bd01;
+}
+.offer-bottom .obcarouselitem .car_text .prices .old_price {
+  color: #121935;
+  text-decoration: line-through;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+}
+.offer-bottom .obcarouselitem .car_text .description {
+  color: #121935;
+  font-size: 16px;
+}
+.offer-bottom .obcarouselitem .car_text .expiry_timeline {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.offer-bottom .obcarouselitem .car_text .expiry_timeline .time_div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.offer-bottom .obcarouselitem .car_text .expiry_timeline .time_div .time_denom {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(221, 200, 200, 0.5);
+}
