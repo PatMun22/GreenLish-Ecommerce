@@ -1,18 +1,18 @@
 import "./bscarousel.scss";
 import { Link } from "react-router-dom";
 
-const BsCarousel = ({ bestsellercarousel, activeObslideIndex }) => {
+const BsCarousel = ({ bestsellercarousel, currentSlide }) => {
   return (
     <Link to="products/:id">
       <div className="bs-bottom">
         {bestsellercarousel.map((item, index) => (
           <div
             key={item.id}
-            className={
-              index === activeObslideIndex
-                ? "bscarouselitem active"
-                : "bscarouselitem inactive"
-            }
+            className={`bscarouselitem ${
+              currentSlide === index ? "active" : ""
+            } ${
+              currentSlide === bestsellercarousel.length - 2 ? "second" : ""
+            }`}
           >
             <div className="car_image">
               <img src={item.img} alt={`carousel-image`} />

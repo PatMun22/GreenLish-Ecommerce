@@ -1,3 +1,4 @@
+import BelowCarousels from "../belowCarousels/BelowCarousels";
 import DiscountSection from "../discountSection/DiscountSection";
 import OfferBestseller from "../offerBestseller/OfferBestseller";
 import Services from "../services/Services";
@@ -9,6 +10,7 @@ const HomeBottom = () => {
       <DiscountSection />
       <Services />
       <OfferBestseller />
+      <BelowCarousels />
     </div>
   );
 };

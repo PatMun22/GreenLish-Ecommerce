@@ -1,3 +1,5 @@
+import drumsticks from "./images/drumsticks.png";
+
 export const carousels = [
   {
     id: 1,
@@ -164,3 +166,11 @@ export const bestsellercarousel = [
     old_price: "150.50",
   },
 ];
+
+export const belowcarousels = {
+  image: drumsticks,
+  title: "fresh broyler chicken",
+  paragraph: "big sale 40%",
+  span: "off",
+  button: "add to cart",
+};

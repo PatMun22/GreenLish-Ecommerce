@@ -4,29 +4,29 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 6%;
   align-items: center;
   overflow: hidden;
-  position: relative;
   width: 100%;
   height: 250px;
   margin-top: 20px;
 
   .bscarouselitem {
     display: inline-flex;
+    flex: 0 0 47%;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 48%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    border: 1.3px solid $section-bg;
+    opacity: 1;
+    transition: transform 0.5s ease;
+    border: 2px solid rgba($section-bg, 0.4);
 
     &.active {
       opacity: 1;
     }
 
-    &.inactive {
-      display: none;
+    &.second {
+      transform: translateX(50%);
     }
 
     .car_image {
@@ -65,13 +65,13 @@
       h1 {
         color: $main-bue;
         text-transform: capitalize;
-        font-size: 18px;
+        font-size: 14px;
       }
 
       .prices {
         display: flex;
         gap: 20px;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: bold;
         margin-top: -1rem;
         margin-bottom: 1rem;

@@ -1,0 +1,59 @@
+@import "../../styles/variables.scss";
+
+.below_carousels {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+  width: 100%;
+  background-color: rgba($fade-green, 0.3);
+  height: 200px;
+  gap: 10px;
+
+  .bc_image {
+    flex: 3;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+
+    img {
+      width: 80%;
+      height: 120%;
+      background: transparent;
+      margin-bottom: -50px;
+      margin-right: -50px;
+      margin-left: 50px;
+      object-fit: cover;
+    }
+  }
+
+  .bc_text {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    h1 {
+      color: $main-bue;
+      text-transform: capitalize;
+      font-size: 18px;
+    }
+
+    p {
+      color: $main-bue;
+      text-transform: capitalize;
+      font-size: 18px;
+    }
+
+    button {
+      background-color: $main-green;
+      padding: 5px 10px;
+      border: none;
+      text-transform: capitalize;
+      color: $white;
+      font-weight: 600;
+      width: 100px;
+    }
+  }
+}

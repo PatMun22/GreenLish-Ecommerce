@@ -2,6 +2,7 @@ import { useState } from "react";
 import BestSeller from "../bestseller/BestSeller";
 import Offer from "../offer/Offer";
 import "./offerBestseller.scss";
+import { bestsellercarousel } from "../../assets/data";
 
 const OfferBestseller = () => {
   const [activeObslideIndex, setActiveObslideIndex] = useState(0);
@@ -13,6 +14,21 @@ const OfferBestseller = () => {
   const prevObslide = () => {
     setActiveObslideIndex(activeObslideIndex - 1);
   };
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === bestsellercarousel.length - 2 ? 0 : prevSlide + 1
+    );
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === 0 ? bestsellercarousel.length - 2 : prevSlide - 1
+    );
+  };
+
   return (
     <div className="offer-bestseller">
       <Offer
@@ -21,9 +37,10 @@ const OfferBestseller = () => {
         activeObslideIndex={activeObslideIndex}
       />
       <BestSeller
-        nextObslide={nextObslide}
-        prevObslide={prevObslide}
-        activeObslideIndex={activeObslideIndex}
+        nextSlide={nextSlide}
+        prevSlide={prevSlide}
+        currentSlide={currentSlide}
+        bestsellercarousel={bestsellercarousel}
       />
     </div>
   );
