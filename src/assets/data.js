@@ -1,4 +1,16 @@
 import drumsticks from "./images/drumsticks.png";
+import rp1 from "./images/rp1.png";
+import rp2 from "./images/rp2.png";
+import rp3 from "./images/rp3.png";
+import rp4 from "./images/rp4.png";
+import rp5 from "./images/rp5.png";
+import rp6 from "./images/rp6.png";
+import rp7 from "./images/rp7.png";
+import rp8 from "./images/rp8.png";
+import rp9 from "./images/rp9.png";
+import rp10 from "./images/rp10.png";
+import rp11 from "./images/rp11.png";
+import rp12 from "./images/rp12.png";
 
 export const carousels = [
   {
@@ -172,5 +184,104 @@ export const belowcarousels = {
   title: "fresh broyler chicken",
   paragraph: "big sale 40%",
   span: "off",
-  button: "add to cart",
+  button: "Add to Cart",
 };
+
+export const recommendedProducts = [
+  {
+    id: 1,
+    image: rp1,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    foodCart: "food & Vegetable",
+    price: "50.00",
+    btn: "Add to Cart",
+  },
+  {
+    id: 2,
+    image: rp2,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    foodCart: "food & Vegetable",
+    price: "150.00",
+    btn: "Add to Cart",
+  },
+  {
+    id: 3,
+    image: rp3,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    foodCart: "food & Vegetable",
+    price: "250.00",
+    btn: "Add to Cart",
+  },
+  {
+    id: 4,
+    image: rp4,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    foodCart: "food & Vegetable",
+    price: "350.00",
+    btn: "Add to Cart",
+  },
+  {
+    id: 5,
+    image: rp5,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    foodCart: "food & Vegetable",
+    price: "180.00",
+    btn: "Add to Cart",
+  },
+  {
+    id: 6,
+    image: rp6,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    foodCart: "food & Vegetable",
+    price: "150.00",
+    btn: "Add to Cart",
+  },
+  {
+    id: 7,
+    image: rp7,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    foodCart: "food & Vegetable",
+    price: "210.00",
+    btn: "Add to Cart",
+  },
+  {
+    id: 8,
+    image: rp8,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    foodCart: "food & Vegetable",
+    price: "350.00",
+    btn: "Add to Cart",
+  },
+  {
+    id: 9,
+    image: rp9,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    foodCart: "food & Vegetable",
+    price: "200.00",
+    btn: "Add to Cart",
+  },
+  {
+    id: 10,
+    image: rp10,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    foodCart: "food & Vegetable",
+    price: "310.00",
+    btn: "Add to Cart",
+  },
+  {
+    id: 11,
+    image: rp11,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    foodCart: "food & Vegetable",
+    price: "100.00",
+    btn: "Add to Cart",
+  },
+  {
+    id: 12,
+    image: rp12,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    foodCart: "food & Vegetable",
+    price: "300.00",
+    btn: "Add to Cart",
+  },
+];

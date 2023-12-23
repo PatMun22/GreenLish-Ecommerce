@@ -6,7 +6,9 @@ const BelowCarousels = () => {
   return (
     <div className="below_carousels">
       <div className="bc_image">
-        <img src={belowcarousels.image} alt={belowcarousels.title} />
+        <Link to="/products/:id">
+          <img src={belowcarousels.image} alt={belowcarousels.title} />
+        </Link>
       </div>
       <div className="bc_text">
         <h1>{belowcarousels.title}</h1>
@@ -14,9 +16,7 @@ const BelowCarousels = () => {
           {belowcarousels.paragraph}
           <span>{belowcarousels.span}</span>
         </p>
-        <button>
-          <Link to="/cart">{belowcarousels.button}</Link>
-        </button>
+        <button>{belowcarousels.button}</button>
       </div>
     </div>
   );

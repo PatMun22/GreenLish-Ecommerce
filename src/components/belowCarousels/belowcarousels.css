@@ -43,9 +43,9 @@
 }
 .below_carousels .bc_text button {
   background-color: #25bd01;
+  cursor: pointer;
   padding: 5px 10px;
   border: none;
-  text-transform: capitalize;
   color: #fff;
   font-weight: 600;
   width: 100px;

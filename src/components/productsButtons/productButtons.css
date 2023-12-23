@@ -1,0 +1,44 @@
+.productButtons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.productButtons .buttons {
+  display: flex;
+  gap: 10px;
+}
+.productButtons .buttons .btn {
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+.productButtons .buttons .active {
+  background-color: #25bd01;
+  color: #fff;
+}
+.productButtons .btn-hr {
+  border: 0.5px solid rgba(221, 200, 200, 0.5);
+  height: 0;
+  width: 35%;
+}
+.productButtons .nav-btns {
+  display: flex;
+  place-items: center;
+  gap: 10px;
+}
+.productButtons .nav-btns button {
+  border: 1px solid rgba(221, 200, 200, 0.5);
+  display: flex;
+  place-items: center;
+  background: transparent;
+  color: rgba(221, 200, 200, 0.5);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.productButtons .nav-btns button:hover {
+  transform: scale(1.15);
+}
