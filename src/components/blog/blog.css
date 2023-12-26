@@ -1,0 +1,70 @@
+.blog {
+  margin: 3rem 15rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.blog h3 {
+  font-size: 18px;
+  color: #121935;
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-weight: 300;
+}
+.blog h1 {
+  font-size: 30px;
+  color: #121935;
+  text-transform: capitalize;
+}
+.blog p {
+  color: #121935;
+  font-size: 18px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+.blog .blog-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.blog .blog-container .blog-item {
+  width: 280px;
+}
+.blog .blog-container .blog-item img {
+  width: 100%;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.blog .blog-container .blog-item .date-comment {
+  height: 20px;
+  display: flex;
+  width: inherit;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  color: #121935;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.blog .blog-container .blog-item .date-comment .vert-line {
+  width: 1.5px;
+  height: 70%;
+  background-color: #121935;
+  opacity: 0.7;
+}
+.blog .blog-container .blog-item h3 {
+  font-size: 18px;
+  text-transform: lowercase;
+  text-align: left;
+}
+.blog .blog-container .blog-item p {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.blog .blog-container .blog-item p:hover {
+  gap: 20px;
+}

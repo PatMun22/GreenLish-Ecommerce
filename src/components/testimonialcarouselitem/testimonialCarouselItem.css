@@ -1,0 +1,78 @@
+.carousel-item {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.carousel-item .slide {
+  flex: 0 0 calc(50% - 90px);
+  margin: 0 45px;
+  transition: transform 0.3s ease;
+  opacity: 1;
+  border: 1.5px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 15px;
+  padding-left: 70px;
+  position: relative;
+  height: 200px;
+  border-radius: 5px;
+}
+.carousel-item .slide.active {
+  opacity: 1;
+}
+.carousel-item .slide.second {
+  transform: translateX(50%);
+}
+.carousel-item .slide h3 {
+  font-size: 16px;
+}
+.carousel-item .slide p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.carousel-item .slide .testimonial-ratings {
+  display: flex;
+  gap: 5px;
+}
+.carousel-item .slide .testimonial-ratings .testimonial-rating {
+  color: #fff;
+  font-size: 10px;
+}
+.carousel-item .slide blockquote {
+  margin: 15px 0;
+}
+.carousel-item .slide .image {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: #fff;
+  transform: translateX(-100px);
+  outline: 15px solid green;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-item .slide .image img {
+  width: 95px;
+  height: 60px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel-item .testimonial-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 380px;
+  display: flex;
+}
+.carousel-item .testimonial-buttons .car-btn {
+  margin-right: 10px;
+}

@@ -11,6 +11,19 @@ import rp9 from "./images/rp9.png";
 import rp10 from "./images/rp10.png";
 import rp11 from "./images/rp11.png";
 import rp12 from "./images/rp12.png";
+import testimonial1 from "./images/testimonial1.png";
+import testimonial2 from "./images/testimonial2.png";
+import testimonial3 from "./images/testimonial3.png";
+import testimonial4 from "./images/testimonial4.png";
+import blog1 from "./images/blog1.jpg";
+import blog2 from "./images/blog2.jpg";
+import blog3 from "./images/blog3.jpg";
+import partner1 from "./images/partner1.png";
+import partner2 from "./images/partner2.png";
+import partner3 from "./images/partner3.png";
+import partner4 from "./images/partner4.png";
+import partner5 from "./images/partner5.png";
+import partner6 from "./images/partner6.png";
 
 export const carousels = [
   {
@@ -284,4 +297,74 @@ export const recommendedProducts = [
     price: "300.00",
     btn: "Add to Cart",
   },
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Chris Tuff",
+    image: testimonial1,
+    profession: "UI/UX Designer",
+    comment:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit autem aperiam hic quidem ipsam.",
+  },
+  {
+    id: 2,
+    name: "Karen Obgdon",
+    image: testimonial2,
+    profession: "UI/UX Designer",
+    comment:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit autem aperiam hic quidem ipsam.",
+  },
+  {
+    id: 3,
+    name: "Cynthia Tracy",
+    image: testimonial3,
+    profession: "UI/UX Designer",
+    comment:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit autem aperiam hic quidem ipsam.",
+  },
+  {
+    id: 4,
+    name: "Patrick Goden",
+    image: testimonial4,
+    profession: "UI/UX Designer",
+    comment:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit autem aperiam hic quidem ipsam.",
+  },
+];
+
+export const blogs = [
+  {
+    id: 1,
+    image: blog1,
+    date: "Nov 11, 2023",
+    cartegory: "Healthy food",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    comments: 14,
+  },
+  {
+    id: 2,
+    image: blog2,
+    date: "Nov 21, 2023",
+    cartegory: "Healthy food",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    comments: 14,
+  },
+  {
+    id: 3,
+    image: blog3,
+    date: "Dec 12, 2023",
+    cartegory: "Healthy food",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    comments: 14,
+  },
+];
+
+export const partners = [
+  { id: 1, image: partner1, description: "Lorem ipsum dolor sit amet." },
+  { id: 2, image: partner2, description: "Lorem ipsum dolor sit amet." },
+  { id: 3, image: partner4, description: "Lorem ipsum dolor sit amet." },
+  { id: 4, image: partner5, description: "Lorem ipsum dolor sit amet." },
+  { id: 5, image: partner6, description: "Lorem ipsum dolor sit amet." },
 ];

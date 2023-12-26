@@ -1,0 +1,91 @@
+@import "../../styles/variables.scss";
+
+.carousel-item {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  .slide {
+    flex: 0 0 calc(50% - 90px);
+    margin: 0 45px;
+    transition: transform 0.3s ease;
+    opacity: 1;
+    border: 1.5px solid $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 15px;
+    padding-left: 70px;
+    position: relative;
+    height: 200px;
+    border-radius: 5px;
+
+    &.active {
+      opacity: 1;
+    }
+
+    &.second {
+      transform: translateX(50%);
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-ratings {
+      display: flex;
+      gap: 5px;
+
+      .testimonial-rating {
+        color: $white;
+        font-size: 10px;
+      }
+    }
+
+    blockquote {
+      margin: 15px 0;
+    }
+
+    .image {
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      background: $white;
+      transform: translateX(-100px);
+      outline: 15px solid green;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 95px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .testimonial-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 380px;
+    display: flex;
+
+    .car-btn {
+      margin-right: 10px;
+    }
+  }
+}

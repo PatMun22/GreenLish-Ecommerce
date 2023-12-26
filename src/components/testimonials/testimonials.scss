@@ -1,0 +1,66 @@
+@import "../../styles/variables.scss";
+
+.testimonials {
+  height: 75vh;
+  background-color: $main-green;
+  color: $white;
+  overflow: hidden;
+  position: relative;
+  padding: 0 15rem;
+
+  .bigger-inner {
+    background: rgba(green, 0.1);
+    width: 1200px;
+    height: 1200px;
+    z-index: 2;
+    border-radius: 0 50% 50% 0;
+    position: absolute;
+    right: 100px;
+    top: -50%;
+    left: 0;
+
+    .bigger-inner1 {
+      position: absolute;
+      left: -50px;
+      top: 150px;
+      height: 350px;
+      width: 350px;
+      border-radius: 50%;
+      z-index: 10;
+      background-color: rgba(green, 0.3);
+
+      .bigger-inner2 {
+        position: absolute;
+        left: -150px;
+        bottom: -50px;
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+        z-index: 20;
+        background-color: rgba(green, 0.2);
+      }
+    }
+  }
+
+  .bigger-inner3 {
+    position: absolute;
+    right: -170px;
+    top: 10px;
+    width: 250px;
+    height: 250px;
+    z-index: 10;
+    border-radius: 50%;
+    background-color: rgba(green, 0.2);
+  }
+
+  .bigger-inner4 {
+    position: absolute;
+    right: -150px;
+    top: 150px;
+    width: 400px;
+    height: 400px;
+    z-index: 20;
+    border-radius: 50%;
+    background-color: rgba(green, 0.1);
+  }
+}
