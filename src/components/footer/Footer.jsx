@@ -2,6 +2,12 @@ import "./footer.scss";
 import { Link } from "react-router-dom";
 import { LiaCopyrightSolid } from "react-icons/lia";
 import Newsletter from "../newsletter/Newsletter";
+import google from "../../assets/images/google.png";
+import apple from "../../assets/images/Apple.png";
+import visa from "../../assets/images/visa.png";
+import master from "../../assets/images/master.png";
+import discover from "../../assets/images/discover.png";
+import mpesa from "../../assets/images/mpesa.png";
 
 const Footer = () => {
   return (
@@ -65,8 +71,8 @@ const Footer = () => {
         <div className="links">
           <h1>Download App</h1>
           <div className="app_download">
-            <img src="" alt="" />
-            <img src="" alt="" />
+            <img src={apple} alt="Apple download app" />
+            <img src={google} alt="Goole play app" />
           </div>
         </div>
       </div>
@@ -79,10 +85,10 @@ const Footer = () => {
           </p>
         </div>
         <div className="payment_cards">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <img src={visa} alt="visa card" />
+          <img src={master} alt="master card" />
+          <img src={discover} alt="discover card" />
+          <img src={mpesa} alt="mpesa logo" />
         </div>
       </div>
     </div>

@@ -20,7 +20,6 @@ import blog2 from "./images/blog2.jpg";
 import blog3 from "./images/blog3.jpg";
 import partner1 from "./images/partner1.png";
 import partner2 from "./images/partner2.png";
-import partner3 from "./images/partner3.png";
 import partner4 from "./images/partner4.png";
 import partner5 from "./images/partner5.png";
 import partner6 from "./images/partner6.png";
