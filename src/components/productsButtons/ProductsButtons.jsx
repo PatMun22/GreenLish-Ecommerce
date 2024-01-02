@@ -1,31 +1,68 @@
-import "./productButtons.scss";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
+/* eslint-disable react/prop-types */
 import { useState } from "react";
+import "./productButtons.scss";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+// import { filterButtons } from "../../assets/data";
 
-const prodCategories = [
-  { id: 1, title: "Recommended" },
-  { id: 2, title: "Popular" },
-  { id: 3, title: "Most Popular" },
-  { id: 4, title: "New Arrival" },
-  { id: 5, title: "Categories" },
-];
+const ProductsButtons = ({ filterItems, recommendedProducts, setItems }) => {
+  const [activeButton, setActiveButton] = useState("All");
 
-const ProductsButtons = () => {
-  const [activeBtn, setActiveBtn] = useState(0);
+  const handleButtonClick = (filter) => {
+    setActiveButton(filter);
+    switch (filter) {
+      case "All":
+        setItems(recommendedProducts);
+        break;
+      case "Recommended":
+        filterItems("Recommended");
+        break;
+      case "Popular":
+        filterItems("Popular");
+        break;
+      case "Most Popular":
+        filterItems("Most Popular");
+        break;
+      case "New Arrival":
+        filterItems("New Arrival");
+        break;
+      default:
+        break;
+    }
+  };
 
   return (
     <div className="productButtons">
       <div className="buttons">
-        {prodCategories.map((item, index) => (
-          <button
-            className={`btn ${activeBtn === index ? "active" : ""}`}
-            key={item.id}
-            onClick={() => setActiveBtn(index)}
-          >
-            {item.title}
-          </button>
-        ))}
+        <button
+          className={`btn ${activeButton === "All" ? "active" : ""}`}
+          onClick={() => handleButtonClick("All")}
+        >
+          All Cats
+        </button>
+        <button
+          className={`btn ${activeButton === "Recommended" ? "active" : ""}`}
+          onClick={() => handleButtonClick("Recommended")}
+        >
+          Recommended
+        </button>
+        <button
+          className={`btn ${activeButton === "Popular" ? "active" : ""}`}
+          onClick={() => handleButtonClick("Popular")}
+        >
+          Popular
+        </button>
+        <button
+          className={`btn ${activeButton === "Most Popular" ? "active" : ""}`}
+          onClick={() => handleButtonClick("Most Popular")}
+        >
+          Most Popular
+        </button>
+        <button
+          className={`btn ${activeButton === "New Arrival" ? "active" : ""}`}
+          onClick={() => handleButtonClick("New Arrival")}
+        >
+          New Arrival
+        </button>
       </div>
       <div className="btn-hr"></div>
       <div className="nav-btns">

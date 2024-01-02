@@ -207,6 +207,7 @@ export const recommendedProducts = [
     foodCart: "food & Vegetable",
     price: "50.00",
     btn: "Add to Cart",
+    category: "popular",
   },
   {
     id: 2,
@@ -215,6 +216,7 @@ export const recommendedProducts = [
     foodCart: "food & Vegetable",
     price: "150.00",
     btn: "Add to Cart",
+    category: "recommended",
   },
   {
     id: 3,
@@ -223,6 +225,7 @@ export const recommendedProducts = [
     foodCart: "food & Vegetable",
     price: "250.00",
     btn: "Add to Cart",
+    category: "popular",
   },
   {
     id: 4,
@@ -231,6 +234,7 @@ export const recommendedProducts = [
     foodCart: "food & Vegetable",
     price: "350.00",
     btn: "Add to Cart",
+    category: "New arrival",
   },
   {
     id: 5,
@@ -239,6 +243,7 @@ export const recommendedProducts = [
     foodCart: "food & Vegetable",
     price: "180.00",
     btn: "Add to Cart",
+    category: "Most popular",
   },
   {
     id: 6,
@@ -247,6 +252,7 @@ export const recommendedProducts = [
     foodCart: "food & Vegetable",
     price: "150.00",
     btn: "Add to Cart",
+    category: "recommended",
   },
   {
     id: 7,
@@ -255,6 +261,7 @@ export const recommendedProducts = [
     foodCart: "food & Vegetable",
     price: "210.00",
     btn: "Add to Cart",
+    category: "New arrival",
   },
   {
     id: 8,
@@ -263,6 +270,7 @@ export const recommendedProducts = [
     foodCart: "food & Vegetable",
     price: "350.00",
     btn: "Add to Cart",
+    category: "Most popular",
   },
   {
     id: 9,
@@ -271,6 +279,7 @@ export const recommendedProducts = [
     foodCart: "food & Vegetable",
     price: "200.00",
     btn: "Add to Cart",
+    category: "New arrival",
   },
   {
     id: 10,
@@ -279,6 +288,7 @@ export const recommendedProducts = [
     foodCart: "food & Vegetable",
     price: "310.00",
     btn: "Add to Cart",
+    category: "popular",
   },
   {
     id: 11,
@@ -287,6 +297,7 @@ export const recommendedProducts = [
     foodCart: "food & Vegetable",
     price: "100.00",
     btn: "Add to Cart",
+    category: "New arrival",
   },
   {
     id: 12,
@@ -295,7 +306,16 @@ export const recommendedProducts = [
     foodCart: "food & Vegetable",
     price: "300.00",
     btn: "Add to Cart",
+    category: "popular",
   },
+];
+
+export const filterButtons = [
+  { id: 1, title: "All Cats", value: "all" },
+  { id: 2, title: "Recommended", value: "recommended" },
+  { id: 3, title: "Popular", value: "popular" },
+  { id: 4, title: "Most popular", value: "mostPopular" },
+  { id: 5, title: "New arrival", value: "newArrival" },
 ];
 
 export const testimonials = [

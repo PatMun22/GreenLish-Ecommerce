@@ -1,13 +1,14 @@
+/* eslint-disable react/prop-types */
 import "./productCategory.scss";
 import { FaStar } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { FiEye } from "react-icons/fi";
-import { recommendedProducts } from "../../assets/data";
+import { Link } from "react-router-dom";
 
-const ProductCategory = () => {
+const ProductCategory = ({ items }) => {
   return (
     <div className="product_category">
-      {recommendedProducts.map((item) => (
+      {items.map((item) => (
         <div className="indiv-product" key={item.id}>
           <div className="image">
             <img src={item.image} alt={`product ${item.title}`} />
@@ -32,9 +33,9 @@ const ProductCategory = () => {
             <div className="emojis">
               <CiHeart className="heart-emoji" />
             </div>
-            <div className="emojis">
+            <Link to={`/shop/${item.id}`} className="emojis">
               <FiEye className="eye-emoji" />
-            </div>
+            </Link>
           </div>
         </div>
       ))}
