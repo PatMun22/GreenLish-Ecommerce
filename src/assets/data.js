@@ -24,6 +24,20 @@ import partner4 from "./images/partner4.png";
 import partner5 from "./images/partner5.png";
 import partner6 from "./images/partner6.png";
 
+export const AllCategories = [
+  { id: 1, category: "Grains" },
+  { id: 2, category: "Milk & Milk Products" },
+  { id: 3, category: "Fruits & Fruit Products" },
+  { id: 4, category: "Eggs" },
+  { id: 5, category: "Meat & Poultry" },
+  { id: 6, category: "Fish" },
+  { id: 7, category: "Vegetables" },
+  { id: 8, category: "Fats & Oils" },
+  { id: 9, category: "Legumes/Nuts/Seeds" },
+  { id: 10, category: "Sugar & Sugar Products" },
+  { id: 11, category: "Non-Alcoholic Beverages" },
+  { id: 12, category: "Alcoholic Beverages" },
+];
 export const carousels = [
   {
     id: 1,
@@ -203,7 +217,7 @@ export const recommendedProducts = [
   {
     id: 1,
     image: rp1,
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Chapati Salad",
     foodCart: "food & Vegetable",
     price: "50.00",
     btn: "Add to Cart",
@@ -212,7 +226,7 @@ export const recommendedProducts = [
   {
     id: 2,
     image: rp2,
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Fresh Organic Pineapple",
     foodCart: "food & Vegetable",
     price: "150.00",
     btn: "Add to Cart",
@@ -221,7 +235,7 @@ export const recommendedProducts = [
   {
     id: 3,
     image: rp3,
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Fresh Organic Spinach",
     foodCart: "food & Vegetable",
     price: "250.00",
     btn: "Add to Cart",
@@ -230,7 +244,7 @@ export const recommendedProducts = [
   {
     id: 4,
     image: rp4,
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Fresh Organic Avocado",
     foodCart: "food & Vegetable",
     price: "350.00",
     btn: "Add to Cart",
@@ -239,7 +253,7 @@ export const recommendedProducts = [
   {
     id: 5,
     image: rp5,
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Fresh Organic Oranges",
     foodCart: "food & Vegetable",
     price: "180.00",
     btn: "Add to Cart",

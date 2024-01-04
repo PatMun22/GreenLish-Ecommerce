@@ -8,15 +8,20 @@ import SignUp from "./pages/signUp/SignUp";
 import Cart from "./pages/cart/Cart";
 import Profile from "./pages/profile/Profile";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+
+import { useTranslation } from "react-i18next";
+
 const App = () => {
+  const { t } = useTranslation();
+
   const Layout = () => {
     return (
       <main>
-        <Header />
+        <Header t={t} />
         <div className="Main_container">
           <Outlet />
         </div>
-        <Footer />
+        <Footer t={t} />
       </main>
     );
   };
