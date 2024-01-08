@@ -85,19 +85,3 @@
   color: #121935;
   font-size: 16px;
 }
-.offer-bottom .obcarouselitem .car_text .expiry_timeline {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-.offer-bottom .obcarouselitem .car_text .expiry_timeline .time_div {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.offer-bottom .obcarouselitem .car_text .expiry_timeline .time_div .time_denom {
-  width: 20px;
-  height: 20px;
-  border: 1px solid rgba(221, 200, 200, 0.5);
-}

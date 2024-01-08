@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./offer.scss";
 import OfferCarousel from "../offerCarousel/OfferCarousel";
 import OfferBestselerTop from "../offerbestsellettop/OfferBestselerTop";

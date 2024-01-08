@@ -97,25 +97,6 @@
         color: $main-bue;
         font-size: 16px;
       }
-
-      .expiry_timeline {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        gap: 15px;
-
-        .time_div {
-          display: flex;
-          flex-direction: column;
-          gap: 5px;
-
-          .time_denom {
-            width: 20px;
-            height: 20px;
-            border: 1px solid $section-bg;
-          }
-        }
-      }
     }
   }
 }

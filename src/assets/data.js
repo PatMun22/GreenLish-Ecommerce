@@ -121,6 +121,7 @@ export const offercarousel = [
     old_price: "75.50",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, natus?",
+    expiry_date: "2024-02-20T12:09:01Z",
   },
   {
     id: 2,
@@ -131,6 +132,7 @@ export const offercarousel = [
     old_price: "375.50",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, natus?",
+    expiry_date: "2024-01-11T20:19:01Z",
   },
   {
     id: 3,
@@ -141,6 +143,7 @@ export const offercarousel = [
     old_price: "320.50",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, natus?",
+    expiry_date: "2024-02-13T01:29:21Z",
   },
   {
     id: 4,
@@ -151,6 +154,7 @@ export const offercarousel = [
     old_price: "1750.50",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, natus?",
+    expiry_date: "2024-03-30T20:32:31Z",
   },
 ];
 
