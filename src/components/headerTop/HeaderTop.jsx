@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+import i18next from "i18next";
 import "./headerTop.scss";
 import { GiMultiDirections } from "react-icons/gi";
 import { VscLocation } from "react-icons/vsc";
@@ -7,12 +9,27 @@ const HeaderTop = () => {
     <div className="headerTop">
       <div className="conversions">
         <div>
-          <h3>English</h3>
-          <img src="/down.svg" alt="" />
+          <select>
+            <option value="0" onClick={() => i18next.changeLanguage(en)}>
+              English
+            </option>
+            <option value="1" onClick={() => i18next.changeLanguage(fr)}>
+              Francais
+            </option>
+            <option value="2" onClick={() => i18next.changeLanguage(sw)}>
+              Swahili
+            </option>
+            <option value="3" onClick={() => i18next.changeLanguage(sp)}>
+              Española
+            </option>
+          </select>
         </div>
         <div>
-          <h3>USD</h3>
-          <img src="/down.svg" alt="" />
+          <select>
+            <option value="0">USD</option>
+            <option value="1">EURO</option>
+            <option value="2">KSH</option>
+          </select>
         </div>
       </div>
       <div className="locations">

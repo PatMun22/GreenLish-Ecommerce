@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.search-dropdown {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  background-color: $white;
+  color: black;
+  text-align: center;
+  min-width: 280px;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba($section-bg, 0.8);
+  padding: 5px 10px;
+
+  &.visible {
+    display: block;
+  }
+
+  .product-item {
+    background-color: rgba($section-bg, 0.3);
+    padding: 2px 0;
+    margin: 3px 0;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba($section-bg, 0.8);
+    }
+  }
+}

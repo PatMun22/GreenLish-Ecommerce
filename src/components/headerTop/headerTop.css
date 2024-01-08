@@ -17,6 +17,23 @@
   align-items: center;
   gap: 5px;
 }
+.headerTop .conversions div select,
+.headerTop .locations div select {
+  border: none;
+  outline: none;
+  background-color: #25bd01;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.headerTop .conversions div select option,
+.headerTop .locations div select option {
+  text-transform: uppercase;
+  font-size: 10px;
+  margin: 5px 0;
+}
 .headerTop .conversions div h3,
 .headerTop .locations div h3 {
   font-size: 10px;

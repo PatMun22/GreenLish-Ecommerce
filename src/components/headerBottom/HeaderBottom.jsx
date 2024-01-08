@@ -18,7 +18,7 @@ const HeaderBottom = () => {
         <Link to="/favorite" className="favorites">
           <FaHeart className="icon" />
           <span>0</span>
-          <p>Favorites</p>
+          <p>WishList</p>
         </Link>
         <Link to="/cart" className="cart">
           <GiShoppingCart className="icon" />

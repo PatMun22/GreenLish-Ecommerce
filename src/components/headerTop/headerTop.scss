@@ -18,6 +18,23 @@
       align-items: center;
       gap: 5px;
 
+      select {
+        border: none;
+        outline: none;
+        background-color: $main-green;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 600;
+        cursor: pointer;
+
+        option {
+          text-transform: uppercase;
+          font-size: 10px;
+          margin: 5px 0;
+        }
+      }
+
       h3 {
         font-size: 10px;
         text-transform: uppercase;
