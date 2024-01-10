@@ -10,6 +10,7 @@ import Profile from "./pages/profile/Profile";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
+import ShopContextProvider from "./context/ShopContext";
 
 const App = () => {
   const { t } = useTranslation();
@@ -17,11 +18,13 @@ const App = () => {
   const Layout = () => {
     return (
       <main>
-        <Header t={t} />
-        <div className="Main_container">
-          <Outlet />
-        </div>
-        <Footer t={t} />
+        <ShopContextProvider>
+          <Header t={t} />
+          <div className="Main_container">
+            <Outlet />
+          </div>
+          <Footer t={t} />
+        </ShopContextProvider>
       </main>
     );
   };

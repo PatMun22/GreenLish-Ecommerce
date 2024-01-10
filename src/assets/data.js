@@ -266,7 +266,7 @@ export const recommendedProducts = [
   {
     id: 6,
     image: rp6,
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Fresh Organic Bell Pepper",
     foodCart: "food & Vegetable",
     price: "150.00",
     btn: "Add to Cart",
@@ -275,7 +275,7 @@ export const recommendedProducts = [
   {
     id: 7,
     image: rp7,
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Cotton Candy Grapes",
     foodCart: "food & Vegetable",
     price: "210.00",
     btn: "Add to Cart",
@@ -284,7 +284,7 @@ export const recommendedProducts = [
   {
     id: 8,
     image: rp8,
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Fresh Fried Fish",
     foodCart: "food & Vegetable",
     price: "350.00",
     btn: "Add to Cart",
@@ -293,7 +293,7 @@ export const recommendedProducts = [
   {
     id: 9,
     image: rp9,
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Fresh Broyler Chicken",
     foodCart: "food & Vegetable",
     price: "200.00",
     btn: "Add to Cart",
@@ -302,7 +302,7 @@ export const recommendedProducts = [
   {
     id: 10,
     image: rp10,
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Fresh Organic Apple",
     foodCart: "food & Vegetable",
     price: "310.00",
     btn: "Add to Cart",
@@ -311,7 +311,7 @@ export const recommendedProducts = [
   {
     id: 11,
     image: rp11,
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Fresh Organic Berries",
     foodCart: "food & Vegetable",
     price: "100.00",
     btn: "Add to Cart",
@@ -320,7 +320,7 @@ export const recommendedProducts = [
   {
     id: 12,
     image: rp12,
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Fresh Organic Cabbage",
     foodCart: "food & Vegetable",
     price: "300.00",
     btn: "Add to Cart",

@@ -1,2 +1,30 @@
+@import "../../styles/variables.scss";
+
 .cart {
+  table {
+    margin: 5rem 15rem;
+    width: calc(100% - 30rem);
+
+    thead {
+      background-color: rgba($main-green, 0.3);
+      text-align: center;
+
+      td {
+        padding: 5px 0;
+        font-size: 14px;
+
+        &:last-of-type {
+          background-color: rgba($main-green, 0.7);
+          color: $white;
+        }
+
+        button {
+          cursor: pointer;
+        }
+      }
+    }
+
+    tbody {
+    }
+  }
 }

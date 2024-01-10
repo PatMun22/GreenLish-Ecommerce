@@ -1,0 +1,16 @@
+tr {
+  padding: 5px 0;
+}
+tr td {
+  text-align: center;
+  padding: 5px 0;
+  border-bottom: 1.5px solid rgba(221, 200, 200, 0.5);
+}
+tr td img {
+  width: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+tr td button {
+  cursor: pointer;
+}

@@ -1,19 +1,12 @@
-import { useState } from "react";
+import { useContext } from "react";
 import ProductsButtons from "../productsButtons/ProductsButtons";
 import ProductCategory from "../productsCartegory/ProductCategory";
 import "./products.scss";
-import { recommendedProducts } from "../../assets/data";
+import { ShopContext } from "../../context/ShopContext";
 
 const Products = () => {
-  const [items, setItems] = useState(recommendedProducts);
-
-  const filterItems = (catItem) => {
-    const filtered = recommendedProducts.filter(
-      (currItem) => currItem.category.toLowerCase() === catItem.toLowerCase()
-    );
-
-    setItems(filtered);
-  };
+  const { filterItems, items, setItems, recommendedProducts } =
+    useContext(ShopContext);
 
   return (
     <div className="products">

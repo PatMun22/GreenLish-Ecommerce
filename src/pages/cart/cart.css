@@ -1,0 +1,19 @@
+.cart table {
+  margin: 5rem 15rem;
+  width: calc(100% - 30rem);
+}
+.cart table thead {
+  background-color: rgba(37, 189, 1, 0.3);
+  text-align: center;
+}
+.cart table thead td {
+  padding: 5px 0;
+  font-size: 14px;
+}
+.cart table thead td:last-of-type {
+  background-color: rgba(37, 189, 1, 0.7);
+  color: #fff;
+}
+.cart table thead td button {
+  cursor: pointer;
+}
