@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom";
 import "./navbar.scss";
 import { IoIosArrowDown } from "react-icons/io";
 
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div>Home</div>
+      <Link to="/">Home</Link>
       <div className="shopping_menu">
         <div className="shopping_container">
-          <p>Shop</p>
+          <Link to="/shop">Shop</Link>
           <IoIosArrowDown />
         </div>
         <div className="shopping_container">

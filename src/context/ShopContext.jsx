@@ -30,6 +30,14 @@ const ShopContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
 
+  const updateCartItemCount = (newAmount, itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
+  };
+
+  const deleteCartItem = (itemId) => {
+    cartItems.filter((item) => item.id !== itemId);
+  };
+
   // Filtering products according to cartegory
 
   const filterItems = (catItem) => {
@@ -54,6 +62,8 @@ const ShopContextProvider = (props) => {
     items,
     color,
     onBgChange,
+    updateCartItemCount,
+    deleteCartItem,
   };
 
   console.log(cartItems);

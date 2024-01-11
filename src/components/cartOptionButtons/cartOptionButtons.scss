@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+
+.cart-btn-container {
+  margin: 0 15rem;
+  width: calc(100% - 30rem);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  .cart-option-btns {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      width: 100px;
+      padding: 5px 0;
+      background: transparent;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 12px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:first-of-type {
+        border: 2px solid $section-bg;
+        color: $main-bue;
+
+        &:hover {
+          background: $main-green;
+          border: 2px solid $main-green;
+          color: $white;
+        }
+      }
+
+      &:last-of-type {
+        border: 2px solid $main-green;
+        background-color: $main-green;
+        color: $white;
+
+        &:hover {
+          background: transparent;
+          border: 2px solid $section-bg;
+          color: $main-bue;
+        }
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

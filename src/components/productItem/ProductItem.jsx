@@ -8,9 +8,9 @@ import { useContext } from "react";
 import { ShopContext } from "../../context/ShopContext";
 
 const ProductItem = ({ item }) => {
-  const { addToCart, cartItems, onBgChange, color } = useContext(ShopContext);
+  const { addToCart, onBgChange, color } = useContext(ShopContext);
 
-  const cartItemAmount = cartItems[item.id];
+  // const cartItemAmount = cartItems[item.id];
 
   return (
     <div className="indiv-product" key={item.id}>
@@ -32,9 +32,7 @@ const ProductItem = ({ item }) => {
         </span>
       </div>
       <div className="buy-like">
-        <button onClick={() => addToCart(item.id)}>
-          Add to Cart {cartItemAmount > 0 && <div>({cartItemAmount})</div>}
-        </button>
+        <button onClick={() => addToCart(item.id)}>Add to Cart</button>
         <div className="emojis">
           <CiHeart
             className="heart-emoji"

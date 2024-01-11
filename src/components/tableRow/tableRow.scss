@@ -8,13 +8,49 @@ tr {
     padding: 5px 0;
     border-bottom: 1.5px solid $section-bg;
 
-    img {
-      width: 60px;
-      object-fit: cover;
+    &:nth-of-type(1) {
+      display: flex;
+      justify-content: start;
+
+      img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border: 1.8px solid $section-bg;
+        padding: 10px;
+      }
+    }
+
+    &:nth-of-type(4) {
+      .incdec-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      button {
+        &:hover {
+          background-color: rgba($main-green, 0.5);
+        }
+      }
+
+      input {
+        width: 40px;
+        text-align: center;
+        outline: none;
+        border: none;
+        background-color: $section-bg;
+        height: 25px;
+      }
     }
 
     button {
       cursor: pointer;
+      outline: none;
+      border: none;
+      font-size: 1.2rem;
+      transition: all 0.3s ease-in-out;
+      width: 25px;
+      height: 25px;
     }
   }
 }
