@@ -226,6 +226,8 @@ export const recommendedProducts = [
     price: "50.00",
     btn: "Add to Cart",
     category: "popular",
+    discount: "2.30",
+    shipping: "0.00",
   },
   {
     id: 2,
@@ -235,6 +237,8 @@ export const recommendedProducts = [
     price: "150.00",
     btn: "Add to Cart",
     category: "recommended",
+    discount: "12.30",
+    shipping: "5.00",
   },
   {
     id: 3,
@@ -244,6 +248,8 @@ export const recommendedProducts = [
     price: "250.00",
     btn: "Add to Cart",
     category: "popular",
+    discount: "12.30",
+    shipping: "10.00",
   },
   {
     id: 4,
@@ -253,6 +259,8 @@ export const recommendedProducts = [
     price: "350.00",
     btn: "Add to Cart",
     category: "New arrival",
+    discount: "12.30",
+    shipping: "10.00",
   },
   {
     id: 5,
@@ -262,6 +270,8 @@ export const recommendedProducts = [
     price: "180.00",
     btn: "Add to Cart",
     category: "Most popular",
+    discount: "6.30",
+    shipping: "0.00",
   },
   {
     id: 6,
@@ -271,6 +281,8 @@ export const recommendedProducts = [
     price: "150.00",
     btn: "Add to Cart",
     category: "recommended",
+    discount: "4.30",
+    shipping: "0.00",
   },
   {
     id: 7,
@@ -280,6 +292,8 @@ export const recommendedProducts = [
     price: "210.00",
     btn: "Add to Cart",
     category: "New arrival",
+    discount: "12.30",
+    shipping: "05.00",
   },
   {
     id: 8,
@@ -289,6 +303,8 @@ export const recommendedProducts = [
     price: "350.00",
     btn: "Add to Cart",
     category: "Most popular",
+    discount: "12.30",
+    shipping: "0.00",
   },
   {
     id: 9,
@@ -298,6 +314,8 @@ export const recommendedProducts = [
     price: "200.00",
     btn: "Add to Cart",
     category: "New arrival",
+    discount: "09.30",
+    shipping: "0.00",
   },
   {
     id: 10,
@@ -307,6 +325,8 @@ export const recommendedProducts = [
     price: "310.00",
     btn: "Add to Cart",
     category: "popular",
+    discount: "12.30",
+    shipping: "10.00",
   },
   {
     id: 11,
@@ -316,6 +336,8 @@ export const recommendedProducts = [
     price: "100.00",
     btn: "Add to Cart",
     category: "New arrival",
+    discount: "2.30",
+    shipping: "0.00",
   },
   {
     id: 12,
@@ -325,6 +347,8 @@ export const recommendedProducts = [
     price: "300.00",
     btn: "Add to Cart",
     category: "popular",
+    discount: "12.30",
+    shipping: "10.00",
   },
 ];
 

@@ -1,6 +1,19 @@
+import { Link } from "react-router-dom";
 import "./cartCheckout.scss";
+import { useContext } from "react";
+import { ShopContext } from "../../context/ShopContext";
 
 const CartCheckout = () => {
+  const { getTotalCartAmount, getTotalDiscountAmount, getTotalShippingAmount } =
+    useContext(ShopContext);
+
+  let totalCartAmount = getTotalCartAmount();
+  let totalDiscountAmount = getTotalDiscountAmount();
+  let totalShippingCharge = getTotalShippingAmount();
+
+  let payOutAmount =
+    totalCartAmount + totalShippingCharge - totalDiscountAmount;
+
   return (
     <div className="checkout-container">
       <div className="cart-total">
@@ -8,24 +21,26 @@ const CartCheckout = () => {
         <div className="cart-details">
           <div className="detailed-details">
             <p>Total Amount:</p>
-            <span>Ksh. {}</span>
+            <span>Ksh. {totalCartAmount}</span>
           </div>
           <div className="detailed-details">
             <p>Dscount (Up to 70%):</p>
-            <span>-Ksh.</span>
+            <span>-Ksh. {totalDiscountAmount}</span>
           </div>
           <div className="detailed-details">
             <p>Shipping Charge:</p>
-            <span>Ksh.</span>
+            <span>Ksh. {totalShippingCharge}</span>
           </div>
         </div>
         <div className="cart-amount">
           <p>Payments amount:</p>
-          <span>Ksh.{}</span>
+          <span>Ksh. {payOutAmount}</span>
         </div>
       </div>
       <div className="checkout">
-        <button>proceed to checkout</button>
+        <Link className="button" to="/checkout">
+          proceed to checkout
+        </Link>
       </div>
     </div>
   );

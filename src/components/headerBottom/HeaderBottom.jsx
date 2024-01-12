@@ -5,8 +5,16 @@ import Search from "../search/Search";
 import Navbar from "../navbar/Navbar";
 import { Link } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
+import { useContext } from "react";
+import { ShopContext } from "../../context/ShopContext";
 
 const HeaderBottom = () => {
+  const { getNumberOfCartItems, getNumberOfWishListItems } =
+    useContext(ShopContext);
+
+  let numberOfCartItems = getNumberOfCartItems();
+  let numberOfWishListItems = getNumberOfWishListItems();
+
   return (
     <div className="headerBottom">
       <h1 className="logo">
@@ -15,14 +23,14 @@ const HeaderBottom = () => {
       <div className="headerbottom_right">
         <Search />
 
-        <Link to="/favorite" className="favorites">
+        <Link to="/wishlist" className="favorites">
           <FaHeart className="icon" />
-          <span>0</span>
+          <span>{numberOfWishListItems}</span>
           <p>WishList</p>
         </Link>
         <Link to="/cart" className="cart">
           <GiShoppingCart className="icon" />
-          <span>0</span>
+          <span>{numberOfCartItems}</span>
         </Link>
         <Link to="/profile" className="profile">
           <LiaUserSolid className="icon" />

@@ -11,6 +11,8 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
 import ShopContextProvider from "./context/ShopContext";
+import Checkout from "./pages/checkout/Checkout";
+import WishList from "./pages/wishList/WishList";
 
 const App = () => {
   const { t } = useTranslation();
@@ -49,6 +51,8 @@ const App = () => {
           path: "/cart",
           element: <Cart />,
         },
+        { path: "/checkout", element: <Checkout /> },
+        { path: "/wishlist", element: <WishList /> },
       ],
     },
     {

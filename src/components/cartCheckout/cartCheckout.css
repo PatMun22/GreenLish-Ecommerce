@@ -58,13 +58,13 @@
   display: flex;
   justify-content: end;
 }
-.checkout-container .checkout button {
+.checkout-container .checkout .button {
   padding: 5px 10px;
   background-color: #25bd01;
   color: #fff;
   text-transform: capitalize;
   border: none;
 }
-.checkout-container .checkout button:focus {
+.checkout-container .checkout .button:focus {
   outline: none;
 }
