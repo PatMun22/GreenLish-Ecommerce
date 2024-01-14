@@ -4,13 +4,8 @@ import "./tableRow.scss";
 import { ShopContext } from "../../context/ShopContext";
 
 const TableRow = ({ item }) => {
-  const {
-    cartItems,
-    addToCart,
-    removeFromCart,
-    updateCartItemCount,
-    deleteCartItem,
-  } = useContext(ShopContext);
+  const { cartItems, addToCart, removeFromCart, updateCartItemCount } =
+    useContext(ShopContext);
   return (
     <tr>
       <td>
@@ -32,7 +27,7 @@ const TableRow = ({ item }) => {
       </td>
       <td>Ksh. {cartItems[item.id] * item.price}</td>
       <td>
-        <button onClick={() => deleteCartItem(item.id)}>x</button>
+        <button onClick={() => removeFromCart(item.id)}>x</button>
       </td>
     </tr>
   );

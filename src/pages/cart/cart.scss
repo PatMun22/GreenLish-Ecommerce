@@ -1,1 +1,11 @@
+@import "../../styles/variables.scss";
 
+.cart {
+  .empty-cart {
+    text-align: center;
+    margin: 50px 15rem 100px;
+    font-weight: bold;
+    font-size: 20px;
+    color: $main-bue;
+  }
+}

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./offercarousel.scss";
-import { FaStar } from "react-icons/fa";
+import ReactStars from "react-rating-stars-component";
 import { Link } from "react-router-dom";
 import ProductExpiry from "../productExpiry/ProductExpiry";
 
@@ -47,11 +47,13 @@ const OfferCarousel = ({ activeObslideIndex, offercarousel }) => {
                 <p className="category">{item.category}</p>
                 <h1>{item.header}</h1>
                 <div className="ratings">
-                  <FaStar className="star-rating" />
-                  <FaStar className="star-rating" />
-                  <FaStar className="star-rating" />
-                  <FaStar className="star-rating" />
-                  <FaStar className="star-rating" />
+                  <ReactStars
+                    count={5}
+                    size={15}
+                    color="#25bd01"
+                    activeColor="#ffd700"
+                    isHalf={true}
+                  />
                 </div>
                 <div className="prices">
                   <span className="new_price">Ksh. {item.new_price}</span>

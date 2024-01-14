@@ -10,8 +10,6 @@ import { ShopContext } from "../../context/ShopContext";
 const ProductItem = ({ item }) => {
   const { addToCart, onBgChange, color } = useContext(ShopContext);
 
-  // const cartItemAmount = cartItems[item.id];
-
   return (
     <div className="indiv-product" key={item.id}>
       <div className="image">

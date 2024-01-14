@@ -1,34 +1,11 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useContext } from "react";
 import "./productButtons.scss";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-// import { filterButtons } from "../../assets/data";
+import { ShopContext } from "../../context/ShopContext";
 
-const ProductsButtons = ({ filterItems, recommendedProducts, setItems }) => {
-  const [activeButton, setActiveButton] = useState("All");
-
-  const handleButtonClick = (filter) => {
-    setActiveButton(filter);
-    switch (filter) {
-      case "All":
-        setItems(recommendedProducts);
-        break;
-      case "Recommended":
-        filterItems("Recommended");
-        break;
-      case "Popular":
-        filterItems("Popular");
-        break;
-      case "Most Popular":
-        filterItems("Most Popular");
-        break;
-      case "New Arrival":
-        filterItems("New Arrival");
-        break;
-      default:
-        break;
-    }
-  };
+const ProductsButtons = () => {
+  const { handleButtonClick, activeButton } = useContext(ShopContext);
 
   return (
     <div className="productButtons">

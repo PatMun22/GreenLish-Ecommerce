@@ -1,7 +1,12 @@
+import CheckoutIndicators from "../../components/checkoutIndicators/CheckoutIndicators";
 import "./checkout.scss";
 
-const Checkout = () => {
-  return <div>Checkout</div>;
+const CheckoutPage = () => {
+  return (
+    <div>
+      <CheckoutIndicators />
+    </div>
+  );
 };
 
-export default Checkout;
+export default CheckoutPage;

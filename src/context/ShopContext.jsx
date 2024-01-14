@@ -20,6 +20,42 @@ const ShopContextProvider = (props) => {
   const [wishListItems, setWishListItems] = useState(getDefaultCart());
   const [color, setColor] = useState("");
   const [items, setItems] = useState(recommendedProducts);
+  const [activeButton, setActiveButton] = useState("All");
+
+  // Filtering products according to cartegory
+
+  const filterItems = (catItem) => {
+    const filtered = recommendedProducts.filter(
+      (currItem) => currItem.category.toLowerCase() === catItem.toLowerCase()
+    );
+
+    setItems(filtered);
+  };
+
+  // product-page buttons
+
+  const handleButtonClick = (filter) => {
+    setActiveButton(filter);
+    switch (filter) {
+      case "All":
+        setItems(recommendedProducts);
+        break;
+      case "Recommended":
+        filterItems("Recommended");
+        break;
+      case "Popular":
+        filterItems("Popular");
+        break;
+      case "Most Popular":
+        filterItems("Most Popular");
+        break;
+      case "New Arrival":
+        filterItems("New Arrival");
+        break;
+      default:
+        break;
+    }
+  };
 
   // adding/removing items to cart
   const getTotalCartAmount = () => {
@@ -113,16 +149,6 @@ const ShopContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
   };
 
-  // Filtering products according to cartegory
-
-  const filterItems = (catItem) => {
-    const filtered = recommendedProducts.filter(
-      (currItem) => currItem.category.toLowerCase() === catItem.toLowerCase()
-    );
-
-    setItems(filtered);
-  };
-
   // changing color of the favorite products Icon
 
   const onBgChange = () => {
@@ -144,6 +170,8 @@ const ShopContextProvider = (props) => {
     getTotalShippingAmount,
     getNumberOfCartItems,
     getNumberOfWishListItems,
+    handleButtonClick,
+    activeButton,
   };
 
   console.log(cartItems);

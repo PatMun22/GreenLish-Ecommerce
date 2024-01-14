@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import "./belowcarousels.scss";
 import { belowcarousels } from "../../assets/data";
+import { useContext } from "react";
+import { ShopContext } from "../../context/ShopContext";
 
 const BelowCarousels = () => {
+  const { addToCart } = useContext(ShopContext);
   return (
     <div className="below_carousels">
       <div className="bc_image">
@@ -16,7 +19,9 @@ const BelowCarousels = () => {
           {belowcarousels.paragraph}
           <span>{belowcarousels.span}</span>
         </p>
-        <button>{belowcarousels.button}</button>
+        <button onClick={() => addToCart(belowcarousels.id)}>
+          {belowcarousels.button}
+        </button>
       </div>
     </div>
   );
