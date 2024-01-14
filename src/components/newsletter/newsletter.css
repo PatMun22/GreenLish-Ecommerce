@@ -22,19 +22,39 @@
 .newsletter form {
   background-color: #fff;
   border-radius: 30px;
-  padding: 5px 20px;
-  padding-right: 5px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 300px;
+  position: relative;
+  height: 40px;
 }
 .newsletter form input {
   border: none;
   outline: none;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 5px;
+}
+.newsletter form input::-moz-placeholder {
+  opacity: 0.5;
+}
+.newsletter form input::placeholder {
+  opacity: 0.5;
 }
 .newsletter form button {
   border: none;
   background: linear-gradient(to right, #38f9d7, #43e97b);
-  padding: 10px 20px;
+  padding: 0 20px;
   border-radius: 20px;
+  position: absolute;
+  font-size: 12px;
+  color: #121935;
+  font-weight: bold;
+  width: 100px;
+  right: 5px;
+  bottom: 5px;
+  height: 30px;
 }
