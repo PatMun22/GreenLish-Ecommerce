@@ -23,6 +23,58 @@ import partner2 from "./images/partner2.png";
 import partner4 from "./images/partner4.png";
 import partner5 from "./images/partner5.png";
 import partner6 from "./images/partner6.png";
+import salad1 from "./images/salad1.png";
+import salad2 from "./images/salad2.png";
+import salad3 from "./images/salad3.png";
+import pineapple1 from "./images/pineapple1.png";
+import pineapple2 from "./images/pineapple2.png";
+import pineapple3 from "./images/pineapple3.png";
+import chinukz from "./images/chinukz.jpg";
+import chinua from "./images/chinua.jpg";
+import kinyua from "./images/kinyua.jpg";
+import job from "./images/job.jpg";
+import vendor1 from "./images/vendor1.jpg";
+import vendor2 from "./images/vendor2.jpg";
+import vendor3 from "./images/vendor3.jpg";
+import vendor4 from "./images/vendor4.jpg";
+import vendor5 from "./images/vendor5.jpg";
+import vendor6 from "./images/vendor6.jpg";
+import vendor7 from "./images/vendor7.jpg";
+import vendor8 from "./images/vendor8.jpg";
+import vendor9 from "./images/vendor9.jpg";
+import vendor10 from "./images/vendor10.jpg";
+import vendor11 from "./images/vendor11.jpg";
+import vendor12 from "./images/vendor12.jpg";
+import spinach1 from "./images/spinach1.jpg";
+import spinach2 from "./images/spinach2.jpg";
+import spinach3 from "./images/spinach3.jpg";
+import avocado1 from "./images/avocado1.png";
+import avocado2 from "./images/avocado2.jpg";
+import avocado3 from "./images/avocado3.png";
+import orange1 from "./images/orange1.png";
+import orange2 from "./images/orange2.png";
+import orange3 from "./images/orange3.png";
+import pepper1 from "./images/pepper1.jpg";
+import pepper2 from "./images/pepper2.jpg";
+import pepper3 from "./images/pepper3.jpg";
+import grapes1 from "./images/grapes1.png";
+import grapes2 from "./images/grapes2.jpg";
+import grapes3 from "./images/grapes3.png";
+import fish1 from "./images/fish1.png";
+import fish2 from "./images/fish2.png";
+import fish3 from "./images/fish3.png";
+import chicken1 from "./images/chicken1.png";
+import chicken2 from "./images/chicken2.jpg";
+import chicken3 from "./images/chicken3.png";
+import apple1 from "./images/apple1.png";
+import apple2 from "./images/apple2.png";
+import apple3 from "./images/apple3.png";
+import berries1 from "./images/berries1.png";
+import berries2 from "./images/berries2.jpg";
+import berries3 from "./images/berries3.png";
+import cabbage1 from "./images/cabbage1.png";
+import cabbage2 from "./images/cabbage2.jpg";
+import cabbage3 from "./images/cabbage3.png";
 
 export const AllCategories = [
   { id: 1, category: "Grains" },
@@ -38,6 +90,7 @@ export const AllCategories = [
   { id: 11, category: "Non-Alcoholic Beverages" },
   { id: 12, category: "Alcoholic Beverages" },
 ];
+
 export const carousels = [
   {
     id: 1,
@@ -428,4 +481,1051 @@ export const partners = [
   { id: 3, image: partner4, description: "Lorem ipsum dolor sit amet." },
   { id: 4, image: partner5, description: "Lorem ipsum dolor sit amet." },
   { id: 5, image: partner6, description: "Lorem ipsum dolor sit amet." },
+];
+
+export const singleProducts = [
+  {
+    id: 1,
+    image1: rp1,
+    image2: salad1,
+    image3: salad2,
+    image4: salad3,
+    title: "Chapati Salad",
+    product_infor:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet facere doloribus, aliquam voluptate excepturi, tenetur, officiis quo possimus neque sequi corporis? Inventore explicabo veritatis adipisci perspiciatis, consectetur earum assumenda?",
+    Cartegory: "food & Vegetable",
+    new_price: "50.00",
+    old_price: "75.00",
+    description: {
+      topic: "Chapati salad",
+      paragraph1:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nostrum minus porro quam ab accusantium dolore sint, expedita aspernatur quas et minima! Libero doloribus vero exercitationem consequuntur debitis, impedit amet.",
+      subtopic1: "Lorem, ipsum dolor.",
+      paragraph2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni architecto eligendi odio sequi. Magnam?",
+      subtopic2: "dicta odio atque.",
+      paragraph3:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nemo quam harum ipsa debitis magni?",
+    },
+    additional_info: {
+      name: "Chapati salad",
+      weight: "30 kg (without poly bag)",
+      weight_capacity: "60 LBS(included poly bag)",
+      color: "green, brown",
+      other_infor: "Lorem ipsum dolor sit amet.",
+    },
+    reviews: [
+      {
+        name: "patrick chinookz",
+        image: chinukz,
+        date: "12 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Collinz chinua",
+        image: chinua,
+        date: "08 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Stella Kinyua",
+        image: kinyua,
+        date: "11 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Job chinookz",
+        image: job,
+        date: "13 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+    ],
+    shipping: {
+      title: "We use best delivery methods for delivery quickly",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
+      subtopic: "Dreamline courier service",
+      timeline: {
+        title: "time schedule",
+        time_schedule: [
+          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
+        ],
+      },
+    },
+    vendor_info: {
+      store_name: "daily healthy foods ltd",
+      location: "Bahati, Nairobi",
+      store_description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, architecto. Quidem voluptate explicabo illo voluptatem.",
+      image: vendor1,
+      vendor_details: [
+        { store_name: "sale office" },
+        { total_products: "22,340" },
+        { distribution_area: "Nairobi metropolitan region" },
+        { average_revenue: "3,750,000" },
+        { product_category: "food & drinks" },
+        { phone: "+254 720 783 654" },
+        { email: "healthyfoods@gmail.com" },
+        { website: "www.dhfoods.com" },
+      ],
+    },
+  },
+  {
+    id: 2,
+    image1: rp2,
+    image2: pineapple1,
+    image3: pineapple2,
+    image4: pineapple3,
+    title: "Fresh Organic Pineapple",
+    product_infor:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet facere doloribus, aliquam voluptate excepturi, tenetur, officiis quo possimus neque sequi corporis? Inventore explicabo veritatis adipisci perspiciatis, consectetur earum assumenda?",
+    Cartegory: "food & Vegetable",
+    new_price: "150.00",
+    old_price: "200.00",
+    description: {
+      topic: "Fresh Organic Pineapple",
+      paragraph1:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nostrum minus porro quam ab accusantium dolore sint, expedita aspernatur quas et minima! Libero doloribus vero exercitationem consequuntur debitis, impedit amet.",
+      subtopic1: "Lorem, ipsum dolor.",
+      paragraph2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni architecto eligendi odio sequi. Magnam?",
+      subtopic2: "dicta odio atque.",
+      paragraph3:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nemo quam harum ipsa debitis magni?",
+    },
+    additional_info: {
+      name: "Fresh Organic Pineapple",
+      weight: "30 kg (without poly bag)",
+      weight_capacity: "60 LBS(included poly bag)",
+      color: "green, brown",
+      other_infor: "Lorem ipsum dolor sit amet.",
+    },
+    reviews: [
+      {
+        name: "patrick chinookz",
+        image: chinukz,
+        date: "12 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Collinz chinua",
+        image: chinua,
+        date: "08 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Stella Kinyua",
+        image: kinyua,
+        date: "11 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Job chinookz",
+        image: job,
+        date: "13 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+    ],
+    shipping: {
+      title: "We use best delivery methods for delivery quickly",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
+      subtopic: "Dreamline courier service",
+      timeline: {
+        title: "time schedule",
+        time_schedule: [
+          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
+        ],
+      },
+    },
+    vendor_info: {
+      store_name: "daily healthy foods ltd",
+      location: "Bahati, Nairobi",
+      store_description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, architecto. Quidem voluptate explicabo illo voluptatem.",
+      image: vendor2,
+      vendor_details: [
+        { store_name: "sale office" },
+        { total_products: "22,340" },
+        { distribution_area: "Nairobi metropolitan region" },
+        { average_revenue: "3,750,000" },
+        { product_category: "food & drinks" },
+        { phone: "+254 720 783 654" },
+        { email: "healthyfoods@gmail.com" },
+        { website: "www.dhfoods.com" },
+      ],
+    },
+  },
+  {
+    id: 3,
+    image1: rp3,
+    image2: spinach1,
+    image3: spinach2,
+    image4: spinach3,
+    title: "Fresh Organic Spinach",
+    product_infor:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet facere doloribus, aliquam voluptate excepturi, tenetur, officiis quo possimus neque sequi corporis? Inventore explicabo veritatis adipisci perspiciatis, consectetur earum assumenda?",
+    Cartegory: "food & Vegetable",
+    new_price: "250.00",
+    old_price: "300.00",
+    description: {
+      topic: "Fresh Organic Pineapple",
+      paragraph1:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nostrum minus porro quam ab accusantium dolore sint, expedita aspernatur quas et minima! Libero doloribus vero exercitationem consequuntur debitis, impedit amet.",
+      subtopic1: "Lorem, ipsum dolor.",
+      paragraph2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni architecto eligendi odio sequi. Magnam?",
+      subtopic2: "dicta odio atque.",
+      paragraph3:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nemo quam harum ipsa debitis magni?",
+    },
+    additional_info: {
+      name: "Fresh Organic Spinach",
+      weight: "30 kg (without poly bag)",
+      weight_capacity: "60 LBS(included poly bag)",
+      color: "green, brown",
+      other_infor: "Lorem ipsum dolor sit amet.",
+    },
+    reviews: [
+      {
+        name: "patrick chinookz",
+        image: chinukz,
+        date: "12 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Collinz chinua",
+        image: chinua,
+        date: "08 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Stella Kinyua",
+        image: kinyua,
+        date: "11 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Job chinookz",
+        image: job,
+        date: "13 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+    ],
+    shipping: {
+      title: "We use best delivery methods for delivery quickly",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
+      subtopic: "Dreamline courier service",
+      timeline: {
+        title: "time schedule",
+        time_schedule: [
+          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
+        ],
+      },
+    },
+    vendor_info: {
+      store_name: "daily healthy foods ltd",
+      location: "Bahati, Nairobi",
+      store_description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, architecto. Quidem voluptate explicabo illo voluptatem.",
+      image: vendor3,
+      vendor_details: [
+        { store_name: "sale office" },
+        { total_products: "22,340" },
+        { distribution_area: "Nairobi metropolitan region" },
+        { average_revenue: "3,750,000" },
+        { product_category: "food & drinks" },
+        { phone: "+254 720 783 654" },
+        { email: "healthyfoods@gmail.com" },
+        { website: "www.dhfoods.com" },
+      ],
+    },
+  },
+  {
+    id: 4,
+    image1: rp4,
+    image2: avocado1,
+    image3: avocado2,
+    image4: avocado3,
+    title: "Fresh Organic Avocado",
+    product_infor:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet facere doloribus, aliquam voluptate excepturi, tenetur, officiis quo possimus neque sequi corporis? Inventore explicabo veritatis adipisci perspiciatis, consectetur earum assumenda?",
+    Cartegory: "food & Vegetable",
+    new_price: "350.00",
+    old_price: "375.00",
+    description: {
+      topic: "Fresh Organic Avocado",
+      paragraph1:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nostrum minus porro quam ab accusantium dolore sint, expedita aspernatur quas et minima! Libero doloribus vero exercitationem consequuntur debitis, impedit amet.",
+      subtopic1: "Lorem, ipsum dolor.",
+      paragraph2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni architecto eligendi odio sequi. Magnam?",
+      subtopic2: "dicta odio atque.",
+      paragraph3:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nemo quam harum ipsa debitis magni?",
+    },
+    additional_info: {
+      name: "Fresh Organic Avocado",
+      weight: "30 kg (without poly bag)",
+      weight_capacity: "60 LBS(included poly bag)",
+      color: "green, brown",
+      other_infor: "Lorem ipsum dolor sit amet.",
+    },
+    reviews: [
+      {
+        name: "patrick chinookz",
+        image: chinukz,
+        date: "12 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Collinz chinua",
+        image: chinua,
+        date: "08 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Stella Kinyua",
+        image: kinyua,
+        date: "11 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Job chinookz",
+        image: job,
+        date: "13 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+    ],
+    shipping: {
+      title: "We use best delivery methods for delivery quickly",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
+      subtopic: "Dreamline courier service",
+      timeline: {
+        title: "time schedule",
+        time_schedule: [
+          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
+        ],
+      },
+    },
+    vendor_info: {
+      store_name: "daily healthy foods ltd",
+      location: "Bahati, Nairobi",
+      store_description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, architecto. Quidem voluptate explicabo illo voluptatem.",
+      image: vendor4,
+      vendor_details: [
+        { store_name: "sale office" },
+        { total_products: "22,340" },
+        { distribution_area: "Nairobi metropolitan region" },
+        { average_revenue: "3,750,000" },
+        { product_category: "food & drinks" },
+        { phone: "+254 720 783 654" },
+        { email: "healthyfoods@gmail.com" },
+        { website: "www.dhfoods.com" },
+      ],
+    },
+  },
+  {
+    id: 5,
+    image1: rp5,
+    image2: orange1,
+    image3: orange2,
+    image4: orange3,
+    title: "Fresh Organic Oranges",
+    product_infor:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet facere doloribus, aliquam voluptate excepturi, tenetur, officiis quo possimus neque sequi corporis? Inventore explicabo veritatis adipisci perspiciatis, consectetur earum assumenda?",
+    Cartegory: "food & Vegetable",
+    new_price: "350.00",
+    old_price: "400.00",
+    description: {
+      topic: "Fresh Organic Oranges",
+      paragraph1:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nostrum minus porro quam ab accusantium dolore sint, expedita aspernatur quas et minima! Libero doloribus vero exercitationem consequuntur debitis, impedit amet.",
+      subtopic1: "Lorem, ipsum dolor.",
+      paragraph2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni architecto eligendi odio sequi. Magnam?",
+      subtopic2: "dicta odio atque.",
+      paragraph3:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nemo quam harum ipsa debitis magni?",
+    },
+    additional_info: {
+      name: "Fresh Organic Oranges",
+      weight: "30 kg (without poly bag)",
+      weight_capacity: "60 LBS(included poly bag)",
+      color: "green, brown",
+      other_infor: "Lorem ipsum dolor sit amet.",
+    },
+    reviews: [
+      {
+        name: "patrick chinookz",
+        image: chinukz,
+        date: "12 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Collinz chinua",
+        image: chinua,
+        date: "08 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Stella Kinyua",
+        image: kinyua,
+        date: "11 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Job chinookz",
+        image: job,
+        date: "13 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+    ],
+    shipping: {
+      title: "We use best delivery methods for delivery quickly",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
+      subtopic: "Dreamline courier service",
+      timeline: {
+        title: "time schedule",
+        time_schedule: [
+          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
+        ],
+      },
+    },
+    vendor_info: {
+      store_name: "daily healthy foods ltd",
+      location: "Bahati, Nairobi",
+      store_description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, architecto. Quidem voluptate explicabo illo voluptatem.",
+      image: vendor5,
+      vendor_details: [
+        { store_name: "sale office" },
+        { total_products: "22,340" },
+        { distribution_area: "Nairobi metropolitan region" },
+        { average_revenue: "3,750,000" },
+        { product_category: "food & drinks" },
+        { phone: "+254 720 783 654" },
+        { email: "healthyfoods@gmail.com" },
+        { website: "www.dhfoods.com" },
+      ],
+    },
+  },
+  {
+    id: 6,
+    image1: rp6,
+    image2: pepper1,
+    image3: pepper2,
+    image4: pepper3,
+    title: "Fresh Organic Bell Pepper",
+    product_infor:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet facere doloribus, aliquam voluptate excepturi, tenetur, officiis quo possimus neque sequi corporis? Inventore explicabo veritatis adipisci perspiciatis, consectetur earum assumenda?",
+    Cartegory: "food & Vegetable",
+    new_price: "150.00",
+    old_price: "180.00",
+    description: {
+      topic: "Fresh Organic Bell Pepper",
+      paragraph1:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nostrum minus porro quam ab accusantium dolore sint, expedita aspernatur quas et minima! Libero doloribus vero exercitationem consequuntur debitis, impedit amet.",
+      subtopic1: "Lorem, ipsum dolor.",
+      paragraph2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni architecto eligendi odio sequi. Magnam?",
+      subtopic2: "dicta odio atque.",
+      paragraph3:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nemo quam harum ipsa debitis magni?",
+    },
+    additional_info: {
+      name: "Fresh Organic Bell Pepper",
+      weight: "30 kg (without poly bag)",
+      weight_capacity: "60 LBS(included poly bag)",
+      color: "green, brown",
+      other_infor: "Lorem ipsum dolor sit amet.",
+    },
+    reviews: [
+      {
+        name: "patrick chinookz",
+        image: chinukz,
+        date: "12 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Collinz chinua",
+        image: chinua,
+        date: "08 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Stella Kinyua",
+        image: kinyua,
+        date: "11 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Job chinookz",
+        image: job,
+        date: "13 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+    ],
+    shipping: {
+      title: "We use best delivery methods for delivery quickly",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
+      subtopic: "Dreamline courier service",
+      timeline: {
+        title: "time schedule",
+        time_schedule: [
+          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
+        ],
+      },
+    },
+    vendor_info: {
+      store_name: "daily healthy foods ltd",
+      location: "Bahati, Nairobi",
+      store_description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, architecto. Quidem voluptate explicabo illo voluptatem.",
+      image: vendor6,
+      vendor_details: [
+        { store_name: "sale office" },
+        { total_products: "22,340" },
+        { distribution_area: "Nairobi metropolitan region" },
+        { average_revenue: "3,750,000" },
+        { product_category: "food & drinks" },
+        { phone: "+254 720 783 654" },
+        { email: "healthyfoods@gmail.com" },
+        { website: "www.dhfoods.com" },
+      ],
+    },
+  },
+  {
+    id: 7,
+    image1: rp7,
+    image2: grapes1,
+    image3: grapes2,
+    image4: grapes3,
+    title: "Cotton Candy Grapes",
+    product_infor:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet facere doloribus, aliquam voluptate excepturi, tenetur, officiis quo possimus neque sequi corporis? Inventore explicabo veritatis adipisci perspiciatis, consectetur earum assumenda?",
+    Cartegory: "food & Vegetable",
+    new_price: "210.00",
+    old_price: "250.00",
+    description: {
+      topic: "Cotton Candy Grapes",
+      paragraph1:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nostrum minus porro quam ab accusantium dolore sint, expedita aspernatur quas et minima! Libero doloribus vero exercitationem consequuntur debitis, impedit amet.",
+      subtopic1: "Lorem, ipsum dolor.",
+      paragraph2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni architecto eligendi odio sequi. Magnam?",
+      subtopic2: "dicta odio atque.",
+      paragraph3:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nemo quam harum ipsa debitis magni?",
+    },
+    additional_info: {
+      name: "Cotton Candy Grapes",
+      weight: "30 kg (without poly bag)",
+      weight_capacity: "60 LBS(included poly bag)",
+      color: "green, brown",
+      other_infor: "Lorem ipsum dolor sit amet.",
+    },
+    reviews: [
+      {
+        name: "patrick chinookz",
+        image: chinukz,
+        date: "12 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Collinz chinua",
+        image: chinua,
+        date: "08 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Stella Kinyua",
+        image: kinyua,
+        date: "11 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Job chinookz",
+        image: job,
+        date: "13 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+    ],
+    shipping: {
+      title: "We use best delivery methods for delivery quickly",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
+      subtopic: "Dreamline courier service",
+      timeline: {
+        title: "time schedule",
+        time_schedule: [
+          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
+        ],
+      },
+    },
+    vendor_info: {
+      store_name: "daily healthy foods ltd",
+      location: "Bahati, Nairobi",
+      store_description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, architecto. Quidem voluptate explicabo illo voluptatem.",
+      image: vendor7,
+      vendor_details: [
+        { store_name: "sale office" },
+        { total_products: "22,340" },
+        { distribution_area: "Nairobi metropolitan region" },
+        { average_revenue: "3,750,000" },
+        { product_category: "food & drinks" },
+        { phone: "+254 720 783 654" },
+        { email: "healthyfoods@gmail.com" },
+        { website: "www.dhfoods.com" },
+      ],
+    },
+  },
+  {
+    id: 8,
+    image1: rp8,
+    image2: fish1,
+    image3: fish2,
+    image4: fish3,
+    title: "Fresh Organic Oranges",
+    product_infor:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet facere doloribus, aliquam voluptate excepturi, tenetur, officiis quo possimus neque sequi corporis? Inventore explicabo veritatis adipisci perspiciatis, consectetur earum assumenda?",
+    Cartegory: "food & Vegetable",
+    new_price: "350.00",
+    old_price: "400.00",
+    description: {
+      topic: "Fresh Fried Fish",
+      paragraph1:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nostrum minus porro quam ab accusantium dolore sint, expedita aspernatur quas et minima! Libero doloribus vero exercitationem consequuntur debitis, impedit amet.",
+      subtopic1: "Lorem, ipsum dolor.",
+      paragraph2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni architecto eligendi odio sequi. Magnam?",
+      subtopic2: "dicta odio atque.",
+      paragraph3:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nemo quam harum ipsa debitis magni?",
+    },
+    additional_info: {
+      name: "Fresh Fried Fish",
+      weight: "30 kg (without poly bag)",
+      weight_capacity: "60 LBS(included poly bag)",
+      color: "green, brown",
+      other_infor: "Lorem ipsum dolor sit amet.",
+    },
+    reviews: [
+      {
+        name: "patrick chinookz",
+        image: chinukz,
+        date: "12 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Collinz chinua",
+        image: chinua,
+        date: "08 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Stella Kinyua",
+        image: kinyua,
+        date: "11 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Job chinookz",
+        image: job,
+        date: "13 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+    ],
+    shipping: {
+      title: "We use best delivery methods for delivery quickly",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
+      subtopic: "Dreamline courier service",
+      timeline: {
+        title: "time schedule",
+        time_schedule: [
+          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
+        ],
+      },
+    },
+    vendor_info: {
+      store_name: "daily healthy foods ltd",
+      location: "Bahati, Nairobi",
+      store_description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, architecto. Quidem voluptate explicabo illo voluptatem.",
+      image: vendor8,
+      vendor_details: [
+        { store_name: "sale office" },
+        { total_products: "22,340" },
+        { distribution_area: "Nairobi metropolitan region" },
+        { average_revenue: "3,750,000" },
+        { product_category: "food & drinks" },
+        { phone: "+254 720 783 654" },
+        { email: "healthyfoods@gmail.com" },
+        { website: "www.dhfoods.com" },
+      ],
+    },
+  },
+  {
+    id: 9,
+    image1: rp9,
+    image2: chicken1,
+    image3: chicken2,
+    image4: chicken3,
+    title: "Fresh Broyler Chicken",
+    product_infor:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet facere doloribus, aliquam voluptate excepturi, tenetur, officiis quo possimus neque sequi corporis? Inventore explicabo veritatis adipisci perspiciatis, consectetur earum assumenda?",
+    Cartegory: "food & Vegetable",
+    new_price: "200.00",
+    old_price: "270.00",
+    description: {
+      topic: "Fresh Broyler Chicken",
+      paragraph1:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nostrum minus porro quam ab accusantium dolore sint, expedita aspernatur quas et minima! Libero doloribus vero exercitationem consequuntur debitis, impedit amet.",
+      subtopic1: "Lorem, ipsum dolor.",
+      paragraph2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni architecto eligendi odio sequi. Magnam?",
+      subtopic2: "dicta odio atque.",
+      paragraph3:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nemo quam harum ipsa debitis magni?",
+    },
+    additional_info: {
+      name: "Fresh Broyler Chicken",
+      weight: "30 kg (without poly bag)",
+      weight_capacity: "60 LBS(included poly bag)",
+      color: "green, brown",
+      other_infor: "Lorem ipsum dolor sit amet.",
+    },
+    reviews: [
+      {
+        name: "patrick chinookz",
+        image: chinukz,
+        date: "12 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Collinz chinua",
+        image: chinua,
+        date: "08 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Stella Kinyua",
+        image: kinyua,
+        date: "11 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Job chinookz",
+        image: job,
+        date: "13 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+    ],
+    shipping: {
+      title: "We use best delivery methods for delivery quickly",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
+      subtopic: "Dreamline courier service",
+      timeline: {
+        title: "time schedule",
+        time_schedule: [
+          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
+        ],
+      },
+    },
+    vendor_info: {
+      store_name: "daily healthy foods ltd",
+      location: "Bahati, Nairobi",
+      store_description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, architecto. Quidem voluptate explicabo illo voluptatem.",
+      image: vendor9,
+      vendor_details: [
+        { store_name: "sale office" },
+        { total_products: "22,340" },
+        { distribution_area: "Nairobi metropolitan region" },
+        { average_revenue: "3,750,000" },
+        { product_category: "food & drinks" },
+        { phone: "+254 720 783 654" },
+        { email: "healthyfoods@gmail.com" },
+        { website: "www.dhfoods.com" },
+      ],
+    },
+  },
+  {
+    id: 10,
+    image1: rp10,
+    image2: apple1,
+    image3: apple2,
+    image4: apple3,
+    title: "Fresh Organic Apple",
+    product_infor:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet facere doloribus, aliquam voluptate excepturi, tenetur, officiis quo possimus neque sequi corporis? Inventore explicabo veritatis adipisci perspiciatis, consectetur earum assumenda?",
+    Cartegory: "food & Vegetable",
+    new_price: "350.00",
+    old_price: "400.00",
+    description: {
+      topic: "Fresh Organic Apple",
+      paragraph1:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nostrum minus porro quam ab accusantium dolore sint, expedita aspernatur quas et minima! Libero doloribus vero exercitationem consequuntur debitis, impedit amet.",
+      subtopic1: "Lorem, ipsum dolor.",
+      paragraph2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni architecto eligendi odio sequi. Magnam?",
+      subtopic2: "dicta odio atque.",
+      paragraph3:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nemo quam harum ipsa debitis magni?",
+    },
+    additional_info: {
+      name: "Fresh Organic Apple",
+      weight: "30 kg (without poly bag)",
+      weight_capacity: "60 LBS(included poly bag)",
+      color: "green, brown",
+      other_infor: "Lorem ipsum dolor sit amet.",
+    },
+    reviews: [
+      {
+        name: "patrick chinookz",
+        image: chinukz,
+        date: "12 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Collinz chinua",
+        image: chinua,
+        date: "08 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Stella Kinyua",
+        image: kinyua,
+        date: "11 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Job chinookz",
+        image: job,
+        date: "13 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+    ],
+    shipping: {
+      title: "We use best delivery methods for delivery quickly",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
+      subtopic: "Dreamline courier service",
+      timeline: {
+        title: "time schedule",
+        time_schedule: [
+          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
+        ],
+      },
+    },
+    vendor_info: {
+      store_name: "daily healthy foods ltd",
+      location: "Bahati, Nairobi",
+      store_description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, architecto. Quidem voluptate explicabo illo voluptatem.",
+      image: vendor10,
+      vendor_details: [
+        { store_name: "sale office" },
+        { total_products: "22,340" },
+        { distribution_area: "Nairobi metropolitan region" },
+        { average_revenue: "3,750,000" },
+        { product_category: "food & drinks" },
+        { phone: "+254 720 783 654" },
+        { email: "healthyfoods@gmail.com" },
+        { website: "www.dhfoods.com" },
+      ],
+    },
+  },
+  {
+    id: 11,
+    image1: rp11,
+    image2: berries1,
+    image3: berries2,
+    image4: berries3,
+    title: "Fresh Organic Oranges",
+    product_infor:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet facere doloribus, aliquam voluptate excepturi, tenetur, officiis quo possimus neque sequi corporis? Inventore explicabo veritatis adipisci perspiciatis, consectetur earum assumenda?",
+    Cartegory: "food & Vegetable",
+    new_price: "100.00",
+    old_price: "120.00",
+    description: {
+      topic: "Fresh Organic Berries",
+      paragraph1:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nostrum minus porro quam ab accusantium dolore sint, expedita aspernatur quas et minima! Libero doloribus vero exercitationem consequuntur debitis, impedit amet.",
+      subtopic1: "Lorem, ipsum dolor.",
+      paragraph2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni architecto eligendi odio sequi. Magnam?",
+      subtopic2: "dicta odio atque.",
+      paragraph3:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nemo quam harum ipsa debitis magni?",
+    },
+    additional_info: {
+      name: "Fresh Organic Berries",
+      weight: "30 kg (without poly bag)",
+      weight_capacity: "60 LBS(included poly bag)",
+      color: "green, brown",
+      other_infor: "Lorem ipsum dolor sit amet.",
+    },
+    reviews: [
+      {
+        name: "patrick chinookz",
+        image: chinukz,
+        date: "12 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Collinz chinua",
+        image: chinua,
+        date: "08 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Stella Kinyua",
+        image: kinyua,
+        date: "11 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Job chinookz",
+        image: job,
+        date: "13 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+    ],
+    shipping: {
+      title: "We use best delivery methods for delivery quickly",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
+      subtopic: "Dreamline courier service",
+      timeline: {
+        title: "time schedule",
+        time_schedule: [
+          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
+        ],
+      },
+    },
+    vendor_info: {
+      store_name: "daily healthy foods ltd",
+      location: "Bahati, Nairobi",
+      store_description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, architecto. Quidem voluptate explicabo illo voluptatem.",
+      image: vendor11,
+      vendor_details: [
+        { store_name: "sale office" },
+        { total_products: "22,340" },
+        { distribution_area: "Nairobi metropolitan region" },
+        { average_revenue: "3,750,000" },
+        { product_category: "food & drinks" },
+        { phone: "+254 720 783 654" },
+        { email: "healthyfoods@gmail.com" },
+        { website: "www.dhfoods.com" },
+      ],
+    },
+  },
+  {
+    id: 12,
+    image1: rp12,
+    image2: cabbage1,
+    image3: cabbage2,
+    image4: cabbage3,
+    title: "Fresh Organic Cabbage",
+    product_infor:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet facere doloribus, aliquam voluptate excepturi, tenetur, officiis quo possimus neque sequi corporis? Inventore explicabo veritatis adipisci perspiciatis, consectetur earum assumenda?",
+    Cartegory: "food & Vegetable",
+    new_price: "300.00",
+    old_price: "350.00",
+    description: {
+      topic: "Fresh Organic Cabbage",
+      paragraph1:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nostrum minus porro quam ab accusantium dolore sint, expedita aspernatur quas et minima! Libero doloribus vero exercitationem consequuntur debitis, impedit amet.",
+      subtopic1: "Lorem, ipsum dolor.",
+      paragraph2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni architecto eligendi odio sequi. Magnam?",
+      subtopic2: "dicta odio atque.",
+      paragraph3:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nemo quam harum ipsa debitis magni?",
+    },
+    additional_info: {
+      name: "Fresh Organic Cabbage",
+      weight: "30 kg (without poly bag)",
+      weight_capacity: "60 LBS(included poly bag)",
+      color: "green, brown",
+      other_infor: "Lorem ipsum dolor sit amet.",
+    },
+    reviews: [
+      {
+        name: "patrick chinookz",
+        image: chinukz,
+        date: "12 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Collinz chinua",
+        image: chinua,
+        date: "08 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Stella Kinyua",
+        image: kinyua,
+        date: "11 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+      {
+        name: "Job chinookz",
+        image: job,
+        date: "13 Jan 2024",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quis.",
+      },
+    ],
+    shipping: {
+      title: "We use best delivery methods for delivery quickly",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
+      subtopic: "Dreamline courier service",
+      timeline: {
+        title: "time schedule",
+        time_schedule: [
+          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
+        ],
+      },
+    },
+    vendor_info: {
+      store_name: "daily healthy foods ltd",
+      location: "Bahati, Nairobi",
+      store_description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, architecto. Quidem voluptate explicabo illo voluptatem.",
+      image: vendor12,
+      vendor_details: [
+        { store_name: "sale office" },
+        { total_products: "22,340" },
+        { distribution_area: "Nairobi metropolitan region" },
+        { average_revenue: "3,750,000" },
+        { product_category: "food & drinks" },
+        { phone: "+254 720 783 654" },
+        { email: "healthyfoods@gmail.com" },
+        { website: "www.dhfoods.com" },
+      ],
+    },
+  },
 ];
