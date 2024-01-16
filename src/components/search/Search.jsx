@@ -11,8 +11,12 @@ const Search = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [value, setValue] = useState("");
 
+  const handleOpenList = () => {
+    setIsOpen(true);
+  };
+
   const handleCloseList = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(false);
   };
 
   const onSearch = (searchTerm) => {
@@ -21,7 +25,11 @@ const Search = () => {
 
   return (
     <div className="menu_searchbox">
-      <Menu handleCloseList={handleCloseList} isOpen={isOpen} />
+      <Menu
+        handleOpenList={handleOpenList}
+        handleCloseList={handleCloseList}
+        isOpen={isOpen}
+      />
       <SearchInput value={value} setValue={setValue} />
       <SearchDropdown
         recommendedProducts={recommendedProducts}

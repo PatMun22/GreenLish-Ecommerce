@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { AllCategories } from "../../assets/data";
 import { Link } from "react-router-dom";
 
-const Menu = ({ handleCloseList, isOpen }) => {
+const Menu = ({ handleCloseList, handleOpenList, isOpen }) => {
   return (
     <div className="menuContainer">
       <div className="dropdown">
@@ -14,7 +14,8 @@ const Menu = ({ handleCloseList, isOpen }) => {
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
-          onClick={() => handleCloseList()}
+          onMouseOver={() => handleOpenList()}
+          onMouseOut={() => handleCloseList()}
         >
           <FiMenu />
           All Categories

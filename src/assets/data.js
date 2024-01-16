@@ -91,6 +91,81 @@ export const AllCategories = [
   { id: 12, category: "Alcoholic Beverages" },
 ];
 
+export const shops = [
+  { id: 1, category: "Grains" },
+  { id: 2, category: "Milk & Milk Products" },
+  { id: 3, category: "Fruits & Fruit Products" },
+  { id: 4, category: "Eggs" },
+  { id: 5, category: "Meat & Poultry" },
+  { id: 6, category: "Fish" },
+  { id: 7, category: "Vegetables" },
+  { id: 8, category: "Fats & Oils" },
+  { id: 9, category: "Legumes/Nuts/Seeds" },
+  { id: 10, category: "Sugar & Sugar Products" },
+  { id: 11, category: "Non-Alcoholic Beverages" },
+  { id: 12, category: "Alcoholic Beverages" },
+];
+
+export const packages = [
+  { id: 1, category: "Grains" },
+  { id: 2, category: "Milk & Milk Products" },
+  { id: 3, category: "Fruits & Fruit Products" },
+  { id: 4, category: "Eggs" },
+  { id: 5, category: "Meat & Poultry" },
+  { id: 6, category: "Fish" },
+  { id: 7, category: "Vegetables" },
+  { id: 8, category: "Fats & Oils" },
+  { id: 9, category: "Legumes/Nuts/Seeds" },
+  { id: 10, category: "Sugar & Sugar Products" },
+  { id: 11, category: "Non-Alcoholic Beverages" },
+  { id: 12, category: "Alcoholic Beverages" },
+];
+
+export const blog_posts = [
+  { id: 1, category: "Grains" },
+  { id: 2, category: "Milk & Milk Products" },
+  { id: 3, category: "Fruits & Fruit Products" },
+  { id: 4, category: "Eggs" },
+  { id: 5, category: "Meat & Poultry" },
+  { id: 6, category: "Fish" },
+  { id: 7, category: "Vegetables" },
+  { id: 8, category: "Fats & Oils" },
+  { id: 9, category: "Legumes/Nuts/Seeds" },
+  { id: 10, category: "Sugar & Sugar Products" },
+  { id: 11, category: "Non-Alcoholic Beverages" },
+  { id: 12, category: "Alcoholic Beverages" },
+];
+
+export const vendors = [
+  { id: 1, category: "Grains" },
+  { id: 2, category: "Milk & Milk Products" },
+  { id: 3, category: "Fruits & Fruit Products" },
+  { id: 4, category: "Eggs" },
+  { id: 5, category: "Meat & Poultry" },
+  { id: 6, category: "Fish" },
+  { id: 7, category: "Vegetables" },
+  { id: 8, category: "Fats & Oils" },
+  { id: 9, category: "Legumes/Nuts/Seeds" },
+  { id: 10, category: "Sugar & Sugar Products" },
+  { id: 11, category: "Non-Alcoholic Beverages" },
+  { id: 12, category: "Alcoholic Beverages" },
+];
+
+export const pages = [
+  { id: 1, category: "Grains" },
+  { id: 2, category: "Milk & Milk Products" },
+  { id: 3, category: "Fruits & Fruit Products" },
+  { id: 4, category: "Eggs" },
+  { id: 5, category: "Meat & Poultry" },
+  { id: 6, category: "Fish" },
+  { id: 7, category: "Vegetables" },
+  { id: 8, category: "Fats & Oils" },
+  { id: 9, category: "Legumes/Nuts/Seeds" },
+  { id: 10, category: "Sugar & Sugar Products" },
+  { id: 11, category: "Non-Alcoholic Beverages" },
+  { id: 12, category: "Alcoholic Beverages" },
+];
+
 export const carousels = [
   {
     id: 1,
