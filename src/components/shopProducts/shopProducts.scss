@@ -1,0 +1,8 @@
+@import "../../styles/variables.scss";
+
+.shop-product-container {
+  margin: 20px 15rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 10px;
+}

@@ -1,0 +1,93 @@
+@import "../../styles/variables.scss";
+
+.shop-buttons {
+  margin: 50px 15rem;
+
+  .buttons-container {
+    border: 1px solid $section-bg;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+
+    button,
+    .form {
+      border: none;
+      border-left: 1px solid $section-bg;
+      height: inherit;
+      background: transparent;
+    }
+
+    button {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: $main-bue;
+      cursor: pointer;
+
+      &:nth-of-type(1) {
+        border-left: none;
+      }
+
+      &:last-of-type {
+        select {
+          border: none;
+          color: $main-bue;
+          outline: none;
+          width: 70%;
+          display: flex;
+          gap: 10px;
+          font-size: 14px;
+          color: $main-bue;
+          font-weight: normal;
+        }
+      }
+    }
+
+    .form {
+      width: calc(100% - 60%);
+      height: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+
+      input {
+        width: 70%;
+        height: inherit;
+        border: none;
+        background: transparent;
+        padding-left: 20px;
+        outline: none;
+        font-size: 18px;
+
+        &::placeholder {
+          font-size: 18px;
+          opacity: 0.5;
+        }
+      }
+
+      .shop-search-btn {
+        display: flex;
+        align-items: center;
+        background-color: $main-green;
+        color: $white;
+        width: 30%;
+        height: inherit;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: normal;
+
+        .search-icon {
+          font-size: 18px;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

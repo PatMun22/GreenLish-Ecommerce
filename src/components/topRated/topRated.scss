@@ -1,0 +1,61 @@
+@import "../../styles/variables.scss";
+
+.top-rated {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  .top-div {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h1 {
+      font-size: 18px;
+      color: $main-bue;
+      font-weight: bold;
+    }
+
+    .underline {
+      height: 5px;
+      width: 50px;
+      background-color: $main-green;
+    }
+  }
+
+  .lower-div {
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .item-container {
+      display: flex;
+      gap: 10px;
+
+      img {
+        width: 60px;
+        height: 60px;
+        background-color: $section-bg;
+      }
+
+      .amount {
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        p {
+          font-size: 12px;
+          text-align: left;
+        }
+
+        h5 {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

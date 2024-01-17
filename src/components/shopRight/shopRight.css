@@ -1,0 +1,8 @@
+.shop-right {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 300px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 30px;
+}

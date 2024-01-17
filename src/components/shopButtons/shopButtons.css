@@ -1,0 +1,83 @@
+.shop-buttons {
+  margin: 50px 15rem;
+}
+.shop-buttons .buttons-container {
+  border: 1px solid rgba(221, 200, 200, 0.5);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+.shop-buttons .buttons-container button,
+.shop-buttons .buttons-container .form {
+  border: none;
+  border-left: 1px solid rgba(221, 200, 200, 0.5);
+  height: inherit;
+  background: transparent;
+}
+.shop-buttons .buttons-container button {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #121935;
+  cursor: pointer;
+}
+.shop-buttons .buttons-container button:nth-of-type(1) {
+  border-left: none;
+}
+.shop-buttons .buttons-container button:last-of-type select {
+  border: none;
+  color: #121935;
+  outline: none;
+  width: 70%;
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: #121935;
+  font-weight: normal;
+}
+.shop-buttons .buttons-container .form {
+  width: 40%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.shop-buttons .buttons-container .form input {
+  width: 70%;
+  height: inherit;
+  border: none;
+  background: transparent;
+  padding-left: 20px;
+  outline: none;
+  font-size: 18px;
+}
+.shop-buttons .buttons-container .form input::-moz-placeholder {
+  font-size: 18px;
+  opacity: 0.5;
+}
+.shop-buttons .buttons-container .form input::placeholder {
+  font-size: 18px;
+  opacity: 0.5;
+}
+.shop-buttons .buttons-container .form .shop-search-btn {
+  display: flex;
+  align-items: center;
+  background-color: #25bd01;
+  color: #fff;
+  width: 30%;
+  height: inherit;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+}
+.shop-buttons .buttons-container .form .shop-search-btn .search-icon {
+  font-size: 18px;
+  opacity: 0.8;
+}

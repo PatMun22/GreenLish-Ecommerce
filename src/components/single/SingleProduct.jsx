@@ -1,21 +1,22 @@
+/* eslint-disable react/prop-types */
 import ReactStars from "react-rating-stars-component";
 import { GiShoppingCart } from "react-icons/gi";
 import { CiHeart } from "react-icons/ci";
 import { BiSolidRightArrow } from "react-icons/bi";
 import "./singleProduct.scss";
 
-const SingleProduct = () => {
+const SingleProduct = (props) => {
   return (
     <div className="singleProduct-container">
       <div className="product-images">
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+        <img src={props.image1} alt="image1" />
+        <img src={props.image2} alt="image2" />
+        <img src={props.image3} alt="image3" />
+        <img src={props.image4} alt="image4" />
       </div>
       <div className="product-text">
         <div>in stock</div>
-        <h3>fresh mixed fruits</h3>
+        <h3>{props.title}</h3>
         <ReactStars
           count={5}
           size={15}
@@ -25,14 +26,11 @@ const SingleProduct = () => {
         />
         <div className="price-container">
           <div className="price-box">price</div>
-          <h5 className="new-price">Ksh. 200</h5>
-          <h6 className="old-price">Ksh. 300</h6>
+          <h5 className="new-price">{props.new_price}</h5>
+          <h6 className="old-price">{props.old_price}</h6>
         </div>
         <div className="product-description">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consequuntur, placeat?
-          </p>
+          <p>{props.product_infor}</p>
         </div>
         <div className="product-quantity">
           <button>-</button>
@@ -47,6 +45,7 @@ const SingleProduct = () => {
         <div className="item-icons">
           <CiHeart />
           <BiSolidRightArrow />
+          div.
         </div>
       </div>
     </div>

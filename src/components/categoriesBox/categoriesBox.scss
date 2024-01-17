@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+.categories-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  .top-div {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    h1 {
+      font-size: 18px;
+      color: $main-bue;
+      font-weight: bold;
+    }
+
+    .underline {
+      height: 5px;
+      width: 50px;
+      background-color: $main-green;
+    }
+  }
+
+  .lower-div {
+    height: calc(100% - 50px);
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .item-container {
+      display: flex;
+      justify-content: space-between;
+      color: $main-bue;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: $main-green;
+      }
+    }
+  }
+}

@@ -13,6 +13,8 @@ import { useTranslation } from "react-i18next";
 import ShopContextProvider from "./context/ShopContext";
 import Checkout from "./pages/checkout/Checkout";
 import WishList from "./pages/wishList/WishList";
+import Shop from "./pages/shop/Shop";
+import Product from "./pages/product/Product";
 
 const App = () => {
   const { t } = useTranslation();
@@ -51,8 +53,22 @@ const App = () => {
           path: "/cart",
           element: <Cart />,
         },
-        { path: "/checkout", element: <Checkout /> },
-        { path: "/wishlist", element: <WishList /> },
+        {
+          path: "/checkout",
+          element: <Checkout />,
+        },
+        {
+          path: "/wishlist",
+          element: <WishList />,
+        },
+        {
+          path: "/shop/:id",
+          element: <Product />,
+        },
+        {
+          path: "/shop",
+          element: <Shop />,
+        },
       ],
     },
     {

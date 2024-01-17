@@ -77,18 +77,18 @@ import cabbage2 from "./images/cabbage2.jpg";
 import cabbage3 from "./images/cabbage3.png";
 
 export const AllCategories = [
-  { id: 1, category: "Grains" },
-  { id: 2, category: "Milk & Milk Products" },
-  { id: 3, category: "Fruits & Fruit Products" },
-  { id: 4, category: "Eggs" },
-  { id: 5, category: "Meat & Poultry" },
-  { id: 6, category: "Fish" },
-  { id: 7, category: "Vegetables" },
-  { id: 8, category: "Fats & Oils" },
-  { id: 9, category: "Legumes/Nuts/Seeds" },
-  { id: 10, category: "Sugar & Sugar Products" },
-  { id: 11, category: "Non-Alcoholic Beverages" },
-  { id: 12, category: "Alcoholic Beverages" },
+  { id: 1, category: "Grains", amount: 300 },
+  { id: 2, category: "Milk & Milk Products", amount: 1300 },
+  { id: 3, category: "Fruits & Fruit Products", amount: 100 },
+  { id: 4, category: "Eggs", amount: 3000 },
+  { id: 5, category: "Meat & Poultry", amount: 150 },
+  { id: 6, category: "Fish", amount: 205 },
+  { id: 7, category: "Vegetables", amount: 302 },
+  { id: 8, category: "Fats & Oils", amount: 3 },
+  { id: 9, category: "Legumes/Nuts/Seeds", amount: 0 },
+  { id: 10, category: "Sugar & Sugar Products", amount: 50 },
+  { id: 11, category: "Non-Alcoholic Beverages", amount: 210 },
+  { id: 12, category: "Alcoholic Beverages", amount: 0 },
 ];
 
 export const shops = [

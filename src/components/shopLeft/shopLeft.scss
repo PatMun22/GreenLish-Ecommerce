@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.shop-left {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(12, 1fr);
+  row-gap: 30px;
+
+  .left-box {
+    border: 1px solid $section-bg;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+    &:last-of-type {
+      padding: 0;
+    }
+  }
+
+  .box2,
+  .box3 {
+    grid-row: span 4;
+  }
+
+  .box4 {
+    grid-row: span 3;
+  }
+}

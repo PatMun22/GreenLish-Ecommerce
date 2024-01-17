@@ -1,0 +1,21 @@
+.shop-left {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(12, 1fr);
+  row-gap: 30px;
+}
+.shop-left .left-box {
+  border: 1px solid rgba(221, 200, 200, 0.5);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.shop-left .left-box:last-of-type {
+  padding: 0;
+}
+.shop-left .box2,
+.shop-left .box3 {
+  grid-row: span 4;
+}
+.shop-left .box4 {
+  grid-row: span 3;
+}

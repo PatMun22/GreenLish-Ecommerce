@@ -1,0 +1,13 @@
+.cook {
+  height: 100%;
+  width: 100%;
+  background-image: url(../../assets/images/cook.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cook .overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(from top rgba(128, 0, 128, 0.7), rgba(128, 0, 128, 0.4));
+}

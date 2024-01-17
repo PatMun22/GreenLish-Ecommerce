@@ -1,0 +1,67 @@
+@import "../../styles/variables.scss";
+
+.filter-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  .upper-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3px;
+
+    h1 {
+      font-size: 14px;
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+
+    .underline {
+      width: 50px;
+      height: 5px;
+      background-color: $main-green;
+    }
+  }
+
+  .lower-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+
+    .btn {
+      width: 15px;
+      height: 15px;
+      background-color: $section-bg;
+      position: relative;
+
+      p {
+        text-wrap: nowrap;
+      }
+
+      &:first-of-type {
+        p {
+          position: absolute;
+          top: -20px;
+          left: 0;
+        }
+      }
+
+      &:last-of-type {
+        p {
+          position: absolute;
+          top: -20px;
+          right: 0;
+        }
+      }
+    }
+
+    .btn-bar {
+      height: 5px;
+      background-color: $main-green;
+      width: calc(100% - 34px);
+    }
+  }
+}
