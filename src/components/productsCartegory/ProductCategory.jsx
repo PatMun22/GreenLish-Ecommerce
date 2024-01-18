@@ -8,7 +8,7 @@ const ProductCategory = () => {
   const { items } = useContext(ShopContext);
   return (
     <div className="product_category">
-      {items.map((item) => (
+      {items.slice(0, 12).map((item) => (
         <ProductItem item={item} key={item.id} />
       ))}
     </div>

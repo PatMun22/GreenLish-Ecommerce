@@ -63,7 +63,7 @@ const App = () => {
           element: <WishList />,
         },
         {
-          path: "/shop/:id",
+          path: "/shop/${id}",
           element: <Product />,
         },
         {

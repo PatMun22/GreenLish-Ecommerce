@@ -159,6 +159,7 @@ const ShopContextProvider = (props) => {
   // Pagination code
 
   const itemsPerPage = 12;
+  const unitItemsPerPage = 6;
 
   const totalItems = items.length;
 
@@ -168,11 +169,26 @@ const ShopContextProvider = (props) => {
     pageNumbers.push(i);
   }
 
-  // get current items per page
+  const unitPageNumbers = [];
+
+  for (let i = 1; i <= Math.ceil(totalItems / unitItemsPerPage); i++) {
+    unitPageNumbers.push(i);
+  }
+
+  // get current items per page in grid view
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = items.slice(indexOfFirstItem, indexOfLastItem);
+
+  // get current items per page in unit view
+
+  const indexOfLastUnitItem = currentPage * unitItemsPerPage;
+  const indexofFirstUnitItem = indexOfLastItem - unitItemsPerPage;
+  const unitCurrentItems = items.slice(
+    indexofFirstUnitItem,
+    indexOfLastUnitItem
+  );
 
   const contextValue = {
     cartItems,
@@ -195,11 +211,10 @@ const ShopContextProvider = (props) => {
     totalItems,
     currentPage,
     setCurrentPage,
-    itemsPerPage,
     pageNumbers,
+    unitCurrentItems,
+    unitPageNumbers,
   };
-
-  console.log(cartItems);
 
   return (
     <ShopContext.Provider value={contextValue}>

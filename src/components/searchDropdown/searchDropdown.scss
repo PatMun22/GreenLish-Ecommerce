@@ -11,9 +11,10 @@
   z-index: 10;
   box-shadow: 0 0 10px rgba($section-bg, 0.8);
   padding: 5px 10px;
+  display: none;
 
   &.visible {
-    display: block;
+    display: none;
   }
 
   .product-item {
