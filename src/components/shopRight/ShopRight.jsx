@@ -1,13 +1,14 @@
-import { useContext } from "react";
+/* eslint-disable react/prop-types */
 import "./shopRight.scss";
-import { ShopContext } from "../../context/ShopContext";
 import ShopProductItem from "../shopProductItem/ShopProductItem";
+import { useContext } from "react";
+import { ShopContext } from "../../context/ShopContext";
 
 const ShopRight = () => {
-  const { items } = useContext(ShopContext);
+  const { currentItems } = useContext(ShopContext);
   return (
     <div className="shop-right">
-      {items.map((item) => (
+      {currentItems.map((item) => (
         <ShopProductItem item={item} key={item.id} />
       ))}
     </div>

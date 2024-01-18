@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import ShopLeft from "../shopLeft/ShopLeft";
 import ShopRight from "../shopRight/ShopRight";
 import "./shopProducts.scss";

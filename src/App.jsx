@@ -7,6 +7,7 @@ import Login from "./pages/login/Login";
 import SignUp from "./pages/signUp/SignUp";
 import Cart from "./pages/cart/Cart";
 import Profile from "./pages/profile/Profile";
+import ShopUnit from "./pages/shop-unit/ShopUnit";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
@@ -69,6 +70,7 @@ const App = () => {
           path: "/shop",
           element: <Shop />,
         },
+        { path: "/shop/unit", element: <ShopUnit /> },
       ],
     },
     {

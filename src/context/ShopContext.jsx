@@ -21,6 +21,7 @@ const ShopContextProvider = (props) => {
   const [color, setColor] = useState("");
   const [items, setItems] = useState(recommendedProducts);
   const [activeButton, setActiveButton] = useState("All");
+  const [currentPage, setCurrentPage] = useState(1);
 
   // Filtering products according to cartegory
 
@@ -155,6 +156,24 @@ const ShopContextProvider = (props) => {
     setColor("green");
   };
 
+  // Pagination code
+
+  const itemsPerPage = 12;
+
+  const totalItems = items.length;
+
+  const pageNumbers = [];
+
+  for (let i = 1; i <= Math.ceil(totalItems / itemsPerPage); i++) {
+    pageNumbers.push(i);
+  }
+
+  // get current items per page
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = items.slice(indexOfFirstItem, indexOfLastItem);
+
   const contextValue = {
     cartItems,
     addToCart,
@@ -172,6 +191,12 @@ const ShopContextProvider = (props) => {
     getNumberOfWishListItems,
     handleButtonClick,
     activeButton,
+    currentItems,
+    totalItems,
+    currentPage,
+    setCurrentPage,
+    itemsPerPage,
+    pageNumbers,
   };
 
   console.log(cartItems);

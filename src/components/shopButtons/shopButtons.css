@@ -9,6 +9,7 @@
   justify-content: space-between;
   gap: 0;
 }
+.shop-buttons .buttons-container .btn,
 .shop-buttons .buttons-container button,
 .shop-buttons .buttons-container .form {
   border: none;
@@ -16,6 +17,7 @@
   height: inherit;
   background: transparent;
 }
+.shop-buttons .buttons-container .btn,
 .shop-buttons .buttons-container button {
   width: 20%;
   display: flex;
@@ -27,10 +29,10 @@
   color: #121935;
   cursor: pointer;
 }
-.shop-buttons .buttons-container button:nth-of-type(1) {
+.shop-buttons .buttons-container .btn:nth-of-type(1) {
   border-left: none;
 }
-.shop-buttons .buttons-container button:last-of-type select {
+.shop-buttons .buttons-container button select {
   border: none;
   color: #121935;
   outline: none;

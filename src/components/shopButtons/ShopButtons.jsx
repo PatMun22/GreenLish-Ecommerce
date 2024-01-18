@@ -3,19 +3,20 @@ import { TfiMenuAlt } from "react-icons/tfi";
 import { MdGridOff } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import "./shopButtons.scss";
+import { Link } from "react-router-dom";
 
 const ShopButtons = () => {
   return (
     <div className="shop-buttons">
       <div className="buttons-container">
-        <button>
+        <Link to="/shop" className="btn">
           <IoGridOutline />
           Grid View
-        </button>
-        <button>
+        </Link>
+        <Link to="/shop/unit" className="btn">
           <TfiMenuAlt />
           Unit View
-        </button>
+        </Link>
         <button>
           <MdGridOff />
           <select name="" id="">
