@@ -184,9 +184,9 @@ const ShopContextProvider = (props) => {
   // get current items per page in unit view
 
   const indexOfLastUnitItem = currentPage * unitItemsPerPage;
-  const indexofFirstUnitItem = indexOfLastItem - unitItemsPerPage;
+  const indexOfFirstUnitItem = indexOfLastUnitItem - unitItemsPerPage;
   const unitCurrentItems = items.slice(
-    indexofFirstUnitItem,
+    indexOfFirstUnitItem,
     indexOfLastUnitItem
   );
 
