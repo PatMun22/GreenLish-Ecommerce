@@ -12,23 +12,23 @@ const Navbar = () => {
           <IoIosArrowDown />
         </div>
         <div className="shopping_container">
-          <p>Package</p>
+          <Link to="/packages">Package</Link>
           <IoIosArrowDown />
         </div>
         <div className="shopping_container">
-          <p>Blog</p>
+          <Link to="/blogs">Blogs</Link>
           <IoIosArrowDown />
         </div>
         <div className="shopping_container">
-          <p>Vendors</p>
+          <Link to="/vendors">Vendors</Link>
           <IoIosArrowDown />
         </div>
         <div className="shopping_container">
-          <p>Pages</p>
+          <Link to="/pages">Pages</Link>
           <IoIosArrowDown />
         </div>
         <div>
-          <p>Contact</p>
+          <Link to="/contacts">Contact</Link>
         </div>
       </div>
       <button>Book a Package</button>

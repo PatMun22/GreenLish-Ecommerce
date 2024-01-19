@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+
+nav {
+  margin: 0 15rem;
+  padding: 10px auto;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    .page-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $section-bg;
+      background-color: rgba($section-bg, 0.5);
+      padding: 7px;
+      width: 25px;
+      height: 25px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: $main-green;
+      border: 1px solid $main-green;
+      color: white;
+    }
+  }
+}

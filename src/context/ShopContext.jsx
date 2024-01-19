@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { createContext, useState } from "react";
-import { recommendedProducts } from "../assets/data";
+import { blogs, recommendedProducts } from "../assets/data";
 
 export const ShopContext = createContext(null);
 
@@ -23,6 +23,7 @@ const ShopContextProvider = (props) => {
   const [activeButton, setActiveButton] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
   const [activeBtn, setActiveBtn] = useState("grid view");
+  const [blogItems, setBlogItems] = useState(blogs);
 
   // Filtering products according to cartegory
 
@@ -161,10 +162,13 @@ const ShopContextProvider = (props) => {
 
   const itemsPerPage = 12;
   const unitItemsPerPage = 6;
+  const blogItemsPerPage = 6;
 
   const totalItems = items.length;
+  const totalBlogItems = blogItems.length;
 
   const pageNumbers = [];
+  const blogPageNumbers = [];
 
   for (let i = 1; i <= Math.ceil(totalItems / itemsPerPage); i++) {
     pageNumbers.push(i);
@@ -174,6 +178,10 @@ const ShopContextProvider = (props) => {
 
   for (let i = 1; i <= Math.ceil(totalItems / unitItemsPerPage); i++) {
     unitPageNumbers.push(i);
+  }
+
+  for (let i = 1; i <= Math.ceil(totalBlogItems / blogItemsPerPage); i++) {
+    blogPageNumbers.push(i);
   }
 
   // get current items per page in grid view
@@ -189,6 +197,15 @@ const ShopContextProvider = (props) => {
   const unitCurrentItems = items.slice(
     indexOfFirstUnitItem,
     indexOfLastUnitItem
+  );
+
+  // get current items per page in unit view
+
+  const indexOfLastBlogItem = currentPage * blogItemsPerPage;
+  const indexOfFirstBlogItem = indexOfLastBlogItem - blogItemsPerPage;
+  const currentBlogItems = blogItems.slice(
+    indexOfFirstBlogItem,
+    indexOfLastBlogItem
   );
 
   const contextValue = {
@@ -217,6 +234,10 @@ const ShopContextProvider = (props) => {
     unitPageNumbers,
     activeBtn,
     setActiveBtn,
+    currentBlogItems,
+    blogItems,
+    blogPageNumbers,
+    blogs,
   };
 
   return (

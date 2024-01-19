@@ -16,6 +16,7 @@ import Checkout from "./pages/checkout/Checkout";
 import WishList from "./pages/wishList/WishList";
 import Shop from "./pages/shop/Shop";
 import Product from "./pages/product/Product";
+import Blogs from "./pages/blogs/Blogs";
 
 const App = () => {
   const { t } = useTranslation();
@@ -70,7 +71,14 @@ const App = () => {
           path: "/shop",
           element: <Shop />,
         },
-        { path: "/shop/unit", element: <ShopUnit /> },
+        {
+          path: "/shop/unit",
+          element: <ShopUnit />,
+        },
+        {
+          path: "/blogs",
+          element: <Blogs />,
+        },
       ],
     },
     {
