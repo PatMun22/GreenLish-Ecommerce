@@ -39,6 +39,10 @@
       }
     }
 
+    .active {
+      color: $main-green;
+    }
+
     button {
       select {
         border: none;

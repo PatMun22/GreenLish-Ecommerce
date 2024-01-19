@@ -4,20 +4,35 @@ import { MdGridOff } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import "./shopButtons.scss";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { ShopContext } from "../../context/ShopContext";
 
 const ShopButtons = () => {
+  const { activeBtn, setActiveBtn } = useContext(ShopContext);
+
   return (
     <div className="shop-buttons">
       <div className="buttons-container">
-        <Link to="/shop" className="btn">
+        <Link
+          to="/shop"
+          className={`btn ${activeBtn === "grid view" ? "active" : ""}`}
+          onClick={() => setActiveBtn("grid view")}
+        >
           <IoGridOutline />
           Grid View
         </Link>
-        <Link to="/shop/unit" className="btn">
+        <Link
+          to="/shop/unit"
+          className={`btn ${activeBtn === "unit view" ? "active" : ""}`}
+          onClick={() => setActiveBtn("unit view")}
+        >
           <TfiMenuAlt />
           Unit View
         </Link>
-        <button>
+        <button
+          className={activeBtn === "select" ? "active" : ""}
+          onClick={() => setActiveBtn("select")}
+        >
           <MdGridOff />
           <select name="" id="">
             <option value="0">Select Period</option>

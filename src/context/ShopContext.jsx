@@ -22,6 +22,7 @@ const ShopContextProvider = (props) => {
   const [items, setItems] = useState(recommendedProducts);
   const [activeButton, setActiveButton] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
+  const [activeBtn, setActiveBtn] = useState("grid view");
 
   // Filtering products according to cartegory
 
@@ -214,6 +215,8 @@ const ShopContextProvider = (props) => {
     pageNumbers,
     unitCurrentItems,
     unitPageNumbers,
+    activeBtn,
+    setActiveBtn,
   };
 
   return (

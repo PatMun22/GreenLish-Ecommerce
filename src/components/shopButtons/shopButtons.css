@@ -32,6 +32,9 @@
 .shop-buttons .buttons-container .btn:nth-of-type(1) {
   border-left: none;
 }
+.shop-buttons .buttons-container .active {
+  color: #25bd01;
+}
 .shop-buttons .buttons-container button select {
   border: none;
   color: #121935;
