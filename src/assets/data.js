@@ -1357,6 +1357,13 @@ export const blogs = [
   },
 ];
 
+export const socials = [
+  { id: 1, name: "Facebook", color: "#0F52BA", message: "follow" },
+  { id: 2, name: "Twitter", color: "#007FFF", message: "follow" },
+  { id: 3, name: "YouTube", color: "#FF2400", message: "follow" },
+  { id: 4, name: "Instagram", color: "#FE4EDA", message: "follow" },
+];
+
 export const partners = [
   { id: 1, image: partner1, description: "Lorem ipsum dolor sit amet." },
   { id: 2, image: partner2, description: "Lorem ipsum dolor sit amet." },

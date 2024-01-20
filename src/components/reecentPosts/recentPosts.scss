@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+
+.recent-posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  .top-post-div {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    h1 {
+      font-size: 18px;
+      color: $main-bue;
+      font-weight: bold;
+    }
+
+    .underline {
+      height: 5px;
+      width: 50px;
+      background-color: $main-green;
+    }
+  }
+
+  .lower-post-div {
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .item-container {
+      display: flex;
+      gap: 10px;
+
+      img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+      }
+    }
+  }
+}
