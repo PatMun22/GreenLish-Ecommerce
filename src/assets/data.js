@@ -75,6 +75,10 @@ import berries3 from "./images/berries3.png";
 import cabbage1 from "./images/cabbage1.png";
 import cabbage2 from "./images/cabbage2.jpg";
 import cabbage3 from "./images/cabbage3.png";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { IoLogoYoutube } from "react-icons/io5";
+import { FaInstagramSquare } from "react-icons/fa";
 
 export const AllCategories = [
   { id: 1, category: "Grains", amount: 300 },
@@ -2417,4 +2421,11 @@ export const singleProducts = [
       ],
     },
   },
+];
+
+export const socialIcons = [
+  FaFacebookF,
+  FaTwitter,
+  IoLogoYoutube,
+  FaInstagramSquare,
 ];

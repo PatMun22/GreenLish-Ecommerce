@@ -1,29 +1,21 @@
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { IoLogoYoutube } from "react-icons/io5";
-import { FaInstagramSquare } from "react-icons/fa";
 import "./blogSocials.scss";
 import { socials } from "../../assets/data";
+import { socialIcons } from "../../assets/data";
 
 const BlogSocials = () => {
-  const SocialIcons = [
-    FaFacebookF,
-    FaTwitter,
-    IoLogoYoutube,
-    FaInstagramSquare,
-  ];
   return (
     <div className="blog-socials">
+      <h3>Follow Us</h3>
+      <div className="underline"></div>
       {socials.map((social, i) => {
-        let socialIcons = SocialIcons;
+        let SocialIcons = socialIcons[i];
         return (
           <div className="social-item" key={social.id}>
-            <h3>Follow Us</h3>
             <div
               className="social-icons"
               style={{ backgroundColor: social.color, color: "white" }}
             >
-              {socialIcons[i]} <div className="small-square"></div>
+              <SocialIcons className="social-icon" />
             </div>
             <div className="social-name">{social.name}</div>
             <div className="message">{social.message}</div>

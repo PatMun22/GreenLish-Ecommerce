@@ -32,9 +32,13 @@
   border-radius: 5px;
   width: 200px;
 }
-.footer .linkTitles .links:last-of-type .app_download img {
+.footer .linkTitles .links:last-of-type .app_download .app-link {
   width: 90%;
   height: 45%;
+}
+.footer .linkTitles .links:last-of-type .app_download .app-link img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }

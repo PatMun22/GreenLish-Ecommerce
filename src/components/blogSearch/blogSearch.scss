@@ -1,0 +1,59 @@
+@import "../../styles/variables.scss";
+
+.blog-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  gap: 0;
+
+  .search-blogs {
+    width: 100%;
+    border: 1.5px solid $section-bg;
+    height: 40px;
+    border-radius: 30px;
+    gap: 0;
+    display: flex;
+    overflow: hidden;
+
+    input {
+      width: 70%;
+      height: inherit;
+      border-radius: 30px 0 0 30px;
+      padding-left: 10px;
+      font-size: 16px;
+      border: none;
+      outline: none;
+
+      &::placeholder {
+        opacity: 0.6;
+        font-size: 14px;
+      }
+    }
+
+    .blog-search-btn {
+      position: relative;
+      width: 30%;
+      height: inherit;
+      border-radius: 0 30px 30px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: $white;
+      background-color: $main-green;
+      border: none;
+    }
+
+    .blog-search-btn::before {
+      content: "";
+      position: absolute;
+      left: -1em;
+      top: 50%;
+      width: 50%;
+      height: 150%;
+      transform: translateY(-50%) rotate(30deg);
+      background-color: inherit;
+    }
+  }
+}

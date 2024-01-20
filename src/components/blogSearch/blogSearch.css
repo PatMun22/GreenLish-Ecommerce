@@ -1,0 +1,56 @@
+.blog-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  gap: 0;
+}
+.blog-search .search-blogs {
+  width: 100%;
+  border: 1.5px solid rgba(221, 200, 200, 0.5);
+  height: 40px;
+  border-radius: 30px;
+  gap: 0;
+  display: flex;
+  overflow: hidden;
+}
+.blog-search .search-blogs input {
+  width: 70%;
+  height: inherit;
+  border-radius: 30px 0 0 30px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+.blog-search .search-blogs input::-moz-placeholder {
+  opacity: 0.6;
+  font-size: 14px;
+}
+.blog-search .search-blogs input::placeholder {
+  opacity: 0.6;
+  font-size: 14px;
+}
+.blog-search .search-blogs .blog-search-btn {
+  position: relative;
+  width: 30%;
+  height: inherit;
+  border-radius: 0 30px 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #fff;
+  background-color: #25bd01;
+  border: none;
+}
+.blog-search .search-blogs .blog-search-btn::before {
+  content: "";
+  position: absolute;
+  left: -1em;
+  top: 50%;
+  width: 50%;
+  height: 150%;
+  transform: translateY(-50%) rotate(30deg);
+  background-color: inherit;
+}

@@ -71,8 +71,20 @@ const Footer = () => {
         <div className="links">
           <h1>Download App</h1>
           <div className="app_download">
-            <img src={apple} alt="Apple download app" />
-            <img src={google} alt="Goole play app" />
+            <Link
+              to="https://apps.apple.com/app/mygreenlish-app/id438147"
+              target="_blank"
+              className="app-link"
+            >
+              <img src={apple} alt="Apple download app" />
+            </Link>
+            <Link
+              to="https://play.google.com/store/apps/details?id=com.greenlish.mygreenlishcom&hl=en&gl=US&pli=1"
+              target="_blank"
+              className="app-link"
+            >
+              <img src={google} alt="Goole play app" />
+            </Link>
           </div>
         </div>
       </div>

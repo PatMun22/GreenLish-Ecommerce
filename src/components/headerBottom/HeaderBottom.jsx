@@ -22,7 +22,6 @@ const HeaderBottom = () => {
       </h1>
       <div className="headerbottom_right">
         <Search />
-
         <Link to="/wishlist" className="favorites">
           <FaHeart className="icon" />
           <span>{numberOfWishListItems}</span>

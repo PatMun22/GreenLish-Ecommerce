@@ -3,7 +3,7 @@
 .blog-left {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(17, 1fr);
+  grid-template-rows: repeat(19, 1fr);
   row-gap: 10px;
 
   .left-blog-box {
@@ -17,15 +17,15 @@
   }
 
   .box2 {
-    grid-row: span 3;
+    grid-row: span 4;
   }
 
   .box3 {
-    grid-row: span 3;
+    grid-row: span 5;
   }
 
   .box4 {
-    grid-row: span 4;
+    grid-row: span 5;
   }
 
   .box5 {
