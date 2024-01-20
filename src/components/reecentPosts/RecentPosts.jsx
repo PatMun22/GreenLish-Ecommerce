@@ -20,9 +20,9 @@ const RecentPosts = () => {
             key={item.id}
           >
             <img src={item.image} alt={`image ${item.id}`} loading="lazy" />
-            <div className="amount">
-              <p>{item.title}</p>
-              <p>{item.date}</p>
+            <div className="blog-details">
+              <p className="category">{item.cartegory}</p>
+              <p className="date">{item.date}</p>
             </div>
           </Link>
         ))}
