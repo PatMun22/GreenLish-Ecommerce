@@ -12,7 +12,7 @@ import { ShopContext } from "../../context/ShopContext";
 const ShopUnitProductItem = ({ item }) => {
   const { addToCart, onBgChange, color } = useContext(ShopContext);
   return (
-    <div className="indiv-unit-product" key={item.id}>
+    <div className="indiv-unit-product">
       <div className="unit-product-image">
         <img src={item.image} alt={`product ${item.title}`} loading="lazy" />
       </div>

@@ -17,6 +17,8 @@ import WishList from "./pages/wishList/WishList";
 import Shop from "./pages/shop/Shop";
 import Product from "./pages/product/Product";
 import Blogs from "./pages/blogs/Blogs";
+import BlogsUnit from "./pages/blogs-unit/BlogsUnit";
+import BlogPost from "./pages/blogPost/BlogPost";
 
 const App = () => {
   const { t } = useTranslation();
@@ -78,6 +80,14 @@ const App = () => {
         {
           path: "/blogs",
           element: <Blogs />,
+        },
+        {
+          path: "/blogs/unit",
+          element: <BlogsUnit />,
+        },
+        {
+          path: "/blogs/${id}",
+          element: <BlogPost />,
         },
       ],
     },

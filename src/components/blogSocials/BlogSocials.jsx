@@ -1,6 +1,7 @@
 import "./blogSocials.scss";
 import { socials } from "../../assets/data";
 import { socialIcons } from "../../assets/data";
+import { Link } from "react-router-dom";
 
 const BlogSocials = () => {
   return (
@@ -18,7 +19,13 @@ const BlogSocials = () => {
               <SocialIcons className="social-icon" />
             </div>
             <div className="social-name">{social.name}</div>
-            <div className="message">{social.message}</div>
+            <Link
+              className="message"
+              to={`https://${social.name}.com/Greenl_Lish`}
+              target="_blank"
+            >
+              {social.message}
+            </Link>
           </div>
         );
       })}

@@ -1,0 +1,7 @@
+.blog-unit-posts {
+  margin: 100px 15rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}

@@ -13,7 +13,7 @@
   padding: 0;
 }
 .blog-left .box2 {
-  grid-row: span 4;
+  grid-row: span 3;
 }
 .blog-left .box3 {
   grid-row: span 5;
