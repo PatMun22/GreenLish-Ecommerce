@@ -168,13 +168,12 @@ const ShopContextProvider = (props) => {
   const totalBlogItems = blogItems.length;
 
   const pageNumbers = [];
+  const unitPageNumbers = [];
   const blogPageNumbers = [];
 
   for (let i = 1; i <= Math.ceil(totalItems / itemsPerPage); i++) {
     pageNumbers.push(i);
   }
-
-  const unitPageNumbers = [];
 
   for (let i = 1; i <= Math.ceil(totalItems / unitItemsPerPage); i++) {
     unitPageNumbers.push(i);
@@ -184,13 +183,13 @@ const ShopContextProvider = (props) => {
     blogPageNumbers.push(i);
   }
 
-  // get current items per page in grid view
+  // get current items per page in product grid view
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = items.slice(indexOfFirstItem, indexOfLastItem);
 
-  // get current items per page in unit view
+  // get current items per page in product unit view
 
   const indexOfLastUnitItem = currentPage * unitItemsPerPage;
   const indexOfFirstUnitItem = indexOfLastUnitItem - unitItemsPerPage;
@@ -199,7 +198,7 @@ const ShopContextProvider = (props) => {
     indexOfLastUnitItem
   );
 
-  // get current items per page in unit view
+  // get current items per page in blog grid and unit view
 
   const indexOfLastBlogItem = currentPage * blogItemsPerPage;
   const indexOfFirstBlogItem = indexOfLastBlogItem - blogItemsPerPage;

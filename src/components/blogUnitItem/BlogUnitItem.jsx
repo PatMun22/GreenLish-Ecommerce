@@ -5,23 +5,23 @@ import "./blogUnitItem.scss";
 
 const BlogUnitItem = ({ blog }) => {
   return (
-    <div className="blog-item">
-      <Link to={`/blogs/${blog.id}`} className="blog-item">
+    <div className="blog-unit-item">
+      <Link to={`/blogs/${blog.id}`} className="blog-unit-image">
         <img src={blog.image} alt={`blog post ${blog.id}`} />
       </Link>
       <div className="blog-unit-details">
-        <div className="date-comment">
-          <div className="date">{blog.date}</div>
-          <div className="vert-line"></div>
-          <div className="comment">{blog.comments} Comments</div>
-          <div className="vert-line"></div>
-          <div className="category">{blog.cartegory}</div>
+        <p className="top-para">enjoy our blogs</p>
+        <h1>{blog.title}</h1>
+        <div className="unit-date-comment">
+          <div className="unit-date">{blog.date}</div>
+          <div className="unit-vert-line"></div>
+          <div className="unit-comment">{blog.comments} Comments</div>
+          <div className="unit-vert-line"></div>
+          <div className="unit-category">{blog.cartegory}</div>
         </div>
-        <h3>{blog.description}</h3>
-        <Link to={`/bog/${blog.id}`} className="blog-link">
-          <p>
-            continue reading <IoIosArrowRoundForward />
-          </p>
+        <p>{blog.description}</p>
+        <Link to={`/blogs/${blog.id}`} className="unit-blog-link">
+          continue reading <IoIosArrowRoundForward />
         </Link>
       </div>
     </div>

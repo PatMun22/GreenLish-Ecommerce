@@ -1116,7 +1116,9 @@ export const blogs = [
     image: blog1,
     date: "Nov 11, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1124,7 +1126,9 @@ export const blogs = [
     image: blog2,
     date: "Nov 21, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1132,7 +1136,9 @@ export const blogs = [
     image: blog3,
     date: "Dec 12, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1140,7 +1146,9 @@ export const blogs = [
     image: blog1,
     date: "Nov 11, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1148,7 +1156,9 @@ export const blogs = [
     image: blog2,
     date: "Nov 21, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1156,7 +1166,9 @@ export const blogs = [
     image: blog3,
     date: "Dec 12, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1164,7 +1176,9 @@ export const blogs = [
     image: blog1,
     date: "Nov 11, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1172,7 +1186,9 @@ export const blogs = [
     image: blog2,
     date: "Nov 21, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1180,7 +1196,9 @@ export const blogs = [
     image: blog3,
     date: "Dec 12, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1188,7 +1206,9 @@ export const blogs = [
     image: blog1,
     date: "Nov 11, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1196,7 +1216,9 @@ export const blogs = [
     image: blog2,
     date: "Nov 21, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1204,7 +1226,9 @@ export const blogs = [
     image: blog3,
     date: "Dec 12, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1212,7 +1236,9 @@ export const blogs = [
     image: blog1,
     date: "Nov 11, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1220,7 +1246,9 @@ export const blogs = [
     image: blog2,
     date: "Nov 21, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1228,7 +1256,9 @@ export const blogs = [
     image: blog3,
     date: "Dec 12, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1236,7 +1266,9 @@ export const blogs = [
     image: blog1,
     date: "Nov 11, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1244,7 +1276,9 @@ export const blogs = [
     image: blog2,
     date: "Nov 21, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1252,7 +1286,9 @@ export const blogs = [
     image: blog3,
     date: "Dec 12, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1260,7 +1296,9 @@ export const blogs = [
     image: blog1,
     date: "Nov 11, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1268,7 +1306,9 @@ export const blogs = [
     image: blog2,
     date: "Nov 21, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1276,7 +1316,9 @@ export const blogs = [
     image: blog3,
     date: "Dec 12, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1284,7 +1326,9 @@ export const blogs = [
     image: blog1,
     date: "Nov 11, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1292,7 +1336,9 @@ export const blogs = [
     image: blog2,
     date: "Nov 21, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1300,7 +1346,9 @@ export const blogs = [
     image: blog3,
     date: "Dec 12, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1308,7 +1356,9 @@ export const blogs = [
     image: blog1,
     date: "Nov 11, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1316,7 +1366,9 @@ export const blogs = [
     image: blog2,
     date: "Nov 21, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1324,7 +1376,9 @@ export const blogs = [
     image: blog3,
     date: "Dec 12, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1332,7 +1386,9 @@ export const blogs = [
     image: blog1,
     date: "Nov 11, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1340,7 +1396,9 @@ export const blogs = [
     image: blog2,
     date: "Nov 21, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1348,7 +1406,9 @@ export const blogs = [
     image: blog3,
     date: "Dec 12, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
   {
@@ -1356,7 +1416,9 @@ export const blogs = [
     image: blog3,
     date: "Dec 12, 2023",
     cartegory: "Healthy food",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
+    title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
   },
 ];
