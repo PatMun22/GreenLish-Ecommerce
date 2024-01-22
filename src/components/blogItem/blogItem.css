@@ -41,7 +41,7 @@
   margin-left: 20px;
   opacity: 0.9;
 }
-.blog-item p {
+.blog-item .blog-link {
   text-align: left;
   display: flex;
   align-items: center;
@@ -49,6 +49,7 @@
   margin-left: 20px;
   transition: all 0.5s ease-in-out;
 }
-.blog-item p:hover {
+.blog-item .blog-link:hover {
   gap: 20px;
+  color: #25bd01;
 }

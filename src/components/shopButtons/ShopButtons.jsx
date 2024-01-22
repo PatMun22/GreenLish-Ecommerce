@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { IoGridOutline } from "react-icons/io5";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { MdGridOff } from "react-icons/md";
@@ -7,14 +8,14 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ShopContext } from "../../context/ShopContext";
 
-const ShopButtons = () => {
+const ShopButtons = ({ grid_path, unit_path }) => {
   const { activeBtn, setActiveBtn } = useContext(ShopContext);
 
   return (
     <div className="shop-buttons">
       <div className="buttons-container">
         <Link
-          to="/shop"
+          to={grid_path}
           className={`btn ${activeBtn === "grid view" ? "active" : ""}`}
           onClick={() => setActiveBtn("grid view")}
         >
@@ -22,7 +23,7 @@ const ShopButtons = () => {
           Grid View
         </Link>
         <Link
-          to="/shop/unit"
+          to={unit_path}
           className={`btn ${activeBtn === "unit view" ? "active" : ""}`}
           onClick={() => setActiveBtn("unit view")}
         >

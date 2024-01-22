@@ -207,6 +207,13 @@ const ShopContextProvider = (props) => {
     indexOfLastBlogItem
   );
 
+  // dynamic link paths to products and blog posts grid and unit view pages
+
+  const productGridViewPath = "/shop";
+  const productUnitViewPath = "/shop/unit";
+  const blogGridViewPath = "/blogs";
+  const blogUnitViewPath = "/blogs/unit";
+
   const contextValue = {
     cartItems,
     addToCart,
@@ -237,6 +244,10 @@ const ShopContextProvider = (props) => {
     blogItems,
     blogPageNumbers,
     blogs,
+    productGridViewPath,
+    productUnitViewPath,
+    blogGridViewPath,
+    blogUnitViewPath,
   };
 
   return (

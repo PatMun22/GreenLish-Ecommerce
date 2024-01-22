@@ -7,7 +7,7 @@ const BlogItem = ({ blog }) => {
   return (
     <div className="blog-item" key={blog.id}>
       <Link to={`/bog/${blog.id}`}>
-        <img src={blog.image} alt={`blog post ${blog.id}`} />
+        <img src={blog.image} alt={`blog post ${blog.id}`} loading="lazy" />
       </Link>
       <div className="date-comment">
         <div className="date">{blog.date}</div>
@@ -18,9 +18,7 @@ const BlogItem = ({ blog }) => {
       </div>
       <h3>{blog.description}</h3>
       <Link to={`/bog/${blog.id}`} className="blog-link">
-        <p>
-          continue reading <IoIosArrowRoundForward />
-        </p>
+        continue reading <IoIosArrowRoundForward />
       </Link>
     </div>
   );
