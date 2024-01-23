@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const BlogItem = ({ blog }) => {
   return (
     <div className="blog-item" key={blog.id}>
-      <Link to={`/bog/${blog.id}`}>
+      <Link to={`/blogs/${blog.id}`}>
         <img src={blog.image} alt={`blog post ${blog.id}`} loading="lazy" />
       </Link>
       <div className="date-comment">
@@ -17,7 +17,7 @@ const BlogItem = ({ blog }) => {
         <div className="category">{blog.cartegory}</div>
       </div>
       <h3>{blog.description}</h3>
-      <Link to={`/bog/${blog.id}`} className="blog-link">
+      <Link to={`/blogs/${blog.id}`} className="blog-link">
         continue reading <IoIosArrowRoundForward />
       </Link>
     </div>

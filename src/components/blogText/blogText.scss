@@ -1,0 +1,75 @@
+@import "../../styles/variables.scss";
+
+.blog-text {
+  margin: 10px 0;
+
+  .top-text-div {
+    margin-bottom: 15px;
+
+    p {
+      font-size: 14px;
+      color: $main-bue;
+      line-height: 20px;
+    }
+  }
+
+  .mid-text-div {
+    margin-bottom: 15px;
+    background-color: rgba($main-green, 0.2);
+    border-left: 2px solid $main-green;
+    padding: 10px 0;
+
+    p {
+      margin-left: 20px;
+      font-size: 14px;
+      line-height: 20px;
+      color: $main-bue;
+    }
+  }
+
+  .bottom-text-div {
+    padding: 10px 0;
+
+    h1 {
+      font-size: 18px;
+      color: $main-bue;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      color: $main-bue;
+    }
+
+    .list-items {
+      margin-top: 10px;
+
+      .list-item {
+        display: flex;
+        gap: 20px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+
+        .list-number {
+          width: 25px;
+          height: 25px;
+          border: 1px solid $section-bg;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 12px;
+          padding: 0 8px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 20px;
+          color: $main-bue;
+        }
+      }
+    }
+  }
+}

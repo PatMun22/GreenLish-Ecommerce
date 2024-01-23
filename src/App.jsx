@@ -86,7 +86,7 @@ const App = () => {
           element: <BlogsUnit />,
         },
         {
-          path: "/blogs/${id}",
+          path: "/blogs/:id",
           element: <BlogPost />,
         },
       ],

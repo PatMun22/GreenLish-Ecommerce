@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+
+.blog-socials-container {
+  width: 100%;
+  height: 35px;
+  border-bottom: 1.8px solid $section-bg;
+  border-top: 1.8px solid $section-bg;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}

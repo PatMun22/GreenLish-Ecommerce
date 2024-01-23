@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.blog-post-top {
+  width: 100%;
+  height: 400px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .heading-date {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    width: 75%;
+    height: 80px;
+    padding: 10px 0;
+
+    h1 {
+      font-size: 25px;
+      color: $main-bue;
+      text-transform: capitalize;
+      word-spacing: 5px;
+    }
+  }
+}

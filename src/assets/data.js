@@ -79,6 +79,8 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io5";
 import { FaInstagramSquare } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaPinterestP } from "react-icons/fa";
 
 export const AllCategories = [
   { id: 1, category: "Grains", amount: 300 },
@@ -1423,13 +1425,6 @@ export const blogs = [
   },
 ];
 
-export const socials = [
-  { id: 1, name: "Facebook", color: "#0F52BA", message: "follow" },
-  { id: 2, name: "Twitter", color: "#007FFF", message: "follow" },
-  { id: 3, name: "YouTube", color: "#FF2400", message: "follow" },
-  { id: 4, name: "Instagram", color: "#FE4EDA", message: "follow" },
-];
-
 export const partners = [
   { id: 1, image: partner1, description: "Lorem ipsum dolor sit amet." },
   { id: 2, image: partner2, description: "Lorem ipsum dolor sit amet." },
@@ -2485,9 +2480,32 @@ export const singleProducts = [
   },
 ];
 
+export const socials = [
+  { id: 1, name: "Facebook", color: "#0F52BA", message: "follow" },
+  { id: 2, name: "Twitter", color: "#007FFF", message: "follow" },
+  { id: 3, name: "YouTube", color: "#FF2400", message: "follow" },
+  { id: 4, name: "Instagram", color: "#FE4EDA", message: "follow" },
+];
+
 export const socialIcons = [
   FaFacebookF,
   FaTwitter,
   IoLogoYoutube,
   FaInstagramSquare,
+];
+
+export const commentSocials = [
+  { id: 1, name: "Facebook", color: "#0F52BA" },
+  { id: 2, name: "Twitter", color: "#007FFF" },
+  { id: 2, name: "Pinterest", color: "#DE3163" },
+  { id: 3, name: "YouTube", color: "#FF2400" },
+  { id: 4, name: "WhatsApp", color: "#00FF7F" },
+];
+
+export const commentSocialIcons = [
+  FaFacebookF,
+  FaTwitter,
+  FaPinterestP,
+  IoLogoYoutube,
+  FaWhatsapp,
 ];

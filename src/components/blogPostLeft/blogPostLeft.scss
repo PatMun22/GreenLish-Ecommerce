@@ -1,0 +1,23 @@
+@import "../../styles/variables.scss";
+
+.blog-post-left {
+  .date-comment {
+    height: 20px;
+    display: flex;
+    width: inherit;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: $main-bue;
+    font-size: 12px;
+    text-transform: capitalize;
+
+    .vert-line {
+      width: 2px;
+      height: 70%;
+      background-color: $main-bue;
+      opacity: 0.5;
+    }
+  }
+}
