@@ -1,0 +1,48 @@
+@import "../../styles/variables.scss";
+
+.related-articles {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 650px;
+
+  .pre-btn,
+  .next-btn {
+    border: none;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.466);
+  }
+
+  .pre-btn {
+    left: 0;
+  }
+
+  .next-btn {
+    right: 0;
+  }
+
+  .pre-btn p,
+  .next-btn p {
+    font-size: 18px;
+  }
+
+  .article-container {
+    padding: 0 10px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+}

@@ -2497,9 +2497,9 @@ export const socialIcons = [
 export const commentSocials = [
   { id: 1, name: "Facebook", color: "#0F52BA" },
   { id: 2, name: "Twitter", color: "#007FFF" },
-  { id: 2, name: "Pinterest", color: "#DE3163" },
-  { id: 3, name: "YouTube", color: "#FF2400" },
-  { id: 4, name: "WhatsApp", color: "#00FF7F" },
+  { id: 3, name: "Pinterest", color: "#DE3163" },
+  { id: 4, name: "YouTube", color: "#FF2400" },
+  { id: 5, name: "WhatsApp", color: "#00FF7F" },
 ];
 
 export const commentSocialIcons = [

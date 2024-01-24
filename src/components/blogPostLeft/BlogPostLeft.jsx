@@ -3,6 +3,7 @@ import PostSocials from "../postSocials/PostSocials";
 import BlogSocialsContainer from "../blogSocialsContainer/BlogSocialsContainer";
 import BlogText from "../blogText/BlogText";
 import "./blogPostLeft.scss";
+import RelatedArticles from "../relatedArticles/RelatedArticles";
 
 const BlogPostLeft = () => {
   return (
@@ -17,6 +18,7 @@ const BlogPostLeft = () => {
       <PostSocials />
       <BlogText />
       <BlogSocialsContainer />
+      <RelatedArticles />
       <BlogComments />
     </div>
   );

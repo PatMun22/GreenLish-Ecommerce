@@ -1,0 +1,11 @@
+.article-card {
+  max-width: 285px;
+  min-width: 285px;
+  height: 200px;
+  margin: 15px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

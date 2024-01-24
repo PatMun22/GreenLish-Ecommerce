@@ -35,23 +35,35 @@ const BlogText = () => {
         <div className="list-items">
           <div className="list-item">
             <span className="list-number">1</span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              alias qui, tempora fugit neque deleniti exercitationem debitis
-              magnam dolores voluptatum autem porro, corrupti eum ad illum
-              veniam libero, minima perspiciatis minus aperiam sint. Quaerat,
-              repellendus?
-            </p>
+            <div>
+              <h1>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
+                vero!
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia alias qui, tempora fugit neque deleniti exercitationem
+                debitis magnam dolores voluptatum autem porro, corrupti eum ad
+                illum veniam libero, minima perspiciatis minus aperiam sint.
+                Quaerat, repellendus?
+              </p>
+            </div>
           </div>
           <div className="list-item">
             <span className="list-number">2</span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              alias qui, tempora fugit neque deleniti exercitationem debitis
-              magnam dolores voluptatum autem porro, corrupti eum ad illum
-              veniam libero, minima perspiciatis minus aperiam sint. Quaerat,
-              repellendus?
-            </p>
+            <div>
+              <h1>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
+                vero!
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia alias qui, tempora fugit neque deleniti exercitationem
+                debitis magnam dolores voluptatum autem porro, corrupti eum ad
+                illum veniam libero, minima perspiciatis minus aperiam sint.
+                Quaerat, repellendus?
+              </p>
+            </div>
           </div>
         </div>
       </div>

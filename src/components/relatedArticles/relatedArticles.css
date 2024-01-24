@@ -1,0 +1,41 @@
+.related-articles {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 650px;
+}
+.related-articles .pre-btn,
+.related-articles .next-btn {
+  border: none;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.466);
+}
+.related-articles .pre-btn {
+  left: 0;
+}
+.related-articles .next-btn {
+  right: 0;
+}
+.related-articles .pre-btn p,
+.related-articles .next-btn p {
+  font-size: 18px;
+}
+.related-articles .article-container {
+  padding: 0 10px;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
