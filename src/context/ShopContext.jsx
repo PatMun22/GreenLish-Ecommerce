@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { createContext, useState } from "react";
-import { blogs, recommendedProducts } from "../assets/data";
+import { blogs, commentSocials, recommendedProducts } from "../assets/data";
 
 export const ShopContext = createContext(null);
 
@@ -24,6 +24,9 @@ const ShopContextProvider = (props) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [activeBtn, setActiveBtn] = useState("grid view");
   const [blogItems, setBlogItems] = useState(blogs);
+  const [isHovering, setIsHovering] = useState(
+    Array(commentSocials.length).fill(false)
+  );
 
   // Filtering products according to cartegory
 
@@ -214,6 +217,24 @@ const ShopContextProvider = (props) => {
   const blogGridViewPath = "/blogs";
   const blogUnitViewPath = "/blogs/unit";
 
+  // Setting color of the article author social icons dynamically
+
+  const handleMouseEnter = (index) => {
+    setIsHovering((prevStates) => {
+      const newStates = [...prevStates];
+      newStates[index] = true;
+      return newStates;
+    });
+  };
+
+  const handleMouseLeave = (index) => {
+    setIsHovering((prevStates) => {
+      const newStates = [...prevStates];
+      newStates[index] = false;
+      return newStates;
+    });
+  };
+
   const contextValue = {
     cartItems,
     addToCart,
@@ -248,6 +269,9 @@ const ShopContextProvider = (props) => {
     productUnitViewPath,
     blogGridViewPath,
     blogUnitViewPath,
+    isHovering,
+    handleMouseEnter,
+    handleMouseLeave,
   };
 
   return (

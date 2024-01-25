@@ -1,29 +1,12 @@
 import { Link } from "react-router-dom";
 import { commentSocialIcons, commentSocials } from "../../assets/data";
 import "./articleAuthor.scss";
-import { useState } from "react";
+import { useContext } from "react";
+import { ShopContext } from "../../context/ShopContext";
 
 const ArticleAuthor = () => {
-  const [isHovering, setIsHovering] = useState(
-    Array(commentSocials.length).fill(false)
-  );
-
-  const handleMouseEnter = (index) => {
-    setIsHovering((prevStates) => {
-      const newStates = [...prevStates];
-      newStates[index] = true;
-      return newStates;
-    });
-  };
-
-  const handleMouseLeave = (index) => {
-    setIsHovering((prevStates) => {
-      const newStates = [...prevStates];
-      newStates[index] = false;
-      return newStates;
-    });
-  };
-
+  const { isHovering, handleMouseEnter, handleMouseLeave } =
+    useContext(ShopContext);
   return (
     <div className="article-author">
       <img

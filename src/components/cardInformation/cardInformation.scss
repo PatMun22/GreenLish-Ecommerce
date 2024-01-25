@@ -1,0 +1,95 @@
+@import "../../styles/variables.scss";
+
+.card-information {
+  h1 {
+    font-size: 16px;
+    color: $main-bue;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 14px;
+    color: $main-bue;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+  }
+
+  .payment-cards {
+    display: flex;
+    gap: 5px;
+    margin: 0 auto;
+
+    img {
+      width: 60px;
+      height: 40px;
+      object-fit: cover;
+      box-shadow: 0 0 10px $section-bg;
+    }
+  }
+
+  .payament-inputs {
+    margin-top: 20px;
+
+    fieldset {
+      height: 50px;
+      border: 1.5px solid $section-bg;
+      margin-bottom: 15px;
+
+      legend {
+        text-transform: capitalize;
+        color: $section-bg;
+        margin-left: 20px;
+      }
+
+      input {
+        height: 30px;
+        width: 100%;
+        margin-bottom: 5px;
+        border: none;
+        outline: none;
+        color: $main-bue;
+        font-size: 18px;
+        padding: 0 10px;
+
+        &::placeholder {
+          color: rgba($main-bue, 0.6);
+        }
+      }
+    }
+
+    .date-cvv {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      fieldset {
+        width: 48%;
+      }
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+
+      button {
+        height: 30px;
+        color: $white;
+        border: none;
+        padding: 5px 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:first-of-type {
+        background-color: $main-bue;
+        width: 200px;
+      }
+
+      button:last-of-type {
+        background-color: $main-green;
+        width: 400px;
+      }
+    }
+  }
+}

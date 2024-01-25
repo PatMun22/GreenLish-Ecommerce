@@ -1,0 +1,8 @@
+.checkout-card {
+  margin: 0 15rem 100px;
+  border: 2px solid rgba(221, 200, 200, 0.5);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 550px;
+  padding: 50px;
+}

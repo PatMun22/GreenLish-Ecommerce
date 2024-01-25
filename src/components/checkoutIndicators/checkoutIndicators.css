@@ -1,3 +1,43 @@
 .checkoutIndicators {
-  margin: 150px 15rem;
+  margin: 100px 15rem 50px;
+}
+.checkoutIndicators .horizontal-line {
+  position: relative;
+  height: 0;
+  width: 400px;
+  margin: 0 auto;
+  border: 0.3px solid rgba(221, 200, 200, 0.2);
+  display: flex;
+  justify-content: space-between;
+}
+.checkoutIndicators .horizontal-line .line-dot-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.checkoutIndicators .horizontal-line .line-dot-container p {
+  position: absolute;
+  bottom: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-wrap: wrap;
+  font-weight: bold;
+  font-size: 12px;
+}
+.checkoutIndicators .horizontal-line .line-dot-container .line-dot {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(221, 200, 200, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 5;
+  color: #121935;
+  background-color: rgba(221, 200, 200, 0.5);
 }

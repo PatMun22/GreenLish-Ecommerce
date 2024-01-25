@@ -81,6 +81,10 @@ import { IoLogoYoutube } from "react-icons/io5";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
+import visa from "./images/visa.png";
+import mastercard from "./images/master.png";
+import discover from "./images/discover.png";
+import mpesa from "./images/mpesa.png";
 
 export const AllCategories = [
   { id: 1, category: "Grains", amount: 300 },
@@ -2510,4 +2514,11 @@ export const commentSocialIcons = [
   IoLogoYoutube,
   FaWhatsapp,
   FaInstagramSquare,
+];
+
+export const paymentCards = [
+  { id: 1, image: visa },
+  { id: 2, image: mastercard },
+  { id: 3, image: discover },
+  { id: 4, image: mpesa },
 ];

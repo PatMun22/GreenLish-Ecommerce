@@ -1,0 +1,81 @@
+.card-information h1 {
+  font-size: 16px;
+  color: #121935;
+  margin-bottom: 30px;
+}
+.card-information p {
+  font-size: 14px;
+  color: #121935;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.card-information .payment-cards {
+  display: flex;
+  gap: 5px;
+  margin: 0 auto;
+}
+.card-information .payment-cards img {
+  width: 60px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 0 10px rgba(221, 200, 200, 0.5);
+}
+.card-information .payament-inputs {
+  margin-top: 20px;
+}
+.card-information .payament-inputs fieldset {
+  height: 50px;
+  border: 1.5px solid rgba(221, 200, 200, 0.5);
+  margin-bottom: 15px;
+}
+.card-information .payament-inputs fieldset legend {
+  text-transform: capitalize;
+  color: rgba(221, 200, 200, 0.5);
+  margin-left: 20px;
+}
+.card-information .payament-inputs fieldset input {
+  height: 30px;
+  width: 100%;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+  color: #121935;
+  font-size: 18px;
+  padding: 0 10px;
+}
+.card-information .payament-inputs fieldset input::-moz-placeholder {
+  color: rgba(18, 25, 53, 0.6);
+}
+.card-information .payament-inputs fieldset input::placeholder {
+  color: rgba(18, 25, 53, 0.6);
+}
+.card-information .payament-inputs .date-cvv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-information .payament-inputs .date-cvv fieldset {
+  width: 48%;
+}
+.card-information .payament-inputs .btn-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.card-information .payament-inputs .btn-container button {
+  height: 30px;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.card-information .payament-inputs .btn-container button:first-of-type {
+  background-color: #121935;
+  width: 200px;
+}
+.card-information .payament-inputs .btn-container button:last-of-type {
+  background-color: #25bd01;
+  width: 400px;
+}

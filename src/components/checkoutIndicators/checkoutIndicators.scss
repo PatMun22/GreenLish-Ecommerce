@@ -1,5 +1,49 @@
 @import "../../styles/variables.scss";
 
 .checkoutIndicators {
-  margin: 150px 15rem;
+  margin: 100px 15rem 50px;
+
+  .horizontal-line {
+    position: relative;
+    height: 0;
+    width: 400px;
+    margin: 0 auto;
+    border: 0.3px solid rgba($section-bg, 0.2);
+    display: flex;
+    justify-content: space-between;
+
+    .line-dot-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        position: absolute;
+        bottom: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        text-wrap: wrap;
+        font-weight: bold;
+        font-size: 12px;
+      }
+
+      .line-dot {
+        width: 30px;
+        height: 30px;
+        border: 1px solid $section-bg;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 5;
+        color: $main-bue;
+        background-color: $section-bg;
+      }
+    }
+  }
 }

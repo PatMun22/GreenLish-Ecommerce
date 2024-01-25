@@ -1,0 +1,10 @@
+@import "../../styles/variables.scss";
+
+.checkout-card {
+  margin: 0 15rem 100px;
+  border: 2px solid $section-bg;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 550px;
+  padding: 50px;
+}
