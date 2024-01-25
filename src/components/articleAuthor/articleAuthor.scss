@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+
+.article-author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1.5px solid $section-bg;
+  height: 170px;
+
+  img {
+    width: 120px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .article-text {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .top-sec {
+      h1 {
+        font-size: 16px;
+        color: $main-bue;
+      }
+
+      p {
+        color: $main-bue;
+        font-size: 12px;
+      }
+    }
+
+    .about-author {
+      font-size: 14px;
+      color: $main-bue;
+    }
+
+    .author-socials {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+
+      .social-icon-box {
+        .post-social-icon {
+          font-size: 14px;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            transform: scale(1.5);
+          }
+        }
+      }
+    }
+  }
+}

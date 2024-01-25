@@ -2500,6 +2500,7 @@ export const commentSocials = [
   { id: 3, name: "Pinterest", color: "#DE3163" },
   { id: 4, name: "YouTube", color: "#FF2400" },
   { id: 5, name: "WhatsApp", color: "#00FF7F" },
+  { id: 6, name: "Instagram", color: "#FE4EDA" },
 ];
 
 export const commentSocialIcons = [
@@ -2508,4 +2509,5 @@ export const commentSocialIcons = [
   FaPinterestP,
   IoLogoYoutube,
   FaWhatsapp,
+  FaInstagramSquare,
 ];

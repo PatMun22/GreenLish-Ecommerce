@@ -4,6 +4,7 @@ import BlogSocialsContainer from "../blogSocialsContainer/BlogSocialsContainer";
 import BlogText from "../blogText/BlogText";
 import "./blogPostLeft.scss";
 import RelatedArticles from "../relatedArticles/RelatedArticles";
+import ArticleAuthor from "../articleAuthor/ArticleAuthor";
 
 const BlogPostLeft = () => {
   return (
@@ -18,6 +19,7 @@ const BlogPostLeft = () => {
       <PostSocials />
       <BlogText />
       <BlogSocialsContainer />
+      <ArticleAuthor />
       <RelatedArticles />
       <BlogComments />
     </div>

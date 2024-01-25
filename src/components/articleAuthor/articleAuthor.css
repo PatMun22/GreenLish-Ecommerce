@@ -1,0 +1,44 @@
+.article-author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1.5px solid rgba(221, 200, 200, 0.5);
+  height: 170px;
+}
+.article-author img {
+  width: 120px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.article-author .article-text {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.article-author .article-text .top-sec h1 {
+  font-size: 16px;
+  color: #121935;
+}
+.article-author .article-text .top-sec p {
+  color: #121935;
+  font-size: 12px;
+}
+.article-author .article-text .about-author {
+  font-size: 14px;
+  color: #121935;
+}
+.article-author .article-text .author-socials {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.article-author .article-text .author-socials .social-icon-box .post-social-icon {
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+.article-author .article-text .author-socials .social-icon-box .post-social-icon:hover {
+  transform: scale(1.5);
+}
