@@ -1,0 +1,85 @@
+@import "../../styles/variables.scss";
+
+.billing-information-container {
+  margin: 0 15rem 100px;
+
+  .billing-information {
+    border: 2px solid $section-bg;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 550px;
+    padding: 50px;
+
+    h1 {
+      font-size: 16px;
+      color: $main-bue;
+      margin-bottom: 20px;
+    }
+
+    .billing-inform-form {
+      fieldset {
+        height: 50px;
+        border: 1.5px solid $section-bg;
+        margin-bottom: 8px;
+
+        legend {
+          text-transform: capitalize;
+          color: rgba($main-bue, 0.9);
+          margin-left: 20px;
+          font-weight: bold;
+
+          .asterisk {
+            color: rgba(red, 0.8);
+            font-size: 12px;
+          }
+        }
+
+        input {
+          height: 30px;
+          width: 100%;
+          margin-bottom: 5px;
+          border: none;
+          outline: none;
+          color: $main-bue;
+          font-size: 14px;
+          padding: 0 10px;
+
+          &::placeholder {
+            color: rgba($main-bue, 0.6);
+          }
+        }
+      }
+
+      .personal-info,
+      .email-phone {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        fieldset {
+          width: 48%;
+        }
+      }
+
+      button {
+        height: 30px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: rgba($white, 0.7);
+        border: none;
+        padding: 5px 10px;
+        font-size: 16px;
+        background-color: $main-green;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          gap: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.successful-payment {
+  margin: 20px 15rem 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+}
+.successful-payment .check-mark-container {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #25bd01;
+  border-radius: 50%;
+  position: relative;
+}
+.successful-payment .check-mark-container .checkmark {
+  font-size: 30px;
+  font-weight: bold;
+  color: #25bd01;
+}
+.successful-payment .check-mark-container .dots {
+  position: absolute;
+  border-radius: 50%;
+}
+.successful-payment .check-mark-container .dots.one {
+  height: 7px;
+  width: 7px;
+  left: -30px;
+  top: -30px;
+  background-color: #25bd01;
+}
+.successful-payment .check-mark-container .dots.two {
+  height: 5px;
+  width: 5px;
+  left: 30px;
+  top: -20px;
+  background-color: #702963;
+}
+.successful-payment .check-mark-container .dots.three {
+  height: 6px;
+  width: 6px;
+  right: -5px;
+  bottom: -30px;
+  background-color: #121935;
+}
+.successful-payment .check-mark-container .dots.four {
+  height: 5px;
+  width: 5px;
+  right: -20px;
+  top: 30px;
+  background-color: #a42a04;
+}
+.successful-payment .check-mark-container .dots.five {
+  height: 8px;
+  width: 8px;
+  left: -50px;
+  bottom: 40px;
+  background-color: #e30b5c;
+}
+.successful-payment .check-mark-container .dots.six {
+  height: 7px;
+  width: 7px;
+  right: -20px;
+  top: -30px;
+  background-color: #80461b;
+}
+.successful-payment .check-mark-container .dots.seven {
+  height: 7px;
+  width: 7px;
+  left: -10px;
+  bottom: -10px;
+  background-color: #ff2400;
+}
+.successful-payment h1 {
+  margin: 50px 0 10px;
+  color: #121935;
+  font-size: 20px;
+}
+.successful-payment p {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #121935;
+}
+.successful-payment p span {
+  color: #25bd01;
+}
+.successful-payment .to-shop-page {
+  height: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #25bd01;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}

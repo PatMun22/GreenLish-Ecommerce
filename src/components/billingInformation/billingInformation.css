@@ -1,0 +1,74 @@
+.billing-information-container {
+  margin: 0 15rem 100px;
+}
+.billing-information-container .billing-information {
+  border: 2px solid rgba(221, 200, 200, 0.5);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 550px;
+  padding: 50px;
+}
+.billing-information-container .billing-information h1 {
+  font-size: 16px;
+  color: #121935;
+  margin-bottom: 20px;
+}
+.billing-information-container .billing-information .billing-inform-form fieldset {
+  height: 50px;
+  border: 1.5px solid rgba(221, 200, 200, 0.5);
+  margin-bottom: 8px;
+}
+.billing-information-container .billing-information .billing-inform-form fieldset legend {
+  text-transform: capitalize;
+  color: rgba(18, 25, 53, 0.9);
+  margin-left: 20px;
+  font-weight: bold;
+}
+.billing-information-container .billing-information .billing-inform-form fieldset legend .asterisk {
+  color: rgba(255, 0, 0, 0.8);
+  font-size: 12px;
+}
+.billing-information-container .billing-information .billing-inform-form fieldset input {
+  height: 30px;
+  width: 100%;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+  color: #121935;
+  font-size: 14px;
+  padding: 0 10px;
+}
+.billing-information-container .billing-information .billing-inform-form fieldset input::-moz-placeholder {
+  color: rgba(18, 25, 53, 0.6);
+}
+.billing-information-container .billing-information .billing-inform-form fieldset input::placeholder {
+  color: rgba(18, 25, 53, 0.6);
+}
+.billing-information-container .billing-information .billing-inform-form .personal-info,
+.billing-information-container .billing-information .billing-inform-form .email-phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.billing-information-container .billing-information .billing-inform-form .personal-info fieldset,
+.billing-information-container .billing-information .billing-inform-form .email-phone fieldset {
+  width: 48%;
+}
+.billing-information-container .billing-information .billing-inform-form button {
+  height: 30px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #25bd01;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.billing-information-container .billing-information .billing-inform-form button:hover {
+  gap: 20px;
+}
