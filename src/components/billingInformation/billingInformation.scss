@@ -1,12 +1,13 @@
 @import "../../styles/variables.scss";
 
 .billing-information-container {
-  margin: 0 15rem 100px;
+  margin: 150px 15rem;
 
   .billing-information {
     border: 2px solid $section-bg;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 20px;
     height: 550px;
     padding: 50px;
 
