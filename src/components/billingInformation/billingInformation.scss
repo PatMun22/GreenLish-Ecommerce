@@ -22,6 +22,17 @@
         height: 50px;
         border: 1.5px solid $section-bg;
         margin-bottom: 8px;
+        position: relative;
+
+        .use-icon,
+        .phone-icon,
+        .email-icon,
+        .address-icon {
+          position: absolute;
+          right: 10px;
+          bottom: 50%;
+          color: $main-green;
+        }
 
         legend {
           text-transform: capitalize;

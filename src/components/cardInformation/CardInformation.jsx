@@ -1,5 +1,8 @@
 import { paymentCards } from "../../assets/data";
 import OrderSummary from "../orderSummary/OrderSummary";
+import { LuUser2 } from "react-icons/lu";
+import { MdEmail } from "react-icons/md";
+import { LiaUnlockAltSolid } from "react-icons/lia";
 import "./cardInformation.scss";
 
 const CardInformation = () => {
@@ -18,6 +21,7 @@ const CardInformation = () => {
             <fieldset>
               <legend>Full Name</legend>
               <input type="text" placeholder="According To Your Card" />
+              <LuUser2 className="use-icon" />
             </fieldset>
             <fieldset>
               <legend>Card Number</legend>
@@ -31,11 +35,13 @@ const CardInformation = () => {
               <fieldset>
                 <legend>Code CVV</legend>
                 <input type="text" />
+                <LiaUnlockAltSolid className="cvv-icon" />
               </fieldset>
             </div>
             <fieldset>
               <legend>Your Email</legend>
               <input type="email" placeholder="Type Your Card Email" />
+              <MdEmail className="email-icon" />
             </fieldset>
             <label htmlFor="">
               <input type="checkbox" /> Save my card for further transactions

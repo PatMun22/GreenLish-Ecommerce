@@ -69,6 +69,11 @@
   font-weight: bold;
   margin-bottom: 5px;
 }
+.order-summary .lower-section .sub-total span,
+.order-summary .lower-section .delivery-charge span,
+.order-summary .lower-section .total-amount span {
+  color: #25bd01;
+}
 .order-summary .lower-section .sub-total,
 .order-summary .lower-section .total-amount {
   margin-top: 5px;

@@ -1,6 +1,10 @@
 import { LuAsterisk } from "react-icons/lu";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import OrderSummary from "../orderSummary/OrderSummary";
+import { LuUser2 } from "react-icons/lu";
+import { MdEmail } from "react-icons/md";
+import { MdPhoneAndroid } from "react-icons/md";
+import { LiaMapMarkerAltSolid } from "react-icons/lia";
 import "./billingInformation.scss";
 
 const BillingInformation = () => {
@@ -16,12 +20,14 @@ const BillingInformation = () => {
                   First Name <LuAsterisk className="asterisk" />
                 </legend>
                 <input type="text" placeholder="Enter your first name" />
+                <LuUser2 className="use-icon" />
               </fieldset>
               <fieldset>
                 <legend>
                   Last Name <LuAsterisk className="asterisk" />
                 </legend>
                 <input type="text" placeholder="Enter your last name" />
+                <LuUser2 className="use-icon" />
               </fieldset>
             </div>
             <div className="email-phone">
@@ -30,12 +36,14 @@ const BillingInformation = () => {
                   Email <LuAsterisk className="asterisk" />
                 </legend>
                 <input type="email" placeholder="Enter your Email" />
+                <MdEmail className="email-icon" />
               </fieldset>
               <fieldset>
                 <legend>
                   Phone <LuAsterisk className="asterisk" />
                 </legend>
                 <input type="tel" placeholder="79701XXXX" />
+                <MdPhoneAndroid className="phone-icon" />
               </fieldset>
             </div>
             <fieldset>
@@ -43,6 +51,7 @@ const BillingInformation = () => {
                 Address <LuAsterisk className="asterisk" />
               </legend>
               <input type="text" placeholder="Street address" />
+              <LiaMapMarkerAltSolid className="address-icon" />
             </fieldset>
             <fieldset>
               <input type="text" placeholder="Apartment, suffix, " />

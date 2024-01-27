@@ -44,6 +44,16 @@
         height: 50px;
         border: 1.5px solid $section-bg;
         margin-bottom: 15px;
+        position: relative;
+
+        .cvv-icon,
+        .use-icon,
+        .email-icon {
+          position: absolute;
+          right: 10px;
+          bottom: 50%;
+          transform: translateY(-50%);
+        }
 
         legend {
           text-transform: capitalize;

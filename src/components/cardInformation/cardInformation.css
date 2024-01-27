@@ -39,6 +39,15 @@
   height: 50px;
   border: 1.5px solid rgba(221, 200, 200, 0.5);
   margin-bottom: 15px;
+  position: relative;
+}
+.card-info-container .card-information .payament-inputs fieldset .cvv-icon,
+.card-info-container .card-information .payament-inputs fieldset .use-icon,
+.card-info-container .card-information .payament-inputs fieldset .email-icon {
+  position: absolute;
+  right: 10px;
+  bottom: 50%;
+  transform: translateY(-50%);
 }
 .card-info-container .card-information .payament-inputs fieldset legend {
   text-transform: capitalize;

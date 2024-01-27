@@ -29,16 +29,16 @@ const OrderSummary = () => {
         <hr />
         <div className="sub-total">
           <p>Sub Total:</p>
-          <span>00</span>
+          <span>Ksh. 00</span>
         </div>
         <div className="delivery-charge">
           <p>Delivery Charge:</p>
-          <span>00</span>
+          <span>Ksh. 00</span>
         </div>
         <hr />
         <div className="total-amount">
           <p>Total Amount:</p>
-          <span>00</span>
+          <span>Ksh. 00</span>
         </div>
       </div>
     </div>

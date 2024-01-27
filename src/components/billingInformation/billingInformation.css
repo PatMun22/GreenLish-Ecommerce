@@ -18,6 +18,16 @@
   height: 50px;
   border: 1.5px solid rgba(221, 200, 200, 0.5);
   margin-bottom: 8px;
+  position: relative;
+}
+.billing-information-container .billing-information .billing-inform-form fieldset .use-icon,
+.billing-information-container .billing-information .billing-inform-form fieldset .phone-icon,
+.billing-information-container .billing-information .billing-inform-form fieldset .email-icon,
+.billing-information-container .billing-information .billing-inform-form fieldset .address-icon {
+  position: absolute;
+  right: 10px;
+  bottom: 50%;
+  color: #25bd01;
 }
 .billing-information-container .billing-information .billing-inform-form fieldset legend {
   text-transform: capitalize;
