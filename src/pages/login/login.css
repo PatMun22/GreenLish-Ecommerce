@@ -1,0 +1,84 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.login .login-container {
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 0 15px rgba(221, 200, 200, 0.5);
+  padding: 20px;
+}
+.login .login-container h1 {
+  text-align: center;
+  font-size: 20px;
+  color: #121935;
+  margin-bottom: 10px;
+}
+.login .login-container p {
+  text-align: center;
+}
+.login .login-container p:first-of-type {
+  margin-bottom: 50px;
+}
+.login .login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.login .login-container form fieldset {
+  height: 50px;
+  width: 100%;
+  border: 1.5px solid rgba(221, 200, 200, 0.5);
+  margin-bottom: 8px;
+  position: relative;
+}
+.login .login-container form fieldset .user-icon,
+.login .login-container form fieldset .lock-icon {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  transform: translateY(-80%);
+  color: #25bd01;
+  font-weight: bold;
+}
+.login .login-container form fieldset legend {
+  color: rgba(18, 25, 53, 0.9);
+  margin-left: 20px;
+  font-weight: bold;
+}
+.login .login-container form fieldset input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+.login .login-container form .redirection-links {
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-between;
+  width: 100%;
+}
+.login .login-container form .redirection-links p {
+  font-size: 14px;
+}
+.login .login-container form .redirection-links p .redirection-link {
+  color: rgba(0, 0, 255, 0.781);
+}
+.login .login-container form .login-btn {
+  height: 50px;
+  width: 100%;
+  background-color: #25bd01;
+  text-transform: uppercase;
+  text-align: center;
+  outline: none;
+  border: none;
+  margin-top: -50px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}

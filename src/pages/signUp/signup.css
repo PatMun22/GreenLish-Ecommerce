@@ -1,0 +1,86 @@
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.signup .signin-container {
+  width: 400px;
+  height: 500px;
+  box-shadow: 0 0 15px rgba(221, 200, 200, 0.5);
+  padding: 20px;
+}
+.signup .signin-container h1 {
+  text-align: center;
+  font-size: 20px;
+  color: #121935;
+  margin-bottom: 10px;
+}
+.signup .signin-container p {
+  text-align: center;
+  color: #121935;
+}
+.signup .signin-container p:first-of-type {
+  margin-bottom: 30px;
+}
+.signup .signin-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.signup .signin-container form fieldset {
+  height: 50px;
+  width: 100%;
+  border: 1.5px solid rgba(221, 200, 200, 0.5);
+  margin-bottom: 8px;
+  position: relative;
+}
+.signup .signin-container form fieldset .user-icon,
+.signup .signin-container form fieldset .lock-icon {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  transform: translateY(-80%);
+  color: #25bd01;
+  font-weight: bold;
+}
+.signup .signin-container form fieldset legend {
+  color: rgba(18, 25, 53, 0.9);
+  margin-left: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.signup .signin-container form fieldset legend .asterisk {
+  color: rgba(255, 0, 0, 0.7);
+}
+.signup .signin-container form fieldset input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.signup .signin-container form p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.signup .signin-container form p .redirection-link {
+  color: rgba(0, 0, 255, 0.781);
+}
+.signup .signin-container form .signin-btn {
+  height: 50px;
+  width: 100%;
+  background-color: #25bd01;
+  text-transform: uppercase;
+  text-align: center;
+  outline: none;
+  border: none;
+  margin-top: -15px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
