@@ -2402,6 +2402,7 @@ export const singleProducts = [
     image3: cabbage2,
     image4: cabbage3,
     title: "Fresh Organic Cabbage",
+    quantity: 2,
     product_infor:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet facere doloribus, aliquam voluptate excepturi, tenetur, officiis quo possimus neque sequi corporis? Inventore explicabo veritatis adipisci perspiciatis, consectetur earum assumenda?",
     Cartegory: "food & Vegetable",
@@ -2452,12 +2453,12 @@ export const singleProducts = [
       },
     ],
     shipping: {
-      title: "We use best delivery methods for delivery quickly",
+      shipping_title: "We use best delivery methods for delivery quickly",
       details:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
       subtopic: "Dreamline courier service",
       timeline: {
-        title: "time schedule",
+        timeline_title: "time schedule",
         time_schedule: [
           { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },

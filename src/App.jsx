@@ -9,7 +9,6 @@ import Cart from "./pages/cart/Cart";
 import Profile from "./pages/profile/Profile";
 import ShopUnit from "./pages/shop-unit/ShopUnit";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-
 import { useTranslation } from "react-i18next";
 import ShopContextProvider from "./context/ShopContext";
 import Checkout from "./pages/checkout/Checkout";
@@ -19,6 +18,7 @@ import Product from "./pages/product/Product";
 import Blogs from "./pages/blogs/Blogs";
 import BlogsUnit from "./pages/blogs-unit/BlogsUnit";
 import BlogPost from "./pages/blogPost/BlogPost";
+import Service from "./pages/service/Service";
 
 const App = () => {
   const { t } = useTranslation();
@@ -66,7 +66,7 @@ const App = () => {
           element: <WishList />,
         },
         {
-          path: "/shop/${id}",
+          path: "/shop/:id",
           element: <Product />,
         },
         {
@@ -88,6 +88,10 @@ const App = () => {
         {
           path: "/blogs/:id",
           element: <BlogPost />,
+        },
+        {
+          path: "/services/:id",
+          element: <Service />,
         },
       ],
     },

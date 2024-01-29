@@ -3,25 +3,11 @@ import "./offercarousel.scss";
 import ReactStars from "react-rating-stars-component";
 import { Link } from "react-router-dom";
 import ProductExpiry from "../productExpiry/ProductExpiry";
+import { useContext } from "react";
+import { ShopContext } from "../../context/ShopContext";
 
 const OfferCarousel = ({ activeObslideIndex, offercarousel }) => {
-  const calculateTimeDifference = (date_info) => {
-    const current_date = new Date();
-    const end_date = new Date(date_info);
-
-    const timeDifferInMilliSec = Math.abs(end_date - current_date);
-
-    const days = Math.floor(timeDifferInMilliSec / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (timeDifferInMilliSec % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    const minutes = Math.floor(
-      (timeDifferInMilliSec % (1000 * 60 * 60)) / (1000 * 60)
-    );
-    const seconds = Math.floor((timeDifferInMilliSec % (1000 * 60)) / 1000);
-
-    return { days, hours, minutes, seconds };
-  };
+  const { calculateTimeDifference } = useContext(ShopContext);
 
   return (
     <Link to="products/:id">

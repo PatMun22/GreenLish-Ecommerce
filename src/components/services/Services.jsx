@@ -20,7 +20,7 @@ const Services = () => {
         const ServiceIcons = serviceIcons[index];
         return (
           <div className="service-box" key={service.id}>
-            <Link to="/services/:id">
+            <Link to={`/services/${service.id}`}>
               <div className="icon-box">
                 <ServiceIcons className="serviceIcon" />
               </div>

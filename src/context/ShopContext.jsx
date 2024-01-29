@@ -235,6 +235,24 @@ const ShopContextProvider = (props) => {
     });
   };
 
+  const calculateTimeDifference = (date_info) => {
+    const current_date = new Date();
+    const end_date = new Date(date_info);
+
+    const timeDifferInMilliSec = Math.abs(end_date - current_date);
+
+    const days = Math.floor(timeDifferInMilliSec / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (timeDifferInMilliSec % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor(
+      (timeDifferInMilliSec % (1000 * 60 * 60)) / (1000 * 60)
+    );
+    const seconds = Math.floor((timeDifferInMilliSec % (1000 * 60)) / 1000);
+
+    return { days, hours, minutes, seconds };
+  };
+
   const contextValue = {
     cartItems,
     addToCart,
@@ -272,6 +290,7 @@ const ShopContextProvider = (props) => {
     isHovering,
     handleMouseEnter,
     handleMouseLeave,
+    calculateTimeDifference,
   };
 
   return (
