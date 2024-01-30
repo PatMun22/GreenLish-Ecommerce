@@ -12,14 +12,17 @@ const Reviews = () => {
   return (
     <div className="reviews">
       <div className="review-comment">
-        {reviews.map((review) => (
+        {reviews.slice(0, 2).map((review) => (
           <div className="review-container" key={review.name}>
-            <img src={review.image} alt="reviewer image" />
+            <div className="image-container">
+              <img src={review.image} alt="reviewer image" />
+            </div>
             <div className="review-details">
               <h3>{review.name}</h3>
               <div className="review-date-rating">
                 <p>{review.date}</p>
                 <ReactStars
+                  classNames="stars"
                   count={5}
                   size={20}
                   color="#25bd01"
@@ -28,6 +31,7 @@ const Reviews = () => {
                 />
               </div>
               <p>{review.info}</p>
+              <button>Reply</button>
             </div>
           </div>
         ))}
