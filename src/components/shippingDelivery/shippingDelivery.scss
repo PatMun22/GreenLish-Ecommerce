@@ -1,4 +1,13 @@
 @import "../../styles/variables.scss";
 
 .shipping-delivery-container {
+  display: flex;
+
+  .shipping-delivery-image {
+    flex: 1;
+  }
+
+  .shipping-delivery-details {
+    flex: 1;
+  }
 }

@@ -12,7 +12,7 @@ const Reviews = () => {
   return (
     <div className="reviews">
       <div className="review-comment">
-        {reviews.slice(0, 2).map((review) => (
+        {reviews.slice(0, 3).map((review) => (
           <div className="review-container" key={review.name}>
             <div className="image-container">
               <img src={review.image} alt="reviewer image" />
@@ -42,27 +42,30 @@ const Reviews = () => {
       </div>
 
       <div className="review-comment-input">
-        <h2>Add a review</h2>
+        <h2>Add a Review</h2>
         <p>
           Your email address will not be published. Required fields are marked.
         </p>
-        <CiStar />
-        <CiStar />
-        <CiStar />
-        <CiStar />
-        <CiStar />
+        <CiStar className="star" />
+        <CiStar className="star" />
+        <CiStar className="star" />
+        <CiStar className="star" />
+        <CiStar className="star" />
         <form action="">
-          <fieldset>
-            <legend>Name</legend>
-            <input type="text" />
-          </fieldset>
-          <fieldset>
-            <legend>Email</legend>
-            <input type="email" />
-          </fieldset>
+          <div className="name-email">
+            <fieldset>
+              <legend>Name</legend>
+              <input type="text" />
+            </fieldset>
+            <fieldset>
+              <legend>Email</legend>
+              <input type="email" />
+            </fieldset>
+          </div>
+
           <fieldset>
             <legend>Your Review</legend>
-            <input type="text" />
+            <textarea name="" id="" cols="30" rows="3"></textarea>
           </fieldset>
 
           <label htmlFor="">

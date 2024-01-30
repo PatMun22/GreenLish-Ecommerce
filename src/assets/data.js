@@ -1500,7 +1500,7 @@ export const singleProducts = [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
       subtopic: "Dreamline courier service",
       timeline: {
-        title: "time schedule",
+        time_title: "time schedule",
         time_schedule: [
           { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
@@ -1587,7 +1587,7 @@ export const singleProducts = [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
       subtopic: "Dreamline courier service",
       timeline: {
-        title: "time schedule",
+        time_title: "time schedule",
         time_schedule: [
           { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
@@ -1674,7 +1674,7 @@ export const singleProducts = [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
       subtopic: "Dreamline courier service",
       timeline: {
-        title: "time schedule",
+        time_title: "time schedule",
         time_schedule: [
           { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
@@ -1761,7 +1761,7 @@ export const singleProducts = [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
       subtopic: "Dreamline courier service",
       timeline: {
-        title: "time schedule",
+        time_title: "time schedule",
         time_schedule: [
           { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
@@ -1848,7 +1848,7 @@ export const singleProducts = [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
       subtopic: "Dreamline courier service",
       timeline: {
-        title: "time schedule",
+        time_title: "time schedule",
         time_schedule: [
           { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
@@ -1935,7 +1935,7 @@ export const singleProducts = [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
       subtopic: "Dreamline courier service",
       timeline: {
-        title: "time schedule",
+        time_title: "time schedule",
         time_schedule: [
           { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
@@ -2022,7 +2022,7 @@ export const singleProducts = [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
       subtopic: "Dreamline courier service",
       timeline: {
-        title: "time schedule",
+        time_title: "time schedule",
         time_schedule: [
           { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
@@ -2109,7 +2109,7 @@ export const singleProducts = [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
       subtopic: "Dreamline courier service",
       timeline: {
-        title: "time schedule",
+        time_title: "time schedule",
         time_schedule: [
           { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
@@ -2196,7 +2196,7 @@ export const singleProducts = [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
       subtopic: "Dreamline courier service",
       timeline: {
-        title: "time schedule",
+        time_title: "time schedule",
         time_schedule: [
           { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
@@ -2283,7 +2283,7 @@ export const singleProducts = [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
       subtopic: "Dreamline courier service",
       timeline: {
-        title: "time schedule",
+        time_title: "time schedule",
         time_schedule: [
           { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
@@ -2370,7 +2370,7 @@ export const singleProducts = [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
       subtopic: "Dreamline courier service",
       timeline: {
-        title: "time schedule",
+        time_title: "time schedule",
         time_schedule: [
           { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
@@ -2458,7 +2458,7 @@ export const singleProducts = [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio unde hic rerum rem consectetur at numquam molestias atque alias.",
       subtopic: "Dreamline courier service",
       timeline: {
-        timeline_title: "time schedule",
+        time_title: "time schedule",
         time_schedule: [
           { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },

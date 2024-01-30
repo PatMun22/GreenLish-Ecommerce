@@ -1,0 +1,9 @@
+.shipping-delivery-container {
+  display: flex;
+}
+.shipping-delivery-container .shipping-delivery-image {
+  flex: 1;
+}
+.shipping-delivery-container .shipping-delivery-details {
+  flex: 1;
+}

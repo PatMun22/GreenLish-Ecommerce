@@ -3,8 +3,8 @@ import "./productDetailCategorisation.scss";
 import { ShopContext } from "../../context/ShopContext";
 // import Description from "../description/Description";
 // import AdditionalInformation from "../AdditionalInformation/AdditionalInformation";
-import Reviews from "../reviews/Reviews";
-// import ShippingDelivery from "../shippingDelivery/ShippingDelivery";
+// import Reviews from "../reviews/Reviews";
+import ShippingDelivery from "../shippingDelivery/ShippingDelivery";
 // import Vendor from "../vendor/Vendor";
 
 const ProductDetailCategorisation = () => {
@@ -51,7 +51,7 @@ const ProductDetailCategorisation = () => {
           Vendor
         </button>
       </div>
-      <Reviews />
+      <ShippingDelivery />
     </div>
   );
 };
