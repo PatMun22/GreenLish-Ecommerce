@@ -1,0 +1,24 @@
+.reviews {
+  display: flex;
+}
+.reviews .review-comment {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.reviews .review-comment .review-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.reviews .review-comment .review-container img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.reviews .review-comment-input {
+  flex: 1;
+}

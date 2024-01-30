@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+
+.reviews {
+  display: flex;
+
+  .review-comment {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .review-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .review-comment-input {
+    flex: 1;
+  }
+}

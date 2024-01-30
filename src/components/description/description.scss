@@ -1,0 +1,48 @@
+@import "../../styles/variables.scss";
+
+.description-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+
+  .description-text {
+    flex: 3;
+    border-right: 2px solid $section-bg;
+    padding-right: 30px;
+
+    h1 {
+      margin-bottom: 20px;
+      color: $main-bue;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+
+    p {
+      line-height: 20px;
+      font-size: 14px;
+      color: $main-bue;
+      margin-bottom: 15px;
+    }
+
+    h4 {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: lowercase;
+      color: $main-bue;
+    }
+  }
+
+  .description-image {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 80%;
+      object-fit: cover;
+    }
+  }
+}
