@@ -1,7 +1,13 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { createContext, useState } from "react";
-import { blogs, commentSocials, recommendedProducts } from "../assets/data";
+import {
+  blogs,
+  commentSocials,
+  recommendedProducts,
+  singleProducts,
+} from "../assets/data";
+import { useParams } from "react-router-dom";
 
 export const ShopContext = createContext(null);
 
@@ -253,6 +259,14 @@ const ShopContextProvider = (props) => {
     return { days, hours, minutes, seconds };
   };
 
+  //Product single pages
+
+  const { id } = useParams();
+
+  const product_id = parseInt(id);
+
+  const product = singleProducts.find((item) => item.id === product_id);
+
   const contextValue = {
     cartItems,
     addToCart,
@@ -291,6 +305,7 @@ const ShopContextProvider = (props) => {
     handleMouseEnter,
     handleMouseLeave,
     calculateTimeDifference,
+    product,
   };
 
   return (
