@@ -3,7 +3,89 @@
 }
 .shipping-delivery-container .shipping-delivery-image {
   flex: 1;
+  height: inherit;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.shipping-delivery-container .shipping-delivery-image img {
+  width: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .shipping-delivery-container .shipping-delivery-details {
   flex: 1;
+}
+.shipping-delivery-container .shipping-delivery-details h3 {
+  font-size: 22px;
+  color: #121935;
+  text-transform: capitalize;
+  word-spacing: 5px;
+  margin-bottom: 10px;
+}
+.shipping-delivery-container .shipping-delivery-details p {
+  font-size: 14px;
+  line-height: 20px;
+  word-spacing: 3px;
+  color: #121935;
+  margin-bottom: 15px;
+}
+.shipping-delivery-container .shipping-delivery-details h5 {
+  font-size: 16px;
+  color: #121935;
+  word-spacing: 2px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+.shipping-delivery-container .shipping-delivery-details .time-schedule h4 {
+  text-transform: capitalize;
+  color: #121935;
+  font-size: 18px;
+  margin-bottom: 5px;
+  word-spacing: 3px;
+  line-height: 20px;
+}
+.shipping-delivery-container .shipping-delivery-details .time-schedule .time-frame {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.shipping-delivery-container .shipping-delivery-details .time-schedule .time-frame h6 {
+  font-size: 16px;
+  color: #121935;
+  line-height: 20px;
+  width: 150px;
+  margin-right: 20px;
+  font-weight: 500;
+}
+.shipping-delivery-container .shipping-delivery-details .time-schedule .time-frame span {
+  font-weight: 600;
+  font-weight: 14px;
+  margin-right: 20px;
+}
+.shipping-delivery-container .shipping-delivery-details .time-schedule .time-frame p {
+  margin-top: 17px;
+}
+.shipping-delivery-container .shipping-delivery-details .advisory {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.shipping-delivery-container .shipping-delivery-details .advisory strong {
+  font-size: 16px;
+}
+.shipping-delivery-container .shipping-delivery-details .advisory p {
+  font-size: 14px;
+  line-height: 15px;
+  word-spacing: normal;
+  color: #121935;
+  margin-bottom: 5px;
+}
+.shipping-delivery-container .shipping-delivery-details .advisory-p {
+  font-size: 14px;
+  word-spacing: normal;
+}
+.shipping-delivery-container .shipping-delivery-details .advisory-p span {
+  color: #25bd01;
 }

@@ -29,13 +29,24 @@ const ShippingDelivery = () => {
 
           <div className="time-frame">
             <h6>{time_schedule[0].day}</h6> <span>:</span>
-            <p>{time_schedule[0].time}</p>
+            <p>({time_schedule[0].time})</p>
           </div>
           <div className="time-frame">
             <h6>{time_schedule[1].day}</h6> <span>:</span>
-            <p>{time_schedule[1].time}</p>
+            <p>({time_schedule[1].time})</p>
           </div>
         </div>
+        <div className="advisory">
+          <strong>Note:</strong>
+          <p>
+            Friday is a closed day and during unexpected natural disaster there
+            may be late delivery.
+          </p>
+        </div>
+        <p className="advisory-p">
+          For any Query Please Call: <span>+254 719710778</span> or Mail{" "}
+          <span>pwafula62@gmail.com.</span>
+        </p>
       </div>
     </div>
   );

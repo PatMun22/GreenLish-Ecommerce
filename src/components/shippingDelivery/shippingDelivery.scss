@@ -5,9 +5,106 @@
 
   .shipping-delivery-image {
     flex: 1;
+    height: inherit;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    img {
+      width: 70%;
+      object-fit: cover;
+    }
   }
 
   .shipping-delivery-details {
     flex: 1;
+
+    h3 {
+      font-size: 22px;
+      color: $main-bue;
+      text-transform: capitalize;
+      word-spacing: 5px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      word-spacing: 3px;
+      color: $main-bue;
+      margin-bottom: 15px;
+    }
+
+    h5 {
+      font-size: 16px;
+      color: $main-bue;
+      word-spacing: 2px;
+      line-height: 20px;
+      margin-bottom: 5px;
+      text-transform: capitalize;
+    }
+
+    .time-schedule {
+      h4 {
+        text-transform: capitalize;
+        color: $main-bue;
+        font-size: 18px;
+        margin-bottom: 5px;
+        word-spacing: 3px;
+        line-height: 20px;
+      }
+
+      .time-frame {
+        display: flex;
+        align-items: center;
+        height: 30px;
+
+        h6 {
+          font-size: 16px;
+          color: $main-bue;
+          line-height: 20px;
+          width: 150px;
+          margin-right: 20px;
+          font-weight: 500;
+        }
+
+        span {
+          font-weight: 600;
+          font-weight: 14px;
+          margin-right: 20px;
+        }
+
+        p {
+          margin-top: 17px;
+        }
+      }
+    }
+
+    .advisory {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+
+      strong {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 15px;
+        word-spacing: normal;
+        color: $main-bue;
+        margin-bottom: 5px;
+      }
+    }
+
+    .advisory-p {
+      font-size: 14px;
+      word-spacing: normal;
+
+      span {
+        color: $main-green;
+      }
+    }
   }
 }
