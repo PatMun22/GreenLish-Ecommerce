@@ -25,7 +25,7 @@ const ProductSummary = () => {
     old_price,
     product_infor,
     reviews,
-    quantity,
+    vendor_info: { vendor_details },
   } = product;
 
   return (
@@ -53,7 +53,7 @@ const ProductSummary = () => {
         </div>
       </div>
       <div className="product-text">
-        {quantity > 0 ? (
+        {parseInt(vendor_details[1].total_products) > 0 ? (
           <div className="in-stock">in stock</div>
         ) : (
           <div className="out-of-stock">out of stock</div>
