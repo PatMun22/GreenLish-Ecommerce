@@ -4,8 +4,8 @@ import { ShopContext } from "../../context/ShopContext";
 // import Description from "../description/Description";
 // import AdditionalInformation from "../AdditionalInformation/AdditionalInformation";
 // import Reviews from "../reviews/Reviews";
-import ShippingDelivery from "../shippingDelivery/ShippingDelivery";
-// import Vendor from "../vendor/Vendor";
+// import ShippingDelivery from "../shippingDelivery/ShippingDelivery";
+import Vendor from "../vendor/Vendor";
 
 const ProductDetailCategorisation = () => {
   const { currentPage, setCurrentPage } = useState("description");
@@ -48,10 +48,10 @@ const ProductDetailCategorisation = () => {
           className={`btn ${currentPage ? "active" : ""}`}
           onClick={() => handlePageChange("vendor")}
         >
-          Vendor
+          Vendor Info
         </button>
       </div>
-      <ShippingDelivery />
+      <Vendor />
     </div>
   );
 };

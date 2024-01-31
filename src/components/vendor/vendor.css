@@ -1,0 +1,89 @@
+.vendor-container {
+  display: flex;
+}
+.vendor-container .vendor-details {
+  flex: 1;
+}
+.vendor-container .vendor-details h1 {
+  font-size: 20px;
+  color: #121935;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.vendor-container .vendor-details .vendor-location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #121935;
+  opacity: 0.6;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.vendor-container .vendor-details .store-detais {
+  font-size: 16px;
+  color: #121935;
+  line-height: 20px;
+}
+.vendor-container .vendor-details .vendor-details {
+  margin: 10px 0;
+  margin-bottom: 20px;
+}
+.vendor-container .vendor-details .vendor-details .vendor-detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.vendor-container .vendor-details .vendor-details .vendor-detail h4 {
+  width: 150px;
+  margin-right: 20px;
+  color: #121935;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.vendor-container .vendor-details .vendor-details .vendor-detail span {
+  margin-right: 20px;
+}
+.vendor-container .vendor-details .vendor-details .vendor-detail p {
+  color: #121935;
+  font-size: 14px;
+}
+.vendor-container .vendor-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vendor-container .vendor-image .image-container {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: relative;
+}
+.vendor-container .vendor-image .image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.vendor-container .vendor-image .image-container .gradient-backg {
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: linear-gradient(-60deg, #43e97b, #38f9d7);
+  z-index: 10;
+}
+.vendor-container .vendor-image .image-container .inherited-bg {
+  position: absolute;
+  bottom: -37px;
+  left: 25px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  background-color: white;
+  transform: skew(30deg) rotate(-15deg);
+  border-radius: 38px;
+}

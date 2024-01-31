@@ -1502,7 +1502,7 @@ export const singleProducts = [
       timeline: {
         time_title: "time schedule",
         time_schedule: [
-          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Saturday - Monday", time: "08.30 am - 05.30 pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
         ],
       },
@@ -1514,11 +1514,11 @@ export const singleProducts = [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, architecto. Quidem voluptate explicabo illo voluptatem.",
       image: vendor1,
       vendor_details: [
-        { store_name: "sale office" },
+        { store_name: "Sale Office" },
         { total_products: "22,340" },
-        { distribution_area: "Nairobi metropolitan region" },
+        { distribution_area: "Nairobi Metropolitan Region" },
         { average_revenue: "3,750,000" },
-        { product_category: "food & drinks" },
+        { product_category: "Food & Drinks" },
         { phone: "+254 720 783 654" },
         { email: "healthyfoods@gmail.com" },
         { website: "www.dhfoods.com" },
@@ -1589,7 +1589,7 @@ export const singleProducts = [
       timeline: {
         time_title: "time schedule",
         time_schedule: [
-          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Saturday - Monday", time: "08.30 am - 05.30 pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
         ],
       },
@@ -1676,7 +1676,7 @@ export const singleProducts = [
       timeline: {
         time_title: "time schedule",
         time_schedule: [
-          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Saturday - Monday", time: "08.30 am - 05.30 pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
         ],
       },
@@ -1763,7 +1763,7 @@ export const singleProducts = [
       timeline: {
         time_title: "time schedule",
         time_schedule: [
-          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Saturday - Monday", time: "08.30 am - 05.30 pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
         ],
       },
@@ -1850,7 +1850,7 @@ export const singleProducts = [
       timeline: {
         time_title: "time schedule",
         time_schedule: [
-          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Saturday - Monday", time: "08.30 am - 05.30 pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
         ],
       },
@@ -1937,7 +1937,7 @@ export const singleProducts = [
       timeline: {
         time_title: "time schedule",
         time_schedule: [
-          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Saturday - Monday", time: "08.30 am - 05.30 pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
         ],
       },
@@ -2024,7 +2024,7 @@ export const singleProducts = [
       timeline: {
         time_title: "time schedule",
         time_schedule: [
-          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Saturday - Monday", time: "08.30 am - 05.30 pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
         ],
       },
@@ -2111,7 +2111,7 @@ export const singleProducts = [
       timeline: {
         time_title: "time schedule",
         time_schedule: [
-          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Saturday - Monday", time: "08.30 am - 05.30 pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
         ],
       },
@@ -2198,7 +2198,7 @@ export const singleProducts = [
       timeline: {
         time_title: "time schedule",
         time_schedule: [
-          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Saturday - Monday", time: "08.30 am - 05.30 pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
         ],
       },
@@ -2285,7 +2285,7 @@ export const singleProducts = [
       timeline: {
         time_title: "time schedule",
         time_schedule: [
-          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Saturday - Monday", time: "08.30 am - 05.30 pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
         ],
       },
@@ -2372,7 +2372,7 @@ export const singleProducts = [
       timeline: {
         time_title: "time schedule",
         time_schedule: [
-          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Saturday - Monday", time: "08.30 am - 05.30 pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
         ],
       },
@@ -2460,7 +2460,7 @@ export const singleProducts = [
       timeline: {
         time_title: "time schedule",
         time_schedule: [
-          { day: "Saturday - Monday", time: "08.30 am - 05.30pm" },
+          { day: "Saturday - Monday", time: "08.30 am - 05.30 pm" },
           { day: "Tuesday - Friday", time: "10.30 am - 04.30 pm" },
         ],
       },

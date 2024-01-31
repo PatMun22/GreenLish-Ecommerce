@@ -44,7 +44,7 @@ const ShippingDelivery = () => {
           </p>
         </div>
         <p className="advisory-p">
-          For any Query Please Call: <span>+254 719710778</span> or Mail{" "}
+          For any Query Please Call: <span>+254 719710778</span> or Mail
           <span>pwafula62@gmail.com.</span>
         </p>
       </div>

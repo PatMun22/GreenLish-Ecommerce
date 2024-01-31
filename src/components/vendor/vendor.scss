@@ -1,4 +1,104 @@
 @import "../../styles/variables.scss";
 
 .vendor-container {
+  display: flex;
+
+  .vendor-details {
+    flex: 1;
+
+    h1 {
+      font-size: 20px;
+      color: $main-bue;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+    }
+
+    .vendor-location {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: $main-bue;
+      opacity: 0.6;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .store-detais {
+      font-size: 16px;
+      color: $main-bue;
+      line-height: 20px;
+    }
+
+    .vendor-details {
+      margin: 10px 0;
+      margin-bottom: 20px;
+
+      .vendor-detail {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        h4 {
+          width: 150px;
+          margin-right: 20px;
+          color: $main-bue;
+          font-size: 16px;
+          text-transform: capitalize;
+        }
+
+        span {
+          margin-right: 20px;
+        }
+
+        p {
+          color: $main-bue;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .vendor-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .image-container {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .gradient-backg {
+        position: absolute;
+        top: 10px;
+        left: -20px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background: linear-gradient(-60deg, $fade-green, $fade-blue);
+        z-index: 10;
+      }
+
+      .inherited-bg {
+        position: absolute;
+        bottom: -37px;
+        left: 25px;
+        height: 100px;
+        width: 100px;
+        z-index: 10;
+        background-color: white;
+        transform: skew(30deg) rotate(-15deg);
+        border-radius: 38px;
+      }
+    }
+  }
 }
