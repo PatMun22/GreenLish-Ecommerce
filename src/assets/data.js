@@ -1450,6 +1450,7 @@ export const singleProducts = [
     Cartegory: "food & Vegetable",
     new_price: "50.00",
     old_price: "75.00",
+    category: "popular",
     description: {
       topic: "Chapati salad",
       paragraph1:
@@ -1537,6 +1538,7 @@ export const singleProducts = [
     Cartegory: "food & Vegetable",
     new_price: "150.00",
     old_price: "200.00",
+    category: "recommended",
     description: {
       topic: "Fresh Organic Pineapple",
       paragraph1:
@@ -1624,6 +1626,7 @@ export const singleProducts = [
     Cartegory: "food & Vegetable",
     new_price: "250.00",
     old_price: "300.00",
+    category: "popular",
     description: {
       topic: "Fresh Organic Pineapple",
       paragraph1:
@@ -1711,6 +1714,7 @@ export const singleProducts = [
     Cartegory: "food & Vegetable",
     new_price: "350.00",
     old_price: "375.00",
+    category: "new arrival",
     description: {
       topic: "Fresh Organic Avocado",
       paragraph1:
@@ -1798,6 +1802,7 @@ export const singleProducts = [
     Cartegory: "food & Vegetable",
     new_price: "350.00",
     old_price: "400.00",
+    category: "most popular",
     description: {
       topic: "Fresh Organic Oranges",
       paragraph1:
@@ -1885,6 +1890,7 @@ export const singleProducts = [
     Cartegory: "food & Vegetable",
     new_price: "150.00",
     old_price: "180.00",
+    category: "recommended",
     description: {
       topic: "Fresh Organic Bell Pepper",
       paragraph1:
@@ -1972,6 +1978,7 @@ export const singleProducts = [
     Cartegory: "food & Vegetable",
     new_price: "210.00",
     old_price: "250.00",
+    category: "new arrival",
     description: {
       topic: "Cotton Candy Grapes",
       paragraph1:
@@ -2059,6 +2066,7 @@ export const singleProducts = [
     Cartegory: "food & Vegetable",
     new_price: "350.00",
     old_price: "400.00",
+    category: "most popular",
     description: {
       topic: "Fresh Fried Fish",
       paragraph1:
@@ -2146,6 +2154,7 @@ export const singleProducts = [
     Cartegory: "food & Vegetable",
     new_price: "200.00",
     old_price: "270.00",
+    category: "new arrival",
     description: {
       topic: "Fresh Broyler Chicken",
       paragraph1:
@@ -2233,6 +2242,7 @@ export const singleProducts = [
     Cartegory: "food & Vegetable",
     new_price: "350.00",
     old_price: "400.00",
+    category: "popular",
     description: {
       topic: "Fresh Organic Apple",
       paragraph1:
@@ -2320,6 +2330,7 @@ export const singleProducts = [
     Cartegory: "food & Vegetable",
     new_price: "100.00",
     old_price: "120.00",
+    category: "new arrival",
     description: {
       topic: "Fresh Organic Berries",
       paragraph1:
@@ -2408,6 +2419,7 @@ export const singleProducts = [
     Cartegory: "food & Vegetable",
     new_price: "300.00",
     old_price: "350.00",
+    category: "popular",
     description: {
       topic: "Fresh Organic Cabbage",
       paragraph1:

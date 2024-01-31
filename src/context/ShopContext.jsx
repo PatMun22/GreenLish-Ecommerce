@@ -33,6 +33,7 @@ const ShopContextProvider = (props) => {
   const [isHovering, setIsHovering] = useState(
     Array(commentSocials.length).fill(false)
   );
+  const [currentView, setCurrentView] = useState("description");
 
   // Filtering products according to cartegory
 
@@ -306,6 +307,8 @@ const ShopContextProvider = (props) => {
     handleMouseLeave,
     calculateTimeDifference,
     product,
+    currentView,
+    setCurrentView,
   };
 
   return (

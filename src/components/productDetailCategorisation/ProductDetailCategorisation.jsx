@@ -1,57 +1,68 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import "./productDetailCategorisation.scss";
 import { ShopContext } from "../../context/ShopContext";
-// import Description from "../description/Description";
-// import AdditionalInformation from "../AdditionalInformation/AdditionalInformation";
-// import Reviews from "../reviews/Reviews";
-// import ShippingDelivery from "../shippingDelivery/ShippingDelivery";
+import Description from "../description/Description";
+import AdditionalInformation from "../AdditionalInformation/AdditionalInformation";
+import Reviews from "../reviews/Reviews";
+import ShippingDelivery from "../shippingDelivery/ShippingDelivery";
 import Vendor from "../vendor/Vendor";
+import RelatedProducts from "../relatedProducts/RelatedProducts";
 
 const ProductDetailCategorisation = () => {
-  const { currentPage, setCurrentPage } = useState("description");
-  const { product } = useContext(ShopContext);
+  const { product, currentView, setCurrentView } = useContext(ShopContext);
 
   const { reviews } = product;
-
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
 
   return (
     <div className="product-detail-categorisation">
       <div className="buttons-container">
         <button
-          className={`btn ${currentPage ? "active" : ""}`}
-          onClick={() => handlePageChange("description")}
+          className={`page-btn ${
+            currentView === "description" ? "active-btn" : ""
+          }`}
+          onClick={() => setCurrentView("description")}
         >
           Description
         </button>
         <button
-          className={`btn ${currentPage ? "active" : ""}`}
-          onClick={() => handlePageChange("additional information")}
+          className={`page-btn ${
+            currentView === "additional" ? "active-btn" : ""
+          }`}
+          onClick={() => setCurrentView("additional")}
         >
           Additional Information
         </button>
         <button
-          className={`btn ${currentPage ? "active" : ""}`}
-          onClick={() => handlePageChange("reviews")}
+          className={`page-btn ${
+            currentView === "reviews" ? "active-btn" : ""
+          }`}
+          onClick={() => setCurrentView("reviews")}
         >
           Reviews ({reviews.length})
         </button>
         <button
-          className={`btn ${currentPage ? "active" : ""}`}
-          onClick={() => handlePageChange("shipping & delivery")}
+          className={`page-btn ${
+            currentView === "shipping" ? "active-btn" : ""
+          }`}
+          onClick={() => setCurrentView("shipping")}
         >
           Shipping & Delivery
         </button>
         <button
-          className={`btn ${currentPage ? "active" : ""}`}
-          onClick={() => handlePageChange("vendor")}
+          className={`page-btn ${currentView === "vendor" ? "active-btn" : ""}`}
+          onClick={() => setCurrentView("vendor")}
         >
           Vendor Info
         </button>
       </div>
-      <Vendor />
+      <div className="page-container">
+        {currentView === "description" && <Description />}
+        {currentView === "additional" && <AdditionalInformation />}
+        {currentView === "reviews" && <Reviews />}
+        {currentView === "shipping" && <ShippingDelivery />}
+        {currentView === "vendor" && <Vendor />}
+      </div>
+      <RelatedProducts />
     </div>
   );
 };

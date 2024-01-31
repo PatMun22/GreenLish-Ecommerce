@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+
+.related-products {
+  margin-top: 50px;
+
+  h1 {
+    border-top: 2px solid $section-bg;
+    border-bottom: 2px solid $section-bg;
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0;
+    text-align: left;
+    color: $main-bue;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .related-products-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 300px;
+    column-gap: 10px;
+    row-gap: 30px;
+  }
+}
