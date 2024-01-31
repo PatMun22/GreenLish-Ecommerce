@@ -13,6 +13,11 @@
   padding: 10px 15px;
   width: calc(100vw - 30rem);
 }
+.navbar .active-link {
+  color: #25bd01;
+  border-right: 2px solid #25bd01;
+  padding-right: 15px;
+}
 .navbar .shopping_menu {
   display: flex;
   align-items: center;
@@ -23,6 +28,11 @@
   display: flex;
   align-items: center;
   gap: 5px;
+}
+.navbar .shopping_menu .active-link {
+  color: #25bd01;
+  border-right: 2px solid #25bd01;
+  padding-right: 15px;
 }
 .navbar button {
   background-color: #25bd01;

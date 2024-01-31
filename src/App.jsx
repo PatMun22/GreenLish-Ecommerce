@@ -19,6 +19,10 @@ import Blogs from "./pages/blogs/Blogs";
 import BlogsUnit from "./pages/blogs-unit/BlogsUnit";
 import BlogPost from "./pages/blogPost/BlogPost";
 import Service from "./pages/service/Service";
+import Packages from "./pages/packages/Packages";
+import Pages from "./pages/pages/Pages";
+import Vendors from "./pages/vendors/Vendors";
+import Contacts from "./pages/contacts/Contacts";
 
 const App = () => {
   const { t } = useTranslation();
@@ -36,6 +40,7 @@ const App = () => {
       </main>
     );
   };
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -92,6 +97,22 @@ const App = () => {
         {
           path: "/services/:id",
           element: <Service />,
+        },
+        {
+          path: "/packages",
+          element: <Packages />,
+        },
+        {
+          path: "/vendors",
+          element: <Vendors />,
+        },
+        {
+          path: "/pages",
+          element: <Pages />,
+        },
+        {
+          path: "/contacts",
+          element: <Contacts />,
         },
       ],
     },

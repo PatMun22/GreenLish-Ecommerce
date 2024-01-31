@@ -15,6 +15,12 @@
   padding: 10px 15px;
   width: calc(100vw - 30rem);
 
+  .active-link {
+    color: $main-green;
+    border-right: 2px solid $main-green;
+    padding-right: 15px;
+  }
+
   .shopping_menu {
     display: flex;
     align-items: center;
@@ -25,6 +31,12 @@
       display: flex;
       align-items: center;
       gap: 5px;
+    }
+
+    .active-link {
+      color: $main-green;
+      border-right: 2px solid $main-green;
+      padding-right: 15px;
     }
   }
 

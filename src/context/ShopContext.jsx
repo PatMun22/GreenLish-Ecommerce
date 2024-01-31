@@ -5,6 +5,7 @@ import {
   blogs,
   commentSocials,
   recommendedProducts,
+  services,
   singleProducts,
 } from "../assets/data";
 import { useParams } from "react-router-dom";
@@ -268,6 +269,14 @@ const ShopContextProvider = (props) => {
 
   const product = singleProducts.find((item) => item.id === product_id);
 
+  //Service single pages
+
+  const { serviceid } = useParams();
+
+  const service_id = parseInt(serviceid);
+
+  const service = services.find((service) => service.id === service_id);
+
   const contextValue = {
     cartItems,
     addToCart,
@@ -309,6 +318,7 @@ const ShopContextProvider = (props) => {
     product,
     currentView,
     setCurrentView,
+    service,
   };
 
   return (
