@@ -3,7 +3,7 @@ import SingleService from "../../components/singleService/SingleService";
 
 const Service = () => {
   return (
-    <div>
+    <div className="service">
       <SingleService />
     </div>
   );

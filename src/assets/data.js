@@ -221,21 +221,197 @@ export const services = [
     id: 1,
     h1: "free shipping",
     p: "on all orders over $99",
+    service_details: {
+      heading1: "Shipping Policy",
+      service_summary:
+        "At GreenLish Ltd, we are dedicated to providing a seamless shopping experience for our customers. Please take a moment to review our shipping policy.",
+      heading2: "Returns",
+      service_rates: [
+        { rate_heading: "Standard Shipping", rate: "5.99" },
+        { rate_heading: "Expedited Shipping", rate: "12.99" },
+      ],
+      free_shipping: {
+        shipping_title: "Free Shipping",
+        shipping_details:
+          "Enjoy free standard shipping on all orders over $99. This offer is automatically applied during checkout and is valid for orders shipped across the globe.",
+      },
+      processing_time: {
+        time_title: "Processing Time",
+        time_details:
+          "Orders are typically processed and shipped within 1-2 business days. Please note that processing times may be extended during peak seasons or promotional events.",
+      },
+      delivery_times: {
+        delivery_title: "Delivery Times",
+        delivery_details: [
+          { delivery_cart: "standard shipping", period: "5-7 business days" },
+          { delivery_cart: "Expedited Shipping", period: "2-3 business days" },
+          {
+            delivery_cart: "International Shipping",
+            period:
+              "We currently do not offer international shipping. We apologize for any inconvenience.",
+          },
+        ],
+      },
+      order_tracking: {
+        tracking_title: "Order Tracking",
+        tracking_details:
+          "Once your order has been shipped, you will receive a confirmation email with a tracking number. You can track the status of your shipment using the provided tracking information.",
+      },
+      shipping_address: {
+        address_title: "Shipping Address",
+        address_details:
+          "Please ensure that your shipping address is accurate and complete. We are not responsible for any delays or delivery issues caused by inaccurate address information.",
+      },
+      lost_packages: {
+        lost_title: "Lost or Stolen Packages",
+        lost_details:
+          "GreenLish Ltd is not responsible for lost or stolen packages. If you believe your package is lost or missing, please contact the shipping carrier to file a claim.",
+      },
+      returns_exchanges: {
+        return_title: "Returns and Exchanges",
+        return_details:
+          "For information about returns and exchanges, please refer to our Return Policy page.",
+      },
+    },
+    service_closure: {
+      paragraph1:
+        "If you have any questions or concerns regarding our shipping policy, please contact our customer service team at customer.service@greenlishltd.com.",
+      paragraph2: "Thank you for shopping with GreenLish Ltd!",
+    },
   },
   {
     id: 2,
     h1: "easy returns",
     p: "30 days return policy",
+    service_details: {
+      service_topic: "Return Policy",
+      service_summary:
+        "We want you to be completely satisfied with your purchase from GreenLish Ltd. If for any reason you are not satisfied, we are here to help. Please review our return policy below:",
+      heading2: "Returns",
+      return_listone:
+        "You have 7 calendar days to return an item from the date you received it.",
+      return_listtwo:
+        "To be eligible for a return, your item must be unused and in the same condition that you received it.",
+      return_listthree: "Your item must be in the original packaging.",
+      heading3: "Refunds",
+      refunds_listone:
+        " Once we receive your item, we will inspect it and notify you that we have received your returned item.",
+      refunds_listtwo:
+        "We will immediately notify you on the status of your refund after inspecting the item.",
+      refunds_listthree:
+        "If your return is approved, we will initiate a refund to your original method of payment.",
+      refunds_listfour:
+        "You will receive the credit within a certain amount of days, depending on your card issuer's policies.",
+      heading4: "Exchanges",
+      exchanges_listone:
+        "We do not currently offer exchanges. If you need a different size, color, or item, please place a new order.",
+      heading5: "Shipping",
+      shipping_listone:
+        "You will be responsible for paying for your own shipping costs for returning your item. Shipping costs are non-refundable.",
+      shipping_listtwo:
+        "If you receive a refund, the cost of return shipping will be deducted from your refund.",
+      heading6: "Damaged or Defective Items",
+      damaged_listone:
+        "f you receive a damaged or defective item, please contact us immediately.",
+      damaged_listtwo:
+        "We will provide instructions on how to return the item and will either send you a replacement or issue a refund.",
+    },
+    service_closure: {
+      paragraph1:
+        "If you have any questions or concerns regarding our shipping policy, please contact our customer service team at customer.service@greenlishltd.com.",
+      paragraph2: "Thank you for shopping with GreenLish Ltd!",
+    },
   },
   {
     id: 3,
     h1: "secure payment",
     p: "100% secure payment",
+    service_details: {
+      heading1: "Secure Payment Policy",
+      service_summary:
+        "At GreenLish Ltd, we take the security of your payment information seriously. Please review our secure payment policy to understand how we ensure a safe and secure payment process for our customers.",
+      heading2: "Secure Payment Methods",
+      paragraph1:
+        "We offer a variety of secure payment methods to provide you with a safe and convenient shopping experience. Our current accepted payment methods include:",
+      payment_listone: "Credit and Debit Cards (Visa, MasterCard,  Discover)",
+      payment_listtwo: "M-Pesa",
+      heading3: "Secure Payment Processing",
+      payment_paragraph1:
+        "All online transactions on our website are processed through secure and encrypted connections. We utilize industry-standard Secure Socket Layer (SSL) technology to ensure that your payment information is transmitted securely over the internet.",
+
+      heading4: "Credit Card Information",
+      credit_listone:
+        "We do not store your credit card information on our servers.",
+      credit_listtwo:
+        "Your credit card details are securely transmitted to our payment processor for authorization during the checkout process.",
+      credit_listthree:
+        "Our payment processor complies with Payment Card Industry Data Security Standard (PCI DSS) requirements.",
+
+      heading5: "Privacy and Data Protection",
+      privacy_listone:
+        "We respect your privacy and are committed to protecting your personal information.",
+      privacy_listtwo:
+        "We do not sell or share your payment details with third parties for marketing purposes.",
+      heading6: "Fraud Prevention",
+      fraud_listone:
+        "Our system includes advanced fraud prevention measures to identify and prevent unauthorized transactions.",
+      fraud_listtwo:
+        "In case of suspicious activity, we may contact you to verify your identity before processing the order.",
+      heading7: "Email Security",
+      email_listone:
+        "We will never request sensitive information such as your credit card details or login credentials via email.",
+      email_listtwo:
+        "Be cautious of phishing emails and only provide payment information through our secure checkout process on our official website.",
+    },
+    service_closure: {
+      paragraph1:
+        "If you have any questions or concerns regarding our shipping policy, please contact our customer service team at customer.service@greenlishltd.com.",
+      paragraph2: "Thank you for shopping with GreenLish Ltd!",
+    },
   },
   {
     id: 4,
     h1: "24/7 support",
     p: "dedicated support",
+    service_details: {
+      heading1: "24/7 Support Policy",
+      service_summary:
+        "At GreenLish Ltd, we are committed to providing around-the-clock support to ensure your satisfaction. Please review our support policy for information on how to contact us and what to expect when seeking assistance.",
+      heading2: "Contacting Support",
+
+      contact_listone:
+        "For general inquiries, product information, or assistance, you can contact our customer support team at [customer.service@example.com] 24 hours a day, 7 days a week.",
+      contact_listtwo:
+        "If you have a specific order-related question, please include your order number in the email for faster assistance.",
+      heading3: "Response Time",
+      response_listone:
+        "Our 24/7 customer support team is dedicated to responding promptly to all inquiries.",
+      response_listtwo:
+        "You can expect to receive a response within a few hours, even during weekends and holidays.",
+      heading4: "Issue Resolution",
+      issue_listone:
+        "Our goal is to resolve customer issues promptly and efficiently.",
+      issue_listtwo:
+        "If your inquiry requires further investigation, we will keep you informed of the progress and provide regular updates until the issue is resolved.",
+      heading5: "Returns and Refunds",
+      returnsRefunds_listone:
+        "For information about returns and refunds, please refer to our Return Policy page.",
+      returnsRefunds_listtwo:
+        "If you have questions about a specific return or refund, please contact our 24/7 support team.",
+      heading6: "Feedback",
+      fraud_listone:
+        "We value your feedback. If you have suggestions or comments about our products or services, please feel free to share them with us.",
+      heading7: "Escalation Process",
+      escalation_listone:
+        "If your concern is not resolved to your satisfaction, you may request to escalate the issue to a supervisor or manager.",
+      escalation_listtwo:
+        "Our team will guide you through the escalation process and ensure that your concern is addressed appropriately.",
+    },
+    service_closure: {
+      paragraph1:
+        "If you have any questions or concerns regarding our shipping policy, please contact our customer service team at customer.service@greenlishltd.com.",
+      paragraph2: "Thank you for shopping with GreenLish Ltd!",
+    },
   },
 ];
 
@@ -2324,7 +2500,7 @@ export const singleProducts = [
     image2: berries1,
     image3: berries2,
     image4: berries3,
-    title: "Fresh Organic Oranges",
+    title: "Fresh Organic Berries",
     product_infor:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet facere doloribus, aliquam voluptate excepturi, tenetur, officiis quo possimus neque sequi corporis? Inventore explicabo veritatis adipisci perspiciatis, consectetur earum assumenda?",
     Cartegory: "food & Vegetable",

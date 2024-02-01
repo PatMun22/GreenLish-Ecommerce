@@ -271,9 +271,7 @@ const ShopContextProvider = (props) => {
 
   //Service single pages
 
-  const { serviceid } = useParams();
-
-  const service_id = parseInt(serviceid);
+  const service_id = parseInt(id);
 
   const service = services.find((service) => service.id === service_id);
 
