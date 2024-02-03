@@ -2,4 +2,56 @@
 
 .single-service {
   width: 100%;
+
+  h1 {
+    color: $main-bue;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    text-decoration: double;
+    text-decoration-color: $main-bue;
+  }
+
+  p {
+    line-height: 15px;
+    color: $main-bue;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    line-height: 20px;
+    color: $main-bue;
+    font-style: 14px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+
+  .standard-rate,
+  .expedited-rate,
+  .standard_shipping,
+  .expedited_shipping {
+    display: flex;
+    align-items: center;
+
+    p {
+      width: 150px;
+      font-size: 18px;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 14px;
+
+      &:first-of-type {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 }

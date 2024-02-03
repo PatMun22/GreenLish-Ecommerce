@@ -1,3 +1,57 @@
 .single-service {
   width: 100%;
 }
+.single-service h1 {
+  color: #121935;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  -webkit-text-decoration: double;
+          text-decoration: double;
+  text-decoration-color: #121935;
+}
+.single-service p {
+  line-height: 15px;
+  color: #121935;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.single-service h3 {
+  line-height: 20px;
+  color: #121935;
+  font-style: 14px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.single-service .standard-rate,
+.single-service .expedited-rate,
+.single-service .standard_shipping,
+.single-service .expedited_shipping {
+  display: flex;
+  align-items: center;
+}
+.single-service .standard-rate p,
+.single-service .expedited-rate p,
+.single-service .standard_shipping p,
+.single-service .expedited_shipping p {
+  width: 150px;
+  font-size: 18px;
+}
+.single-service .standard-rate span,
+.single-service .expedited-rate span,
+.single-service .standard_shipping span,
+.single-service .expedited_shipping span {
+  font-weight: 600;
+  font-size: 14px;
+}
+.single-service .standard-rate span:first-of-type,
+.single-service .expedited-rate span:first-of-type,
+.single-service .standard_shipping span:first-of-type,
+.single-service .expedited_shipping span:first-of-type {
+  margin-right: 10px;
+}
+.single-service h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}

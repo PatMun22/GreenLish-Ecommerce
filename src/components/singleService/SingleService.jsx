@@ -55,11 +55,12 @@ const SingleService = () => {
       <h3>{heading2}</h3>
       <div className="standard-rate">
         <p>{listone}</p>
-        <span>{standard_rate}</span>
+        <span>:</span>
+        <span>Ksh. {standard_rate}</span>
       </div>
       <div className="expedited-rate">
-        <p>{listtwo}</p>
-        <span>{expedited_rate}</span>
+        <p>{listtwo}</p> <span>:</span>
+        <span>Ksh. {expedited_rate}</span>
       </div>
       <p>{listthree}</p>
       <h3>{heading3}</h3>
@@ -74,10 +75,12 @@ const SingleService = () => {
       <h3>{heading5}</h3>
       <div className="standard_shipping">
         <p>{listeleven}</p>
+        <span>:</span>
         <span>{standard_period}</span>
       </div>
       <div className="expedited_shipping">
         <p>{listtwelve}</p>
+        {service.id === 1 && <span>:</span>}
         <span>{expedited_period}</span>
       </div>
       <h5>{listthirteen}</h5>
