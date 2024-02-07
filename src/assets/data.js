@@ -201,7 +201,7 @@ export const carousels = [
 
 export const discounts = [
   {
-    id: 0,
+    id: 2,
     h1: "Fresh Pineapple",
     span: "25% discount",
     p: "FREE Delivery",
@@ -228,8 +228,8 @@ export const services = [
       heading2: "Service Rates",
       listone: "Standard Shipping",
       listtwo: "Expedited Shipping",
-      standard_rate: "5.99",
-      expedited_rate: "12.99",
+      standard_rate: "Ksh. 5.99",
+      expedited_rate: "Ksh. 12.99",
       listthree: "",
       heading3: "Free Shipping",
       listfour:

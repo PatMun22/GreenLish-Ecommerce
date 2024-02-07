@@ -31,13 +31,6 @@
   display: flex;
   align-items: center;
 }
-.single-service .standard-rate p,
-.single-service .expedited-rate p,
-.single-service .standard_shipping p,
-.single-service .expedited_shipping p {
-  width: 150px;
-  font-size: 18px;
-}
 .single-service .standard-rate span,
 .single-service .expedited-rate span,
 .single-service .standard_shipping span,

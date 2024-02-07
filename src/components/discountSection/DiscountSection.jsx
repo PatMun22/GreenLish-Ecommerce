@@ -11,7 +11,7 @@ const DiscountSection = () => {
             <h1>{discount.h1}</h1>
             <span>{discount.span}</span>
             <p>{discount.p}</p>
-            <Link to="/singleproduct/:id">
+            <Link to={`/shop/${discount.id}`}>
               <button>shop now</button>
             </Link>
           </div>

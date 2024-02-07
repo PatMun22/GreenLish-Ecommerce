@@ -54,13 +54,28 @@ const SingleService = () => {
       <p>{service_summary}</p>
       <h3>{heading2}</h3>
       <div className="standard-rate">
-        <p>{listone}</p>
-        <span>:</span>
-        <span>Ksh. {standard_rate}</span>
+        <p
+          style={{
+            width: service.id === 1 ? "150px" : "100%",
+            fontSize: service.id === 1 ? "18px" : "14px",
+          }}
+        >
+          {listone}
+        </p>
+        {service.id === 1 && <span>:</span>}
+        <span>{standard_rate}</span>
       </div>
       <div className="expedited-rate">
-        <p>{listtwo}</p> <span>:</span>
-        <span>Ksh. {expedited_rate}</span>
+        <p
+          style={{
+            width: service.id === 1 ? "150px" : "100%",
+            fontSize: service.id === 1 ? "18px" : "14px",
+          }}
+        >
+          {listtwo}
+        </p>
+        {service.id === 1 && <span>:</span>}
+        <span>{expedited_rate}</span>
       </div>
       <p>{listthree}</p>
       <h3>{heading3}</h3>
@@ -74,12 +89,26 @@ const SingleService = () => {
       <p>{listten}</p>
       <h3>{heading5}</h3>
       <div className="standard_shipping">
-        <p>{listeleven}</p>
-        <span>:</span>
+        <p
+          style={{
+            width: service.id === 1 ? "150px" : "100%",
+            fontSize: service.id === 1 ? "18px" : "14px",
+          }}
+        >
+          {listeleven}
+        </p>
+        {service.id === 1 && <span>:</span>}
         <span>{standard_period}</span>
       </div>
       <div className="expedited_shipping">
-        <p>{listtwelve}</p>
+        <p
+          style={{
+            width: service.id === 1 ? "150px" : "100%",
+            fontSize: service.id === 1 ? "18px" : "14px",
+          }}
+        >
+          {listtwelve}
+        </p>
         {service.id === 1 && <span>:</span>}
         <span>{expedited_period}</span>
       </div>

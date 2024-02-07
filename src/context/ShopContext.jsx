@@ -261,9 +261,11 @@ const ShopContextProvider = (props) => {
     return { days, hours, minutes, seconds };
   };
 
-  //Product single pages
+  // getting single page ids from usePaarams hook
 
   const { id } = useParams();
+
+  //Product single pages
 
   const product_id = parseInt(id);
 
@@ -274,6 +276,11 @@ const ShopContextProvider = (props) => {
   const service_id = parseInt(id);
 
   const service = services.find((service) => service.id === service_id);
+  //Blogs single pages
+
+  const blog_id = parseInt(id);
+
+  const blog = blogs.find((blog) => blog.id === blog_id);
 
   const contextValue = {
     cartItems,
@@ -317,6 +324,7 @@ const ShopContextProvider = (props) => {
     currentView,
     setCurrentView,
     service,
+    blog,
   };
 
   return (
