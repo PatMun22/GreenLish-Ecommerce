@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { ShopContext } from "../../context/ShopContext";
 
 const ArticleAuthor = () => {
-  const { isHovering, handleMouseEnter, handleMouseLeave } =
+  const { isHovering, handleMouseEnter, handleMouseLeave, blog } =
     useContext(ShopContext);
   return (
     <div className="article-author">
@@ -15,7 +15,7 @@ const ArticleAuthor = () => {
       />
       <div className="article-text">
         <div className="top-sec">
-          <h1 className="author-name">Austin Auriellas</h1>
+          <h1 className="author-name">{blog.author}</h1>
           <p className="author-profession">Food Stylist - </p>
         </div>
         <p className="about-author">
@@ -28,7 +28,7 @@ const ArticleAuthor = () => {
             let CommentSocialIcon = commentSocialIcons[i];
             return (
               <Link
-                to={`https://${icon.name}.com/Austin_Auriellas`}
+                to={`https://${icon.name}.com/${blog.author}`}
                 target="_blank"
                 className="social-icon-box"
                 key={icon.id}

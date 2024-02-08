@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./carouselItem.scss";
 import CarouselLeft from "../carouselLeft/CarouselLeft";
 import CarouselRight from "../carouselRight/CarouselRight";
@@ -16,7 +17,7 @@ const CarouselItem = ({ carousels, updateIndex, activeSlideIndex }) => {
                 : "carousel-item inactive"
             }
           >
-            <CarouselLeft />
+            <CarouselLeft carousel={carousel} />
             <CarouselRight carousel={carousel} />
           </div>
         ))}

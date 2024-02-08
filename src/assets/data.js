@@ -178,23 +178,23 @@ export const pages = [
 
 export const carousels = [
   {
-    id: 1,
+    id: 8,
     img: "https://images.pexels.com/photos/15913452/pexels-photo-15913452/free-photo-of-poke-bowl-with-salmon.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
-    id: 2,
+    id: 4,
     img: "https://images.pexels.com/photos/7662649/pexels-photo-7662649.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
-    id: 3,
+    id: 5,
     img: "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
-    id: 4,
+    id: 9,
     img: "https://images.pexels.com/photos/56007/jause-eat-delicious-food-56007.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
-    id: 5,
+    id: 1,
     img: "https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
 ];
@@ -1334,6 +1334,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Austina Aurelias",
   },
   {
     id: 2,
@@ -1344,6 +1345,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Silas Chrinto",
   },
   {
     id: 3,
@@ -1354,6 +1356,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Immaculate Odhis",
   },
   {
     id: 4,
@@ -1364,6 +1367,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Austina Aurelias",
   },
   {
     id: 5,
@@ -1374,6 +1378,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Opiyo Aurelias",
   },
   {
     id: 6,
@@ -1384,6 +1389,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Austina Daniels",
   },
   {
     id: 7,
@@ -1394,6 +1400,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Daniel Aurelias",
   },
   {
     id: 8,
@@ -1404,6 +1411,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Austina Aurelias",
   },
   {
     id: 9,
@@ -1414,6 +1422,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Austina Aurelias",
   },
   {
     id: 10,
@@ -1424,6 +1433,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "John Kusimba",
   },
   {
     id: 11,
@@ -1434,6 +1444,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "John Doe",
   },
   {
     id: 12,
@@ -1444,6 +1455,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Jael Joe",
   },
   {
     id: 13,
@@ -1454,6 +1466,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Jeffer Just",
   },
   {
     id: 14,
@@ -1464,6 +1477,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Bevely Quintons",
   },
   {
     id: 15,
@@ -1474,6 +1488,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Diana Aurelias",
   },
   {
     id: 16,
@@ -1484,6 +1499,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Chris Kroos",
   },
   {
     id: 17,
@@ -1494,6 +1510,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Philomen Aurelias",
   },
   {
     id: 18,
@@ -1504,6 +1521,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Gentrix Aurelias",
   },
   {
     id: 19,
@@ -1514,6 +1532,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Stacy Dorris",
   },
   {
     id: 20,
@@ -1524,6 +1543,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Nakato Quartz",
   },
   {
     id: 21,
@@ -1534,6 +1554,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Prine Kuloba",
   },
   {
     id: 22,
@@ -1544,6 +1565,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Pamela Austin",
   },
   {
     id: 23,
@@ -1554,6 +1576,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Johnstone Okoo",
   },
   {
     id: 24,
@@ -1564,6 +1587,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Chicka Kuruka",
   },
   {
     id: 25,
@@ -1574,6 +1598,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Patrick Chinookz",
   },
   {
     id: 26,
@@ -1584,6 +1609,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Chris Rock",
   },
   {
     id: 27,
@@ -1594,6 +1620,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Yasmin Babra",
   },
   {
     id: 28,
@@ -1604,6 +1631,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Rosemary Cleo",
   },
   {
     id: 29,
@@ -1614,6 +1642,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Justine Aurelias",
   },
   {
     id: 30,
@@ -1624,6 +1653,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Austin Aurelias",
   },
   {
     id: 31,
@@ -1634,6 +1664,7 @@ export const blogs = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci necessitatibus sunt ipsam assumenda. Dolores, incidunt",
     title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     comments: 14,
+    author: "Jefferson Aurelias",
   },
 ];
 

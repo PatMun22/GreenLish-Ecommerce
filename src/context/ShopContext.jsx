@@ -140,6 +140,20 @@ const ShopContextProvider = (props) => {
     return numberOfCartItems;
   };
 
+  const addToCart = (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+  };
+
+  const removeFromCart = (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+  };
+
+  const updateCartItemCount = (newAmount, itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
+  };
+
+  // Implementing Wish List functionality
+
   const getNumberOfWishListItems = () => {
     let numberOfWishListItems = 0;
     for (const item in wishListItems) {
@@ -151,16 +165,12 @@ const ShopContextProvider = (props) => {
     return numberOfWishListItems;
   };
 
-  const addToCart = (itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+  const addToWishList = (itemId) => {
+    setWishListItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
   };
 
-  const removeFromCart = (itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
-  };
-
-  const updateCartItemCount = (newAmount, itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
+  const removeFromWishList = (itemId) => {
+    setWishListItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
 
   // changing color of the favorite products Icon
@@ -325,6 +335,8 @@ const ShopContextProvider = (props) => {
     setCurrentView,
     service,
     blog,
+    addToWishList,
+    removeFromWishList,
   };
 
   return (

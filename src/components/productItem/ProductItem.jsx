@@ -8,7 +8,7 @@ import { useContext } from "react";
 import { ShopContext } from "../../context/ShopContext";
 
 const ProductItem = ({ item }) => {
-  const { addToCart, onBgChange, color } = useContext(ShopContext);
+  const { addToCart, color, addToWishList } = useContext(ShopContext);
 
   return (
     <div className="indiv-product" key={item.id}>
@@ -35,7 +35,7 @@ const ProductItem = ({ item }) => {
           <CiHeart
             className="heart-emoji"
             style={{ Color: color }}
-            onClick={onBgChange}
+            onClick={() => addToWishList(item.id)}
           />
         </div>
         <Link to={`/shop/${item.id}`} className="emojis">

@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import "./carouselcompnent.scss";
 import CarouselItem from "../carouselItem/CarouselItem";
 
-const CarouselComponent = ({ carousels, index }) => {
+const CarouselComponent = ({ carousels }) => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
   const nextSlide = () => {

@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { BiSolidRightArrow } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import "./carouselLeft.scss";
 
-const CarouselLeft = () => {
+const CarouselLeft = ({ carousel }) => {
   return (
     <div className="carousel-left">
       <h1>
@@ -19,7 +20,7 @@ const CarouselLeft = () => {
         voluptatum nihil illum impedit accusamus quaerat placeat enim corrupti
       </p>
       <div className="carousel-buttons">
-        <Link to="/singlepage/:id">
+        <Link to={`/shop/${carousel.id}`}>
           <button>Order now</button>
         </Link>
         <div className="blinking">

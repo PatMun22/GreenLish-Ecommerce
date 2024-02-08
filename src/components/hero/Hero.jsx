@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import CarouselComponent from "../carouselComponent/CarouselComponent";
 import "./hero.scss";
 

@@ -5,16 +5,19 @@ import BlogText from "../blogText/BlogText";
 import "./blogPostLeft.scss";
 import RelatedArticles from "../relatedArticles/RelatedArticles";
 import ArticleAuthor from "../articleAuthor/ArticleAuthor";
+import { useContext } from "react";
+import { ShopContext } from "../../context/ShopContext";
 
 const BlogPostLeft = () => {
+  const { blog } = useContext(ShopContext);
   return (
     <div className="blog-post-left">
       <div className="date-comment">
-        <div className="author">By Austin Auriellas</div>
+        <div className="author">By {blog.author}</div>
         <div className="vert-line"></div>
-        <div className="date"> Nov 21, 2023</div>
+        <div className="date"> {blog.date}</div>
         <div className="vert-line"></div>
-        <div className="comments">14 Comments</div>
+        <div className="comments">{blog.comments} Comments</div>
       </div>
       <PostSocials />
       <BlogText />
