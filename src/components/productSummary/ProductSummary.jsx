@@ -8,12 +8,21 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { commentSocialIcons, commentSocials } from "../../assets/data";
 import "./productSummary.scss";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ShopContext } from "../../context/ShopContext";
 import { Link } from "react-router-dom";
 
 const ProductSummary = () => {
-  const { product } = useContext(ShopContext);
+  const [value, setValue] = useState(0);
+  const { product, addToCart } = useContext(ShopContext);
+
+  const increaseValue = () => {
+    setValue(value + 1);
+  };
+
+  const decreaseValue = () => {
+    setValue(value - 1);
+  };
 
   const {
     image1,
@@ -79,11 +88,14 @@ const ProductSummary = () => {
           <p>{product_infor}</p>
         </div>
         <div className="product-quantity">
-          <button>-</button>
-          <input type="text" />
-          <button>+</button>=<p className="total-product-price">Ksh. 500</p>
+          <button onClick={() => decreaseValue()}>-</button>
+          <input type="text" value={value} onChange={() => setValue()} />
+          <button onClick={() => increaseValue()}>+</button>=
+          <p className="total-product-price">
+            Ksh. {value * product.new_price}
+          </p>
         </div>
-        <button className="add-cart">
+        <button className="add-cart" onClick={() => addToCart(product.id)}>
           <GiShoppingCart />
           Add to Cart
         </button>
