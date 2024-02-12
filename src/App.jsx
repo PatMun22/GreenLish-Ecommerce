@@ -23,9 +23,11 @@ import Packages from "./pages/packages/Packages";
 import Pages from "./pages/pages/Pages";
 import Vendors from "./pages/vendors/Vendors";
 import Contacts from "./pages/contacts/Contacts";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
 const App = () => {
   const { t } = useTranslation();
+  <ScrollToTop />;
 
   const Layout = () => {
     return (
