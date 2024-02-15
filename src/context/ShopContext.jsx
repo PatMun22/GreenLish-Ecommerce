@@ -35,6 +35,15 @@ const ShopContextProvider = (props) => {
     Array(commentSocials.length).fill(false)
   );
   const [currentView, setCurrentView] = useState("description");
+  const [formData, setFormData] = useState({
+    fullName: "",
+    userName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+    comment: "",
+  });
+  const [errors, setErrors] = useState({});
 
   // Filtering products according to cartegory
 
@@ -292,6 +301,53 @@ const ShopContextProvider = (props) => {
 
   const blog = blogs.find((blog) => blog.id === blog_id);
 
+  // form validation
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const validationErrors = {};
+
+    if (!formData.fullName.trim()) {
+      validationErrors.fullName === "Full name is required";
+    }
+
+    if (!formData.userName.trim()) {
+      validationErrors.userName === "User name is required";
+    }
+
+    if (!formData.email.trim()) {
+      validationErrors.email === "Email is required";
+    } else if (!/\s+@\s+\.\s+/.test(formData.email)) {
+      validationErrors.email === "Invalid email address";
+    }
+
+    if (!formData.password.trim()) {
+      validationErrors.password === "Password is required";
+    } else if (formData.password.trim().length < 8) {
+      validationErrors.password === "Password should be at least 8 characters";
+    }
+
+    if (formData.confirmPassword.trim() !== formData.password.trim()) {
+      validationErrors.confirmPassword === "Password does not match";
+    }
+
+    if (!formData.comment.trim()) {
+      validationErrors.comment === "Add a comment";
+    }
+
+    setErrors(validationErrors);
+
+    if (Object.keys(validationErrors).length === 0) {
+      alert("Form submitted successfully");
+    }
+  };
+
   const contextValue = {
     cartItems,
     addToCart,
@@ -337,6 +393,9 @@ const ShopContextProvider = (props) => {
     blog,
     addToWishList,
     removeFromWishList,
+    errors,
+    handleChange,
+    handleSubmit,
   };
 
   return (

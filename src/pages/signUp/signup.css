@@ -61,8 +61,16 @@
   height: 30px;
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 16px;
   padding-left: 10px;
+}
+.signup .signin-container form fieldset input::-moz-placeholder {
+  font-size: 12px;
+  opacity: 0.3;
+}
+.signup .signin-container form fieldset input::placeholder {
+  font-size: 12px;
+  opacity: 0.3;
 }
 .signup .signin-container form p {
   font-size: 14px;

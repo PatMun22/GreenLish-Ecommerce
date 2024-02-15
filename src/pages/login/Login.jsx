@@ -2,22 +2,25 @@ import { LuUser2 } from "react-icons/lu";
 import { LiaUnlockAltSolid } from "react-icons/lia";
 import "./login.scss";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { ShopContext } from "../../context/ShopContext";
 
 const Login = () => {
+  const { errors, handleSubmit, handleChange, value } = useContext(ShopContext);
   return (
     <div className="login">
       <div className="login-container">
         <h1 className="login-head">SIGN IN</h1>
         <p className="login-descrip">To manage your order please login first</p>
-        <form action="" className="login-form">
+        <form onSubmit={handleSubmit} className="login-form">
           <fieldset>
             <legend>User Name or Email</legend>
-            <input type="text" />
+            <input type="text" onChange={handleChange} />
             <LuUser2 className="user-icon" />
           </fieldset>
           <fieldset>
             <legend>Password</legend>
-            <input type="text" />
+            <input type="text" onChange={handleChange} />
             <LiaUnlockAltSolid className="lock-icon" />
           </fieldset>
           <div className="redirection-links">
