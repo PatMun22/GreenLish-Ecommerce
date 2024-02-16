@@ -313,21 +313,21 @@ const ShopContextProvider = (props) => {
 
     const validationErrors = {};
 
-    if (!formData.fullName.trim()) {
+    if (formData.fullName.trim().length === 0) {
       validationErrors.fullName === "Full name is required";
     }
 
-    if (!formData.userName.trim()) {
+    if (formData.userName.trim().length === 0) {
       validationErrors.userName === "User name is required";
     }
 
-    if (!formData.email.trim()) {
+    if (formData.email.trim().length === 0) {
       validationErrors.email === "Email is required";
     } else if (!/\s+@\s+\.\s+/.test(formData.email)) {
       validationErrors.email === "Invalid email address";
     }
 
-    if (!formData.password.trim()) {
+    if (formData.password.trim().length === 0) {
       validationErrors.password === "Password is required";
     } else if (formData.password.trim().length < 8) {
       validationErrors.password === "Password should be at least 8 characters";
@@ -337,7 +337,7 @@ const ShopContextProvider = (props) => {
       validationErrors.confirmPassword === "Password does not match";
     }
 
-    if (!formData.comment.trim()) {
+    if (formData.comment.trim().length === 0) {
       validationErrors.comment === "Add a comment";
     }
 
@@ -396,6 +396,7 @@ const ShopContextProvider = (props) => {
     errors,
     handleChange,
     handleSubmit,
+    formData,
   };
 
   return (

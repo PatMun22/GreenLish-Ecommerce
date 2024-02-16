@@ -6,7 +6,8 @@ import { useContext } from "react";
 import { ShopContext } from "../../context/ShopContext";
 
 const Login = () => {
-  const { errors, handleSubmit, handleChange, value } = useContext(ShopContext);
+  const { errors, handleSubmit, handleChange, formData } =
+    useContext(ShopContext);
   return (
     <div className="login">
       <div className="login-container">
@@ -15,12 +16,21 @@ const Login = () => {
         <form onSubmit={handleSubmit} className="login-form">
           <fieldset>
             <legend>User Name or Email</legend>
-            <input type="text" onChange={handleChange} />
+            <input
+              type="text"
+              value={formData.userName || formData.email}
+              onChange={handleChange}
+            />
             <LuUser2 className="user-icon" />
           </fieldset>
+          {errors.email && <span>{errors.email}</span>}
           <fieldset>
             <legend>Password</legend>
-            <input type="text" onChange={handleChange} />
+            <input
+              type="text"
+              value={formData.password}
+              onChange={handleChange}
+            />
             <LiaUnlockAltSolid className="lock-icon" />
           </fieldset>
           <div className="redirection-links">

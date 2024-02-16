@@ -10,7 +10,6 @@ import Profile from "./pages/profile/Profile";
 import ShopUnit from "./pages/shop-unit/ShopUnit";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import ShopContextProvider from "./context/ShopContext";
 import Checkout from "./pages/checkout/Checkout";
 import WishList from "./pages/wishList/WishList";
 import Shop from "./pages/shop/Shop";
@@ -32,13 +31,11 @@ const App = () => {
   const Layout = () => {
     return (
       <main>
-        <ShopContextProvider>
-          <Header t={t} />
-          <div className="Main_container">
-            <Outlet />
-          </div>
-          <Footer t={t} />
-        </ShopContextProvider>
+        <Header t={t} />
+        <div className="Main_container">
+          <Outlet />
+        </div>
+        <Footer t={t} />
       </main>
     );
   };

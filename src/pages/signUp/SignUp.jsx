@@ -8,7 +8,8 @@ import { useContext } from "react";
 import { ShopContext } from "../../context/ShopContext";
 
 const SignUp = () => {
-  const { errors, handleChange, handleSubmit, value } = useContext(ShopContext);
+  const { errors, formData, handleChange, handleSubmit } =
+    useContext(ShopContext);
 
   return (
     <div className="signup">
@@ -24,7 +25,7 @@ const SignUp = () => {
               type="text"
               placeholder="Enter Your Full Name"
               name="fullName"
-              value={value}
+              value={formData.fullName}
               onChange={handleChange}
             />
             {errors.fullName && (
@@ -42,7 +43,7 @@ const SignUp = () => {
               type="text"
               placeholder="Enter Your User Name"
               name="userName"
-              value={value}
+              value={formData.userName}
               onChange={handleChange}
             />
             {errors.userName && (
@@ -60,7 +61,7 @@ const SignUp = () => {
               type="email"
               placeholder="Enter Your Email"
               name="email"
-              value={value}
+              value={formData.email}
               onChange={handleChange}
             />
             {errors.email && (
@@ -78,7 +79,7 @@ const SignUp = () => {
               type="password"
               placeholder="Enter Your Password"
               name="password"
-              value={value}
+              value={formData.password}
               onChange={handleChange}
             />
             {errors.password && (
@@ -96,7 +97,7 @@ const SignUp = () => {
               type="text"
               placeholder="Confirm Your Password"
               name="confirmPassword"
-              value={value}
+              value={formData.confirmPassword}
               onChange={handleChange}
             />
             {errors.confirmPassword && (
