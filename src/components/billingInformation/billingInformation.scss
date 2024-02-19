@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
-    height: 550px;
+    height: fit-content;
     padding: 50px;
 
     h1 {

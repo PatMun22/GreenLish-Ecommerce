@@ -6,7 +6,8 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
-  height: 550px;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 50px;
 }
 .billing-information-container .billing-information h1 {

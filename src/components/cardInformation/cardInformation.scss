@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
-    height: 550px;
+    height: fit-content;
     padding: 50px;
 
     h1 {
@@ -52,7 +52,7 @@
           position: absolute;
           right: 10px;
           bottom: 50%;
-          transform: translateY(-50%);
+          color: $main-green;
         }
 
         legend {

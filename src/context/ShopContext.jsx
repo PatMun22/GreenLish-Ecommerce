@@ -41,9 +41,28 @@ const ShopContextProvider = (props) => {
     email: "",
     password: "",
     confirmPassword: "",
-    comment: "",
   });
   const [errors, setErrors] = useState({});
+  const [cardData, setCardData] = useState({
+    cardFullName: "",
+    cardNumber: "",
+    expiryDate: "",
+    codeCvv: "",
+    cardEmail: "",
+  });
+  const [cardErrors, setCardErrors] = useState({});
+  const [billingData, setBillingData] = useState({
+    billingFirstName: "",
+    billingLastName: "",
+    billingEmail: "",
+    billingPhone: "",
+    billingAddress: "",
+    billingApartment: "",
+    billingCity: "",
+    billingCountry: "",
+    billingPostCode: "",
+  });
+  const [billingErrors, setBillingErrors] = useState({});
 
   // Filtering products according to cartegory
 
@@ -301,7 +320,7 @@ const ShopContextProvider = (props) => {
 
   const blog = blogs.find((blog) => blog.id === blog_id);
 
-  // form validation
+  // Login and LogUp input form validation
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -323,7 +342,7 @@ const ShopContextProvider = (props) => {
 
     if (!formData.email.trim()) {
       validationErrors.email = "Email is required";
-    } else if (!/\s+@\s+\.\s+/.test(formData.email)) {
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       validationErrors.email = "Invalid email address";
     }
 
@@ -337,10 +356,6 @@ const ShopContextProvider = (props) => {
       validationErrors.confirmPassword = "Password does not match";
     }
 
-    if (!formData.comment.trim()) {
-      validationErrors.comment = "Add a comment";
-    }
-
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
@@ -349,6 +364,113 @@ const ShopContextProvider = (props) => {
   };
 
   const inputStyle = { color: "red", fontSize: "12px" };
+
+  // Payment Card Information Input Form Validation
+
+  const handleCardChange = (e) => {
+    const { name, value } = e.target;
+    setCardData({ ...cardData, [name]: value });
+  };
+
+  const handleCardInfoSubmit = (e) => {
+    e.preventDefault();
+
+    const cardInforValidationErrors = {};
+
+    if (!cardData.cardFullName.trim()) {
+      cardInforValidationErrors.cardFullName = "Full name required";
+    } else if (cardData.cardFullName.trim().length < 2) {
+      cardInforValidationErrors.cardFullName = "Enter at least two names";
+    }
+
+    if (!cardData.cardNumber.trim()) {
+      cardInforValidationErrors.cardNumber = "Card number required";
+    } else if (!/^(?:\d[ -]*?){13,16}$/.test(cardData.cardNumber)) {
+      cardInforValidationErrors.cardNumber = "Enter a valid card number";
+    }
+
+    if (!cardData.expiryDate.trim()) {
+      cardInforValidationErrors.expiryDate = "Expiry date required";
+    } else if (!/\d{1,2}\/\d{1,2}\/\d{2,4}/.test(cardData.expiryDate)) {
+      cardInforValidationErrors.cardExpiry = "Invalid expiry date format";
+    }
+
+    if (!cardData.codeCvv.trim()) {
+      cardInforValidationErrors.codeCvv = "Code CVV required";
+    } else if (!/^[0-9]{3, 4}$/.test(cardData.codeCvv)) {
+      cardInforValidationErrors.codeCvv = "Invalid code CVV";
+    }
+
+    if (!cardData.cardEmail.trim()) {
+      cardInforValidationErrors.cardEmail = "Card email required";
+    } else if (
+      !/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(cardData.cardEmail)
+    ) {
+      cardInforValidationErrors.cardEmail = "Invalid email address";
+    }
+
+    setCardErrors(cardInforValidationErrors);
+  };
+
+  // Billing Card Input Form Validation
+
+  const handleBillingCardChange = (e) => {
+    const { name, value } = e.target;
+    setBillingData({ ...billingData, [name]: value });
+  };
+
+  const handleBillingFormSubmit = (e) => {
+    e.preventDefault();
+
+    const billingFormValidationErrors = {};
+
+    if (!billingData.billingFirstName.trim()) {
+      billingFormValidationErrors.billingFirstName = "First name required";
+    }
+
+    if (!billingData.billingLastName.trim()) {
+      billingFormValidationErrors.billingLastName = "Last name required";
+    }
+
+    if (!billingData.billingEmail.trim()) {
+      billingFormValidationErrors.billingEmail = "Email required";
+    } else if (
+      !/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(
+        billingData.billingEmail
+      )
+    ) {
+      billingFormValidationErrors.billingEmail = "Invalid email";
+    }
+
+    if (!billingData.billingPhone.trim()) {
+      billingFormValidationErrors.billingPhone = "Phone required";
+    } else if (
+      !/r"^(\\+254|0)([7][0-9]|[1][0-1]){1}[0-9]{1}[0-9]{6}$"/.test(
+        billingData.billingPhone
+      )
+    ) {
+      billingFormValidationErrors.billingPhone = "Invalid phone number";
+    }
+
+    if (!billingData.billingAddress.trim()) {
+      billingFormValidationErrors.billingAddress = "Address required";
+    }
+
+    if (!billingData.billingCity.trim()) {
+      billingFormValidationErrors.billingCity = "City required";
+    }
+
+    if (!billingData.billingCountry.trim()) {
+      billingFormValidationErrors.billingCountry = "Country required";
+    }
+
+    if (!billingData.billingPostCode.trim()) {
+      billingFormValidationErrors.billingPostCode =
+        "Postcode or Zip code required";
+    }
+
+    setBillingErrors(billingFormValidationErrors);
+  };
 
   const contextValue = {
     cartItems,
@@ -400,6 +522,12 @@ const ShopContextProvider = (props) => {
     handleSubmit,
     formData,
     inputStyle,
+    handleCardChange,
+    handleCardInfoSubmit,
+    cardErrors,
+    billingErrors,
+    handleBillingCardChange,
+    handleBillingFormSubmit,
   };
 
   return (

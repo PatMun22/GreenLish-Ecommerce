@@ -8,14 +8,11 @@ import { useContext } from "react";
 import { ShopContext } from "../../context/ShopContext";
 
 const SignUp = () => {
-  const { errors, formData, handleChange, handleSubmit } =
+  const { errors, handleChange, handleSubmit, inputStyle } =
     useContext(ShopContext);
-
-  const inputStyle = { color: "red", fontSize: "12px" };
 
   return (
     <div className="signup">
-      <pre>{JSON.stringify(formData, undefined, 2)}</pre>
       <div className="signin-container">
         <h1>SIGN UP</h1>
         <p>It&apos;s easy to create account</p>
@@ -81,7 +78,7 @@ const SignUp = () => {
               Confirm Password <LuAsterisk className="asterisk" />
             </legend>
             <input
-              type="text"
+              type="password"
               placeholder="Confirm Your Password"
               name="confirmPassword"
               onChange={handleChange}

@@ -6,7 +6,8 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
-  height: 550px;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 50px;
 }
 .card-info-container .card-information h1 {
@@ -47,7 +48,7 @@
   position: absolute;
   right: 10px;
   bottom: 50%;
-  transform: translateY(-50%);
+  color: #25bd01;
 }
 .card-info-container .card-information .payament-inputs fieldset legend {
   text-transform: capitalize;
