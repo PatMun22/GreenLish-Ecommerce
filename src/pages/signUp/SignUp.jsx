@@ -11,8 +11,11 @@ const SignUp = () => {
   const { errors, formData, handleChange, handleSubmit } =
     useContext(ShopContext);
 
+  const inputStyle = { color: "red", fontSize: "12px" };
+
   return (
     <div className="signup">
+      <pre>{JSON.stringify(formData, undefined, 2)}</pre>
       <div className="signin-container">
         <h1>SIGN UP</h1>
         <p>It&apos;s easy to create account</p>
@@ -25,16 +28,12 @@ const SignUp = () => {
               type="text"
               placeholder="Enter Your Full Name"
               name="fullName"
-              value={formData.fullName}
               onChange={handleChange}
             />
-            {errors.fullName && (
-              <span style={{ color: "red", fontSize: "12px" }}>
-                {errors.fullName}
-              </span>
-            )}
+
             <LuUser2 className="user-icon" />
           </fieldset>
+          {errors.fullName && <span style={inputStyle}>{errors.fullName}</span>}
           <fieldset>
             <legend>
               User Name <LuAsterisk className="asterisk" />
@@ -43,16 +42,12 @@ const SignUp = () => {
               type="text"
               placeholder="Enter Your User Name"
               name="userName"
-              value={formData.userName}
               onChange={handleChange}
             />
-            {errors.userName && (
-              <span style={{ color: "red", fontSize: "12px" }}>
-                {errors.userName}
-              </span>
-            )}
+
             <LuUser2 className="user-icon" />
           </fieldset>
+          {errors.userName && <span style={inputStyle}>{errors.userName}</span>}
           <fieldset>
             <legend>
               Email <LuAsterisk className="asterisk" />
@@ -61,16 +56,12 @@ const SignUp = () => {
               type="email"
               placeholder="Enter Your Email"
               name="email"
-              value={formData.email}
               onChange={handleChange}
             />
-            {errors.email && (
-              <span style={{ color: "red", fontSize: "12px" }}>
-                {errors.email}
-              </span>
-            )}
+
             <MdEmail className="lock-icon" />
           </fieldset>
+          {errors.email && <span style={inputStyle}>{errors.email}</span>}
           <fieldset>
             <legend>
               Password <LuAsterisk className="asterisk" />
@@ -79,16 +70,12 @@ const SignUp = () => {
               type="password"
               placeholder="Enter Your Password"
               name="password"
-              value={formData.password}
               onChange={handleChange}
             />
-            {errors.password && (
-              <span style={{ color: "red", fontSize: "12px" }}>
-                {errors.password}
-              </span>
-            )}
+
             <LiaUnlockAltSolid className="lock-icon" />
-          </fieldset>
+          </fieldset>{" "}
+          {errors.password && <span style={inputStyle}>{errors.password}</span>}
           <fieldset>
             <legend>
               Confirm Password <LuAsterisk className="asterisk" />
@@ -97,16 +84,14 @@ const SignUp = () => {
               type="text"
               placeholder="Confirm Your Password"
               name="confirmPassword"
-              value={formData.confirmPassword}
               onChange={handleChange}
             />
-            {errors.confirmPassword && (
-              <span style={{ color: "red", fontSize: "12px" }}>
-                {errors.confirmPassword}
-              </span>
-            )}
+
             <LiaUnlockAltSolid className="lock-icon" />
           </fieldset>
+          {errors.confirmPassword && (
+            <span style={inputStyle}>{errors.confirmPassword}</span>
+          )}
           <p>
             Have an account?{" "}
             <Link to="/login" className="redirection-link">

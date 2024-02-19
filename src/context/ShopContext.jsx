@@ -313,32 +313,32 @@ const ShopContextProvider = (props) => {
 
     const validationErrors = {};
 
-    if (formData.fullName.trim().length === 0) {
-      validationErrors.fullName === "Full name is required";
+    if (!formData.fullName.trim()) {
+      validationErrors.fullName = "Full name is required";
     }
 
-    if (formData.userName.trim().length === 0) {
-      validationErrors.userName === "User name is required";
+    if (!formData.userName.trim()) {
+      validationErrors.userName = "User name is required";
     }
 
-    if (formData.email.trim().length === 0) {
-      validationErrors.email === "Email is required";
+    if (!formData.email.trim()) {
+      validationErrors.email = "Email is required";
     } else if (!/\s+@\s+\.\s+/.test(formData.email)) {
-      validationErrors.email === "Invalid email address";
+      validationErrors.email = "Invalid email address";
     }
 
-    if (formData.password.trim().length === 0) {
-      validationErrors.password === "Password is required";
-    } else if (formData.password.trim().length < 8) {
-      validationErrors.password === "Password should be at least 8 characters";
+    if (!formData.password.trim()) {
+      validationErrors.password = "Password is required";
+    } else if (formData.password.length < 8) {
+      validationErrors.password = "Password should be at least 8 characters";
     }
 
     if (formData.confirmPassword.trim() !== formData.password.trim()) {
-      validationErrors.confirmPassword === "Password does not match";
+      validationErrors.confirmPassword = "Password does not match";
     }
 
-    if (formData.comment.trim().length === 0) {
-      validationErrors.comment === "Add a comment";
+    if (!formData.comment.trim()) {
+      validationErrors.comment = "Add a comment";
     }
 
     setErrors(validationErrors);
@@ -347,6 +347,8 @@ const ShopContextProvider = (props) => {
       alert("Form submitted successfully");
     }
   };
+
+  const inputStyle = { color: "red", fontSize: "12px" };
 
   const contextValue = {
     cartItems,
@@ -397,6 +399,7 @@ const ShopContextProvider = (props) => {
     handleChange,
     handleSubmit,
     formData,
+    inputStyle,
   };
 
   return (

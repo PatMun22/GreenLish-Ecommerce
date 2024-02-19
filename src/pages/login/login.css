@@ -56,6 +56,15 @@
   border: none;
   outline: none;
   font-size: 18px;
+  padding-left: 10px;
+}
+.login .login-container form fieldset input::-moz-placeholder {
+  font-size: 12px;
+  opacity: 0.3;
+}
+.login .login-container form fieldset input::placeholder {
+  font-size: 12px;
+  opacity: 0.3;
 }
 .login .login-container form .redirection-links {
   display: flex;

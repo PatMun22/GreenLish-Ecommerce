@@ -63,6 +63,12 @@
           border: none;
           outline: none;
           font-size: 18px;
+          padding-left: 10px;
+
+          &::placeholder {
+            font-size: 12px;
+            opacity: 0.3;
+          }
         }
       }
 
