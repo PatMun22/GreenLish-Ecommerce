@@ -23,6 +23,7 @@ import Pages from "./pages/pages/Pages";
 import Vendors from "./pages/vendors/Vendors";
 import Contacts from "./pages/contacts/Contacts";
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
+import ShopContextProvider from "./context/ShopContext";
 
 const App = () => {
   const { t } = useTranslation();
@@ -30,13 +31,15 @@ const App = () => {
 
   const Layout = () => {
     return (
-      <main>
-        <Header t={t} />
-        <div className="Main_container">
-          <Outlet />
-        </div>
-        <Footer t={t} />
-      </main>
+      <ShopContextProvider>
+        <main>
+          <Header t={t} />
+          <div className="Main_container">
+            <Outlet />
+          </div>
+          <Footer t={t} />
+        </main>
+      </ShopContextProvider>
     );
   };
 
