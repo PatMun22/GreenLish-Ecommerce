@@ -7,6 +7,7 @@ import { useContext } from "react";
 import ProductDetailCategorisation from "../productDetailCategorisation/ProductDetailCategorisation";
 
 const SingleProduct = () => {
+  window.scrollTo(0, 0);
   const { product } = useContext(ShopContext);
 
   if (!product) {

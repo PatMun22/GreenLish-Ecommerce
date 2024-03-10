@@ -22,6 +22,10 @@
 .footer .linkTitles .links .link {
   color: rgba(255, 255, 255, 0.4);
   font-size: 14px;
+  transition: all 0.5s ease-in-out;
+}
+.footer .linkTitles .links .link:hover {
+  color: rgba(255, 255, 255, 0.8);
 }
 .footer .linkTitles .links:last-of-type .app_download {
   background-color: #fff;

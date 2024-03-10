@@ -9,7 +9,7 @@ const BelowCarousels = () => {
   return (
     <div className="below_carousels">
       <div className="bc_image">
-        <Link to="/products/:id">
+        <Link to="/shop/9">
           <img src={belowcarousels.image} alt={belowcarousels.title} />
         </Link>
       </div>

@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 const ProductSummary = () => {
   const [value, setValue] = useState(0);
-  const { product, addToCart } = useContext(ShopContext);
+  const { product, addToCart, addToWishList } = useContext(ShopContext);
 
   const increaseValue = () => {
     setValue(value + 1);
@@ -101,7 +101,7 @@ const ProductSummary = () => {
         </button>
         <div className="item-icons">
           <div className="icon-symbol">
-            <CiHeart />
+            <CiHeart onClick={() => addToWishList(product.id)} />
           </div>
           <div className="icon-symbol">
             <BiSolidRightArrow />

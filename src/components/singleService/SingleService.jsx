@@ -3,6 +3,7 @@ import "./singleService.scss";
 import { ShopContext } from "../../context/ShopContext";
 
 const SingleService = () => {
+  window.scrollTo(0, 0);
   const { service } = useContext(ShopContext);
   const {
     service_details: {

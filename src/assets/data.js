@@ -556,6 +556,7 @@ export const bestsellercarousel = [
 ];
 
 export const belowcarousels = {
+  id: 1,
   image: drumsticks,
   title: "fresh broyler chicken",
   paragraph: "big sale 40%",

@@ -63,6 +63,7 @@ const ShopContextProvider = (props) => {
     billingPostCode: "",
   });
   const [billingErrors, setBillingErrors] = useState({});
+  const [toggleWishIcon, setToggleWishIcon] = useState("CiHeart");
 
   // Filtering products according to cartegory
 
@@ -203,8 +204,8 @@ const ShopContextProvider = (props) => {
 
   // changing color of the favorite products Icon
 
-  const onBgChange = () => {
-    setColor("green");
+  const onWishListIconChange = () => {
+    setToggleWishIcon("green");
   };
 
   // Pagination code
@@ -479,7 +480,8 @@ const ShopContextProvider = (props) => {
     filterItems,
     items,
     color,
-    onBgChange,
+    toggleWishIcon,
+    onWishListIconChange,
     updateCartItemCount,
     deleteCartItem,
     getTotalCartAmount,

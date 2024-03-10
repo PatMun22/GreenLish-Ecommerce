@@ -64,7 +64,7 @@ const Footer = () => {
           <Link to="/about" className="link">
             About Us
           </Link>
-          <Link to="/payment" className="link">
+          <Link to="/services/3" className="link">
             Secure Payment
           </Link>
         </div>

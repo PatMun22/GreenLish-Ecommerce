@@ -1,5 +1,6 @@
 import { LiaUserSolid } from "react-icons/lia";
 import { GiShoppingCart } from "react-icons/gi";
+// import { IoMdHeart } from "react-icons/io";
 import "./headerbottom.scss";
 import Search from "../search/Search";
 import Navbar from "../navbar/Navbar";
@@ -25,7 +26,6 @@ const HeaderBottom = () => {
         <Link to="/wishlist" className="favorites">
           <FaHeart className="icon" />
           <span>{numberOfWishListItems}</span>
-          <p>WishList</p>
         </Link>
         <Link to="/cart" className="cart">
           <GiShoppingCart className="icon" />
